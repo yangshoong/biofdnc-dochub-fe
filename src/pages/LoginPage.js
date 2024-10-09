@@ -123,9 +123,14 @@ function LoginPage() {
       console.log('로그인 응답:', response.data);
 
       if (response.data && response.data.success) {
-        setUser(response.data.user); // 사용자 상태 업데이트
-        setUserInfo(response.data.user); // 사용자 정보를 저장
-        setOpenDialog(true); // 다이얼로그 열기
+        // 'name' 대신 'username'을 사용
+        const user = {
+          ...response.data.user,
+          name: response.data.user.username
+        };
+        setUser(user);
+        setUserInfo(user);
+        setOpenDialog(true);
       } else {
         setError(response.data.message || '로그인에 실패했습니다.');
       }
@@ -206,7 +211,7 @@ function LoginPage() {
           <DialogTitle>로그인 성공</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              {userInfo && `${userInfo.name}님, 환영합니다!`}
+              {userInfo && `${userInfo.username || userInfo.name}님, 환영합니다!`}
             </DialogContentText>
             <DialogContentText>
               이메일: {userInfo && userInfo.email}

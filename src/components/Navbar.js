@@ -77,6 +77,8 @@ function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
   const { user, logout } = useAuthStore();
 
+  console.log('Navbar user:', user); // 디버깅을 위한 로그
+
   const toggleSearch = () => {
     setShowSearch(!showSearch);
   };
@@ -94,6 +96,8 @@ function Navbar() {
     handleClose();
     navigate('/login');
   };
+
+  if (!user) return null; // user가 없으면 Navbar를 렌더링하지 않음
 
   return (
     <NavRail component="nav">
@@ -129,7 +133,7 @@ function Navbar() {
       </List>
       <UserInfo>
         <IconButton onClick={handleMenu}>
-          <Avatar alt={user?.name} src={user?.avatar} />
+          <Avatar alt={user?.name || '사용자'} src={user?.avatar} />
         </IconButton>
         <Menu
           id="menu-appbar"
