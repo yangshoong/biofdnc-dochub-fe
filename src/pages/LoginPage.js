@@ -63,6 +63,7 @@ function LoginPage() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
+          alignItems: 'center', // 추가: 가로 중앙 정렬
           pt: 8, // 상단 패딩 추가
         }}
       >
@@ -105,15 +106,37 @@ function LoginPage() {
           >
             로그인
           </Button>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', mt: 2 }}>
+          <Box sx={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', // 수직 중앙 정렬 추가
+            width: '100%', 
+            mt: 2 
+          }}>
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={
+                <Checkbox 
+                  value="remember" 
+                  color="primary" 
+                  size="small" // 체크박스 크기를 작게 조정
+                />
+              }
               label="ID저장"
               checked={rememberMe}
               onChange={(e) => setRememberMe(e.target.checked)}
+              sx={{ 
+                '& .MuiFormControlLabel-label': { 
+                  fontSize: '0.875rem', // body2와 동일한 폰트 크기
+                },
+                margin: 0, // FormControlLabel의 기본 마진 제거
+              }}
             />
-            <Link href="#" variant="body2">
-              HELPDESK
+            <Link href="/signup" variant="body2" sx={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              height: '100%' 
+            }}>
+              회원가입
             </Link>
           </Box>
           <Link href="#" variant="body2" sx={{ mt: 2 }}>
