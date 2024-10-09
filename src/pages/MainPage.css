@@ -11,21 +11,44 @@
 
 /* 헤더 */
 .header {
+  background-color: white;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #005dab;
-  color: white;
+  border-bottom: 1px solid #ccc;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: black;
 }
 
 .user-info {
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.user-info a, .user-info span {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: black;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #e0e0e0;
 }
 
 /* 네비게이션 바 */

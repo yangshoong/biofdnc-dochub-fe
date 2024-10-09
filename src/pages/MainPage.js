@@ -18,21 +18,18 @@ function MainPage() {
       {/* 네비게이션 바 */}
       <nav className="navbar">
         <ul>
-          <li>Community</li>
-          <li>협력사 정보</li>
-          <li>견적관리</li>
-          <li>전자계약</li>
-          <li>구매관리</li>
-          <li>품질관리</li>
-          <li>평가결과</li>
-          <li>Win-Win 커뮤니티</li>
+          <li>MainPage</li>
+          <li>Ingredient</li>
+          <li>Product</li>
+          <li>Record</li>
+          <li>Audit</li>
+          <li>User</li>
         </ul>
       </nav>
 
       {/* 최근 선택한 메뉴 */}
       <section className="recent-menu">
-        <h2>최근 선택한 메뉴</h2>
-        <div className="menu-tab">
+          <div className="menu-tab">
           <span>AP발주현황</span>
           <span>거래명세서작성</span>
           <span>거래명세표</span>
