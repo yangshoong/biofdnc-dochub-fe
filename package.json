@@ -10,10 +10,12 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "cross-spawn": "^7.0.3",
+    "jsesc": "^3.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
+    "source-map": "^0.7.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
