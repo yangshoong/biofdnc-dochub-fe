@@ -55,7 +55,7 @@ const SearchContainer = styled(Paper)(({ theme }) => ({
 
 const UserInfo = styled(Box)(({ theme }) => ({
   position: 'absolute',
-  bottom: theme.spacing(2),
+  bottom: theme.spacing(6),
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

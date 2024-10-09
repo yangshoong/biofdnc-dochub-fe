@@ -43,14 +43,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Logo>BIO-FD&C</Logo>
-      <UserInfo>
-        <span>{user ? `${user.name}님 환영합니다` : '로그인이 필요합니다'}</span>
-        {user && (
-          <LogoutButton variant="outlined" color="primary" onClick={handleLogout}>
-            로그아웃
-          </LogoutButton>
-        )}
-      </UserInfo>
+      
     </HeaderContainer>
   );
 }
