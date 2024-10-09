@@ -17,9 +17,7 @@ function MainPage() {
   return (
     <MainContainer>
       <Content>
-        <Header />
-        <h2>최근 메뉴</h2>
-        {/* ... */}
+        
       </Content>
     </MainContainer>
   );

@@ -8,9 +8,9 @@ const HeaderContainer = styled('header')({
   backgroundColor: 'white',
   color: 'black',
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'space-between', // space-between으로 변경
   alignItems: 'center',
-  padding: '10px 20px',
+  padding: '20px 20px',
   borderBottom: '1px solid #ccc',
 });
 
@@ -18,6 +18,8 @@ const Logo = styled('div')({
   fontSize: '24px',
   fontWeight: 'bold',
   color: 'black',
+  marginLeft: 'auto', // 오른쪽으로 이동
+  marginRight: '20px', 
 });
 
 const UserInfo = styled('div')({
@@ -43,7 +45,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Logo>BIO-FD&C</Logo>
-      
+      {/* 다른 요소들 */}
     </HeaderContainer>
   );
 }

@@ -62,10 +62,7 @@ const navItems = [
   { path: '/main', label: 'Home', icon: <HomeIcon /> },
   { path: '/ingredient', label: 'Ingredient', icon: <InventoryIcon /> },
   { path: '/product', label: 'Product', icon: <CategoryIcon /> },
-  {
-    path: '/record',
-    label: 'Record',
-    icon: <DescriptionIcon />,
+  { path: '/record', label: 'Record', icon: <DescriptionIcon />,
     subItems: [
       { path: '/record/hygiene', label: '위생관리' },
       { path: '/record/safety-check', label: '퇴실시안전점검' },
@@ -79,7 +76,19 @@ const navItems = [
       { path: '/record/vendor-evaluation', label: '거래처평가' },
     ],
   },
-  { path: '/audit', label: 'Audit', icon: <AssignmentIcon /> },
+  {
+    path: '/quality', label: 'Quality', icon: <AssignmentIcon />,
+    subItems: [
+      { path: '/quality/iso9001', label: 'ISO9001' },
+      { path: '/quality/rmd-quality', label: '원료제조팀규정' },
+    ],
+  },
+  { path: '/audit', label: 'Audit', icon: <AssignmentIcon />,
+    subItems: [
+      { path: '/audit/amorepacific', label: '아모레퍼시픽' },
+      { path: '/audit/givaudan', label: 'GIVAUDAN' },
+    ],
+  },
   { path: '/user', label: 'User', icon: <PersonIcon /> },
 ];
 
@@ -95,6 +104,7 @@ function Navbar() {
 
   const handleMouseEnter = (event, item) => {
     if (item.subItems) {
+      clearTimeout(timeoutRef.current); // 기존 타임아웃 제거
       setAnchorEl(event.currentTarget);
       setOpenSubMenu(item.label);
     }
@@ -104,11 +114,11 @@ function Navbar() {
     timeoutRef.current = setTimeout(() => {
       setOpenSubMenu(null);
       setAnchorEl(null);
-    }, 200);
+    }, 500); // 타임아웃 시간을 늘림
   };
 
   const handleSubMenuEnter = () => {
-    clearTimeout(timeoutRef.current);
+    clearTimeout(timeoutRef.current); // 하위 메뉴가 열려 있도록 함
   };
 
   const handleSubMenuLeave = () => {
@@ -142,7 +152,7 @@ function Navbar() {
             p: '2px 4px',
             display: 'flex',
             alignItems: 'center',
-            width: 240,
+            width: 500, // 검색창 길이를 더 길게 수정
             position: 'absolute',
             left: '80px',
             top: '10px',
@@ -217,7 +227,7 @@ function Navbar() {
         ))}
       </List>
       <Box sx={{ flexGrow: 1 }} />
-      <Box sx={{ mb: 2 }}>
+      <Box sx={{ mb: 4 }}>
         <IconButton onClick={handleMenu}>
           <Avatar alt={user?.username} src={user?.avatar} />
         </IconButton>
