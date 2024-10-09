@@ -1,16 +1,22 @@
+// 프론트엔드
+// src/pages/SignupPage.js
+
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link as RouterLink } from 'react-router-dom'; // Link를 RouterLink로 별칭 지정
 import {
   Button,
   TextField,
-  Link,
   Typography,
   Container,
   Box,
   ThemeProvider,
-  createTheme
+  createTheme,
+  Alert,
+  Link as MuiLink, // MuiLink 추가
 } from '@mui/material';
 import { styled } from '@mui/system';
+
+const API_URL = 'http://localhost:5000/api/auth/signup'; // 엔드포인트 업데이트
 
 const theme = createTheme({
   palette: {
@@ -46,17 +52,52 @@ function SignupPage() {
     password: '',
     confirmPassword: '',
   });
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // 여기에 회원가입 로직을 구현합니다.
-    console.log('회원가입 데이터:', formData);
-    // 회원가입 성공 후 로그인 페이지로 이동
-    navigate('/');
+    setError('');
+
+    if (formData.password !== formData.confirmPassword) {
+      setError('비밀번호가 일치하지 않습니다.');
+      return;
+    }
+
+    try {
+      const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: formData.username,
+          email: formData.email,
+          password: formData.password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.status === 201) {
+        console.log(data.message);
+        navigate('/login');
+      } else if (response.status === 409) {
+        setError('이미 사용 중인 이메일입니다.');
+      } else {
+        setError(data.message || '회원가입에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('회원가입 요청 중 오류 발생:', error);
+      setError('서버 오류가 발생했습니다. 나중에 다시 시도해주세요.');
+    }
   };
 
   return (
@@ -74,6 +115,11 @@ function SignupPage() {
             회원가입
           </Typography>
           <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
+            {error && (
+              <Alert severity="error" sx={{ mb: 2 }}>
+                {error}
+              </Alert>
+            )}
             <TextField
               margin="normal"
               required
@@ -129,9 +175,12 @@ function SignupPage() {
             >
               가입하기
             </Button>
-            <Link href="/" variant="body2">
-              이미 계정이 있으신가요? 로그인
-            </Link>
+            <Typography variant="body2">
+              이미 계정이 있으신가요?{' '}
+              <MuiLink component={RouterLink} to="/login">
+                로그인
+              </MuiLink>
+            </Typography>
           </Box>
         </SignupBox>
       </Container>

@@ -3,147 +3,222 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { 
-  Button, 
-  TextField, 
-  Checkbox, 
-  FormControlLabel, 
-  Link, 
-  Typography, 
-  Container, 
+import axios from 'axios'; // 추가: API 호출을 위한 axios
+import {
+  Button,
+  TextField,
+  Link,
+  Typography,
+  Container,
   Box,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   ThemeProvider,
-  createTheme
+  createTheme,
+  Alert // 추가: 에러 메시지를 위한 Alert 컴포넌트
 } from '@mui/material';
 import { styled } from '@mui/system';
+import useAuthStore from '../store/authStore'; // 파일 상단에 추가
 
-// 이미지의 색상 계열에 맞춘 테마 생성
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#4A90E2', // 로그인 버튼 색상
+      main: '#005dab',
     },
     background: {
-      default: '#FFFFFF', // 흰색 배경
+      default: '#f5f5f5',
     },
     text: {
-      primary: '#333333', // 어두운 회색 텍스트
+      primary: '#333333',
     },
   },
 });
 
-// 스타일된 컴포넌트
-const LoginBox = styled(Box)(({ theme }) => ({
-  width: '100%', // 너비를 100%로 설정
+const LoginContainer = styled(Container)(({ theme }) => ({
   display: 'flex',
-  flexDirection: 'column',
+  justifyContent: 'center',
   alignItems: 'center',
-  padding: theme.spacing(3),
-  backgroundColor: theme.palette.background.default,
-  borderRadius: theme.shape.borderRadius,
-  boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .1)',
+  height: '100vh',
+  backgroundColor: 'white', // 여기를 'white'로 변경
 }));
+
+const LoginBox = styled(Box)(({ theme }) => ({
+  width: '380px',
+  backgroundColor: 'white',
+  padding: '40px',
+  borderRadius: '8px',
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  textAlign: 'center',
+  fontFamily: "'Arial', sans-serif",
+}));
+
+const Title = styled(Typography)(({ theme }) => ({
+  fontSize: '20px',
+  marginBottom: '30px',
+  fontWeight: 'bold',
+}));
+
+const StyledTextField = styled(TextField)(({ theme }) => ({
+  width: '100%',
+  margin: '15px 0',
+  '& .MuiInputBase-input': {
+    padding: '14px',
+    fontSize: '16px',
+  },
+}));
+
+const LoginButton = styled(Button)(({ theme }) => ({
+  width: '100%',
+  padding: '14px',
+  backgroundColor: theme.palette.primary.main,
+  color: 'white',
+  fontSize: '18px',
+  marginTop: '20px',
+  '&:hover': {
+    backgroundColor: '#003e7e',
+  },
+}));
+
+const LinksBox = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  marginTop: '15px',
+  fontSize: '14px',
+}));
+
+const StyledLink = styled(Link)(({ theme }) => ({
+  color: theme.palette.primary.main,
+  textDecoration: 'none',
+  '&:hover': {
+    textDecoration: 'underline',
+  },
+}));
+
+const API_URL = 'http://localhost:5000/api/auth/login'; // 엔드포인트 업데이트
 
 function LoginPage() {
   const navigate = useNavigate();
-  const [rememberMe, setRememberMe] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [userInfo, setUserInfo] = useState(null); // 사용자 정보를 저장하는 상태 추가
+  const [openDialog, setOpenDialog] = useState(false); // 다이얼로그 상태 추가
+  const setUser = useAuthStore(state => state.setUser); // 추가
 
-  const handleLogin = () => {
-    // 로그인 로직을 추가하거나, 간단히 메인 페이지로 이동
-    navigate('/main');
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setError(''); // 에러 초기화
+    setIsLoading(true);
+
+    try {
+      const response = await axios.post(API_URL, {
+        email,
+        password
+      });
+
+      console.log('로그인 응답:', response.data);
+
+      if (response.data && response.data.success) {
+        setUser(response.data.user); // 사용자 상태 업데이트
+        setUserInfo(response.data.user); // 사용자 정보를 저장
+        setOpenDialog(true); // 다이얼로그 열기
+      } else {
+        setError(response.data.message || '로그인에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('로그인 에러:', error);
+      setError('로그인 요청 중 오류가 발생했습니다.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleConfirm = () => {
+    setOpenDialog(false);
+    navigate('/'); // 메인 페이지로 이동
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Container 
-        component="main" 
-        maxWidth="xs" 
-        sx={{
-          minHeight: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center', // 추가: 가로 중앙 정렬
-          pt: 8, // 상단 패딩 추가
-        }}
-      >
+      <LoginContainer>
         <LoginBox>
-          <Typography component="h1" variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+          <Title variant="h5">
             BIO-FD&C
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom sx={{ color: 'text.secondary' }}>
+          </Title>
+          <Typography variant="subtitle2" gutterBottom>
             Ingredient Product Document Hub
           </Typography>
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            id="id"
-            name="id"
-            autoComplete="id"
-            autoFocus
-            sx={{ bgcolor: '#F0F0F0' }}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            name="password"
-            label="PASSWORD"
-            type="password"
-            id="password"
-            autoComplete="current-password"
-          />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            onClick={handleLogin}
-            sx={{ mt: 3, mb: 2 }}
-          >
-            로그인
-          </Button>
-          <Box sx={{ 
-            display: 'flex', 
-            justifyContent: 'space-between', 
-            alignItems: 'center', // 수직 중앙 정렬 추가
-            width: '100%', 
-            mt: 2 
-          }}>
-            <FormControlLabel
-              control={
-                <Checkbox 
-                  value="remember" 
-                  color="primary" 
-                  size="small" // 체크박스 크기를 작게 조정
-                />
-              }
-              label="ID저장"
-              checked={rememberMe}
-              onChange={(e) => setRememberMe(e.target.checked)}
-              sx={{ 
-                '& .MuiFormControlLabel-label': { 
-                  fontSize: '0.875rem', // body2와 동일한 폰트 크기
-                },
-                margin: 0, // FormControlLabel의 기본 마진 제거
+          {error && <Alert severity="error" sx={{ width: '100%', mb: 2 }}>{error}</Alert>}
+          <Box component="form" onSubmit={handleLogin}>
+            <StyledTextField
+              required
+              fullWidth
+              id="email"
+              label="이메일"
+              name="email"
+              autoComplete="email"
+              autoFocus
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              InputLabelProps={{
+                shrink: true,
               }}
             />
-            <Link href="/signup" variant="body2" sx={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              height: '100%' 
-            }}>
-              회원가입
-            </Link>
+            <StyledTextField
+              required
+              fullWidth
+              name="password"
+              label="비밀번호"
+              type="password"
+              id="password"
+              autoComplete="current-password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+            <LoginButton
+              type="submit"
+              fullWidth
+              variant="contained"
+              disabled={isLoading}
+            >
+              {isLoading ? '로그인 중...' : '로그인'}
+            </LoginButton>
           </Box>
-          <Link href="#" variant="body2" sx={{ mt: 2 }}>
-            아이디 / 비밀번호 찾기
-          </Link>
+          <LinksBox>
+            <StyledLink href="/signup">
+              회원가입
+            </StyledLink>
+            <StyledLink href="#">
+              아이디 / 비밀번호 찾기
+            </StyledLink>
+          </LinksBox>
         </LoginBox>
-      </Container>
+
+        {/* 로그인 성공 후 사용자 정보 표시 다이얼로그 */}
+        <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
+          <DialogTitle>로그인 성공</DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              {userInfo && `${userInfo.name}님, 환영합니다!`}
+            </DialogContentText>
+            <DialogContentText>
+              이메일: {userInfo && userInfo.email}
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleConfirm} color="primary" autoFocus>
+              메인페이지로 이동
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </LoginContainer>
     </ThemeProvider>
   );
 }
