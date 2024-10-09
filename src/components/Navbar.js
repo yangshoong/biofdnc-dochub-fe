@@ -1,7 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { styled } from '@mui/system';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, IconButton, InputBase, Paper, Avatar, Menu, MenuItem } from '@mui/material';
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  IconButton,
+  InputBase,
+  Paper,
+  Avatar,
+  Menu,
+  MenuItem,
+  Popper,
+  Grow,
+  ClickAwayListener,
+} from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import CategoryIcon from '@mui/icons-material/Category';
@@ -9,10 +25,10 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import PersonIcon from '@mui/icons-material/Person';
 import SearchIcon from '@mui/icons-material/Search';
-import useAuthStore from '../store/authStore'; // authStore import 추가
+import useAuthStore from '../store/authStore';
 
 const NavRail = styled(Box)(({ theme }) => ({
-  width: '80px',
+  width: '100px',
   backgroundColor: theme.palette.background.paper,
   borderRight: `1px solid ${theme.palette.divider}`,
   height: '100vh',
@@ -42,33 +58,31 @@ const NavItem = styled(ListItemButton)(({ theme, active }) => ({
   },
 }));
 
-const SearchContainer = styled(Paper)(({ theme }) => ({
-  position: 'absolute',
-  left: '80px',
-  top: '0',
-  padding: '2px 4px',
-  display: 'flex',
-  alignItems: 'center',
-  width: 400,
-  zIndex: 1000,
-}));
-
-const UserInfo = styled(Box)(({ theme }) => ({
-  position: 'absolute',
-  bottom: theme.spacing(6),
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-}));
-
 const navItems = [
   { path: '/main', label: 'Home', icon: <HomeIcon /> },
   { path: '/ingredient', label: 'Ingredient', icon: <InventoryIcon /> },
   { path: '/product', label: 'Product', icon: <CategoryIcon /> },
-  { path: '/record', label: 'Record', icon: <DescriptionIcon /> },
+  {
+    path: '/record',
+    label: 'Record',
+    icon: <DescriptionIcon />,
+    subItems: [
+      { path: '/record/hygiene', label: '위생관리' },
+      { path: '/record/safety-check', label: '퇴실시안전점검' },
+      { path: '/record/cleaning', label: '작업장청소' },
+      { path: '/record/5s-checklist', label: '5S Check List' },
+      { path: '/record/purified-water', label: '정제수' },
+      { path: '/record/deviation', label: '일탈' },
+      { path: '/record/nonconformance', label: '부적합' },
+      { path: '/record/complaint', label: '클레임' },
+      { path: '/record/change-management', label: '변경관리(4M)' },
+      { path: '/record/vendor-evaluation', label: '거래처평가' },
+    ],
+  },
   { path: '/audit', label: 'Audit', icon: <AssignmentIcon /> },
   { path: '/user', label: 'User', icon: <PersonIcon /> },
 ];
+
 
 function Navbar() {
   const location = useLocation();
@@ -76,11 +90,30 @@ function Navbar() {
   const [showSearch, setShowSearch] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const { user, logout } = useAuthStore();
+  const [openSubMenu, setOpenSubMenu] = useState(null);
+  const timeoutRef = useRef(null);
 
-  console.log('Navbar user:', user); // 디버깅을 위한 로그
+  const handleMouseEnter = (event, item) => {
+    if (item.subItems) {
+      setAnchorEl(event.currentTarget);
+      setOpenSubMenu(item.label);
+    }
+  };
 
-  const toggleSearch = () => {
-    setShowSearch(!showSearch);
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenSubMenu(null);
+      setAnchorEl(null);
+    }, 200);
+  };
+
+  const handleSubMenuEnter = () => {
+    clearTimeout(timeoutRef.current);
+  };
+
+  const handleSubMenuLeave = () => {
+    setOpenSubMenu(null);
+    setAnchorEl(null);
   };
 
   const handleMenu = (event) => {
@@ -97,24 +130,34 @@ function Navbar() {
     navigate('/login');
   };
 
-  if (!user) return null; // user가 없으면 Navbar를 렌더링하지 않음
-
   return (
     <NavRail component="nav">
-      <IconButton onClick={toggleSearch} sx={{ mb: 2 }}>
+      <IconButton onClick={() => setShowSearch(!showSearch)} sx={{ mb: 2 }}>
         <SearchIcon />
       </IconButton>
       {showSearch && (
-        <SearchContainer>
+        <Paper
+          component="form"
+          sx={{
+            p: '2px 4px',
+            display: 'flex',
+            alignItems: 'center',
+            width: 240,
+            position: 'absolute',
+            left: '80px',
+            top: '10px',
+            zIndex: 1000,
+          }}
+        >
           <InputBase
             sx={{ ml: 1, flex: 1 }}
             placeholder="검색..."
             inputProps={{ 'aria-label': '검색' }}
           />
-          <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+          <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
             <SearchIcon />
           </IconButton>
-        </SearchContainer>
+        </Paper>
       )}
       <List>
         {navItems.map((item) => (
@@ -122,38 +165,79 @@ function Navbar() {
             <NavItem
               component={Link}
               to={item.path}
-              selected={location.pathname === item.path}
-              active={location.pathname === item.path ? 1 : 0}
+              selected={location.pathname.startsWith(item.path)}
+              active={location.pathname.startsWith(item.path) ? 1 : 0}
+              onMouseEnter={(event) => handleMouseEnter(event, item)}
+              onMouseLeave={handleMouseLeave}
             >
               <ListItemIcon>{item.icon}</ListItemIcon>
-              <ListItemText primary={item.label} primaryTypographyProps={{ variant: 'caption', align: 'center' }} />
+              <ListItemText
+                primary={item.label}
+                primaryTypographyProps={{ variant: 'caption', align: 'center' }}
+              />
             </NavItem>
+            {item.subItems && openSubMenu === item.label && (
+              <Popper
+                open={true}
+                anchorEl={anchorEl}
+                placement="right-start"
+                transition
+                disablePortal
+                style={{ zIndex: 1000 }}
+              >
+                {({ TransitionProps, placement }) => (
+                  <Grow
+                    {...TransitionProps}
+                    style={{ transformOrigin: 'left top' }}
+                  >
+                    <Paper
+                      onMouseEnter={handleSubMenuEnter}
+                      onMouseLeave={handleSubMenuLeave}
+                      sx={{ mt: '-8px', ml: '4px', width: '200px' }}  // width 추가
+                    >
+                      <List dense>
+                        {item.subItems.map((subItem) => (
+                          <ListItemButton
+                            key={subItem.path}
+                            component={Link}
+                            to={subItem.path}
+                            selected={location.pathname === subItem.path}
+                            sx={{ pl: 2, pr: 2 }}
+                          >
+                            <ListItemText primary={subItem.label} />
+                          </ListItemButton>
+                        ))}
+                      </List>
+                    </Paper>
+                  </Grow>
+                )}
+              </Popper>
+            )}
           </ListItem>
         ))}
       </List>
-      <UserInfo>
+      <Box sx={{ flexGrow: 1 }} />
+      <Box sx={{ mb: 2 }}>
         <IconButton onClick={handleMenu}>
-          <Avatar alt={user?.name || '사용자'} src={user?.avatar} />
+          <Avatar alt={user?.username} src={user?.avatar} />
         </IconButton>
         <Menu
-          id="menu-appbar"
           anchorEl={anchorEl}
+          open={Boolean(anchorEl) && !openSubMenu}
+          onClose={handleClose}
           anchorOrigin={{
             vertical: 'top',
             horizontal: 'right',
           }}
-          keepMounted
           transformOrigin={{
             vertical: 'bottom',
             horizontal: 'right',
           }}
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
         >
           <MenuItem onClick={handleClose}>프로필</MenuItem>
           <MenuItem onClick={handleLogout}>로그아웃</MenuItem>
         </Menu>
-      </UserInfo>
+      </Box>
     </NavRail>
   );
 }

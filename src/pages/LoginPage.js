@@ -123,7 +123,6 @@ function LoginPage() {
       console.log('로그인 응답:', response.data);
 
       if (response.data && response.data.success) {
-        // 'name' 대신 'username'을 사용
         const user = {
           ...response.data.user,
           name: response.data.user.username
@@ -136,7 +135,28 @@ function LoginPage() {
       }
     } catch (error) {
       console.error('로그인 에러:', error);
-      setError('로그인 요청 중 오류가 발생했습니다.');
+      if (error.response) {
+        // 서버에서 응답을 받았지만 2xx 범위를 벗어난 상태 코드가 반환된 경우
+        switch (error.response.status) {
+          case 400:
+            setError('이메일 또는 비밀번호가 올바르지 않습니다.');
+            break;
+          case 401:
+            setError('인증에 실패했습니다.');
+            break;
+          case 404:
+            setError('해당 이메일로 등록된 계정을 찾을 수 없습니다.');
+            break;
+          default:
+            setError('로그인 중 오류가 발생했습니다. 나중에 다시 시도해주세요.');
+        }
+      } else if (error.request) {
+        // 요청은 보냈지만 응답을 받지 못한 경우
+        setError('서버에 연결할 수 없습니다. 인터넷 연결을 확인해주세요.');
+      } else {
+        // 요청을 보내기 전에 오류가 발생한 경우
+        setError('로그인 요청을 보내는 중 오류가 발생했습니다.');
+      }
     } finally {
       setIsLoading(false);
     }
@@ -151,13 +171,28 @@ function LoginPage() {
     <ThemeProvider theme={theme}>
       <LoginContainer>
         <LoginBox>
-          <Title variant="h5">
-            BIO-FD&C
-          </Title>
-          <Typography variant="subtitle2" gutterBottom>
-            Ingredient Product Document Hub
-          </Typography>
-          {error && <Alert severity="error" sx={{ width: '100%', mb: 2 }}>{error}</Alert>}
+          <Box sx={{ textAlign: 'center', mb: 2 }}>
+            <Typography variant="h5" component="h1" gutterBottom>
+              BIO-FD&C
+            </Typography>
+            <Typography variant="subtitle3" component="p" sx={{ mt: -0 }}>
+              Product Document Hub
+            </Typography>
+          </Box>
+          {error && (
+            <Alert 
+              severity="error" 
+              sx={{ 
+                width: '100%', 
+                mb: 2,
+                pl: 2, // 왼쪽 패딩
+                pr: 2, // 오른쪽 패딩
+                boxSizing: 'border-box' // 패딩 포함
+              }}
+            >
+              {error}
+            </Alert>
+          )}
           <Box component="form" onSubmit={handleLogin}>
             <StyledTextField
               required
