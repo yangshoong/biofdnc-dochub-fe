@@ -1,0 +1,84 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-box {
+  width: 380px;
+  /* Adjusted width */
+  background-color: white;
+  padding: 40px;
+  /* Increased padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  /* Adjusted font size */
+  margin-bottom: 30px;
+  /* Increased margin */
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  /* Adjust padding */
+  margin: 15px 0;
+  /* Adjust margin for spacing between inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  /* Ensure padding is included in the total width */
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  /* Adjusted padding */
+  background-color: #005dab;
+  /* Adjusted color to match */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  /* Adjusted font size */
+  margin-top: 20px;
+  /* Added margin */
+}
+
+.login-button:hover {
+  background-color: #003e7e;
+  /* Adjusted hover color */
+}
+
+.options {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  /* Adjusted margin */
+  font-size: 14px;
+}
+
+.links a {
+  color: #005dab;
+  /* Adjusted link color */
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
