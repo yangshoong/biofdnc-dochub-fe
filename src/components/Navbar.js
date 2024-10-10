@@ -16,7 +16,6 @@ import {
   MenuItem,
   Popper,
   Grow,
-  ClickAwayListener,
 } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import InventoryIcon from '@mui/icons-material/Inventory';

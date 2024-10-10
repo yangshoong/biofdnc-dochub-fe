@@ -22,6 +22,7 @@ const Logo = styled('div')({
   marginRight: '20px', 
 });
 
+// eslint-disable-next-line no-unused-vars
 const UserInfo = styled('div')({
   display: 'flex',
   alignItems: 'center',

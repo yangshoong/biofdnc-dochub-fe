@@ -1,6 +1,5 @@
 import React from 'react';
 import { styled } from '@mui/system';
-import Header from '../components/Header';
 
 const MainContainer = styled('div')({
   display: 'flex',

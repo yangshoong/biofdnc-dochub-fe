@@ -41,8 +41,10 @@ const LoginContainer = styled(Container)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  height: '100vh',
-  backgroundColor: 'white', // 여기를 'white'로 변경
+  minHeight: 'calc(100vh - 100px)', // 헤더 높이(64px)를 뺀 높이
+  paddingTop: '2rem',
+  paddingBottom: '2rem',
+  backgroundColor: 'white',
 }));
 
 const LoginBox = styled(Box)(({ theme }) => ({
@@ -55,11 +57,11 @@ const LoginBox = styled(Box)(({ theme }) => ({
   fontFamily: "'Arial', sans-serif",
 }));
 
-const Title = styled(Typography)(({ theme }) => ({
-  fontSize: '20px',
-  marginBottom: '30px',
-  fontWeight: 'bold',
-}));
+// const Title = styled(Typography)(({ theme }) => ({
+//   fontSize: '20px',
+//   marginBottom: '30px',
+//   fontWeight: 'bold',
+// }));
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
   width: '100%',

@@ -44,6 +44,16 @@ const SignupBox = styled(Box)(({ theme }) => ({
   boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .1)',
 }));
 
+const SignupContainer = styled(Container)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  minHeight: 'calc(100vh - 100px)', // Adjust this value as needed
+  paddingTop: '2rem', // Adjust this value as needed
+  paddingBottom: '2rem', // Adjust this value as needed
+  backgroundColor: 'white',
+}));
+
 function SignupPage() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -102,14 +112,7 @@ function SignupPage() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs" sx={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        pt: 8,
-      }}>
+      <SignupContainer>
         <SignupBox>
           <Typography component="h1" variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
             회원가입
@@ -183,7 +186,7 @@ function SignupPage() {
             </Typography>
           </Box>
         </SignupBox>
-      </Container>
+      </SignupContainer>
     </ThemeProvider>
   );
 }
