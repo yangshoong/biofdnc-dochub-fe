@@ -3,7 +3,7 @@ import { styled } from '@mui/system';
 
 const MainContainer = styled('div')({
   display: 'flex',
-  height: '100vh',
+  height: '60vh',
 });
 
 const Content = styled('div')(({ theme }) => ({

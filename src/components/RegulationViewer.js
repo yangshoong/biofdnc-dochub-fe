@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import rmdRegulations from '../data/rmdRegulations';
 
 function RegulationViewer() {
   const [content, setContent] = useState('');
 
-  const loadContent = async (id) => {
-    if (id === 'BF-RMD-GM-01') {
-      const module = await import('../data/BF-RMD-GM-01-content');
+  const loadContent = useCallback(async (id) => {
+    try {
+      const module = await import(`../data/${id}-content`);
       setContent(module.default);
+    } catch (error) {
+      console.error(`Failed to load content for ${id}:`, error);
+      setContent('Content not found');
     }
-    // Add more conditions if you have more dynamic imports
-  };
+  }, []);
 
   return (
     <div>
@@ -18,9 +20,9 @@ function RegulationViewer() {
         <div key={regulation.category}>
           <h2>{regulation.category}</h2>
           {regulation.items.map((item) => (
-            <div key={item.id}>
-              <button onClick={() => loadContent(item.id)}>{item.title}</button>
-            </div>
+            <button key={item.id} onClick={() => loadContent(item.id)}>
+              {item.title}
+            </button>
           ))}
         </div>
       ))}

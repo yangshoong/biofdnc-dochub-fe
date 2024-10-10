@@ -1,23 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { styled } from '@mui/system';
 import { Box, Typography, Divider, Button } from '@mui/material';
 import rmdRegulations from '../data/rmdRegulations';
 
+const PageWrapper = styled(Box)({
+  paddingTop: '100px',
+  paddingLeft: '300px',
+  minHeight: '60vh',
+});
+
 const Container = styled(Box)(({ theme }) => ({
   display: 'flex',
-  height: 'calc(100vh - 64px)', // 헤더 높이를 제외한 높이
-  marginTop: '100px', // 헤더 높이만큼 마진 추가
-  marginLeft: '300px', // 좌측 여백을 더 넓게
-  padding: theme.spacing(2), // 전체적인 패딩 추가
-  justifyContent: 'center', // 중앙 정렬
-  alignItems: 'flex-start', // 상단 정렬
+  justifyContent: 'flex-start',
+  alignItems: 'flex-start',
+  padding: theme.spacing(2),
+  height: '95%', // 헤더 높이를 제외한 높이
+  position: 'fixed',
+  top: '150px',
+  left: '200px',
+  right: 0,
 }));
 
 const LeftSection = styled(Box)(({ theme }) => ({
-  width: '35%', // 좌측 본문의 가로 폭을 줄임
+  width: '35%',
   overflowY: 'auto',
-  paddingRight: theme.spacing(2), // 우측 패딩 추가
+  paddingRight: theme.spacing(2),
   borderRight: `1px solid ${theme.palette.divider}`,
+  height: '85%',
   '&::-webkit-scrollbar': {
     display: 'none',
   },
@@ -26,18 +35,16 @@ const LeftSection = styled(Box)(({ theme }) => ({
 }));
 
 const RightSection = styled(Box)(({ theme }) => ({
-  width: '65%', // 우측 본문의 가로 폭을 늘림
+  width: '65%',
   overflowY: 'auto',
-  paddingLeft: theme.spacing(2), // 좌측 패딩 추가
-  marginRight: theme.spacing(5), // 우측 여백 추가
+  paddingLeft: theme.spacing(2),
+  marginRight: theme.spacing(5),
+  height: '85%',
   '&::-webkit-scrollbar': {
     display: 'none',
   },
   '-ms-overflow-style': 'none',
   'scrollbar-width': 'none',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'flex-start', // 상단 정렬
 }));
 
 const CategoryTitle = styled(Typography)(({ theme }) => ({
@@ -69,7 +76,7 @@ function RMDQualityPage() {
   };
 
   return (
-    <Box>
+    <PageWrapper>
       <Container>
         <LeftSection>
           <Typography variant="h6" gutterBottom>
@@ -94,23 +101,25 @@ function RMDQualityPage() {
           ))}
         </LeftSection>
         <RightSection>
-          {selectedRegulation ? (
-            <Box>
-              <Typography variant="h5" gutterBottom>
-                {`${selectedRegulation.id}. ${selectedRegulation.title}`}
+          <Box sx={{ paddingBottom: '20px' }}>
+            {selectedRegulation ? (
+              <Box>
+                <Typography variant="h5" gutterBottom>
+                  {`${selectedRegulation.id}. ${selectedRegulation.title}`}
+                </Typography>
+                <Typography variant="body1">
+                  {content}
+                </Typography>
+              </Box>
+            ) : (
+              <Typography variant="h6">
+                규정을 선택하면 내용이 표시됩니다.
               </Typography>
-              <Typography variant="body1">
-                {content}
-              </Typography>
-            </Box>
-          ) : (
-            <Typography variant="h6">
-              규정을 선택하면 내용이 표시됩니다.
-            </Typography>
-          )}
+            )}
+          </Box>
         </RightSection>
       </Container>
-    </Box>
+    </PageWrapper>
   );
 }
 
