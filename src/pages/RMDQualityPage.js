@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { styled } from '@mui/system';
 import { Box, Typography, Divider, Button } from '@mui/material';
 import rmdRegulations from '../data/rmdRegulations';
@@ -63,15 +63,25 @@ const RegulationButton = styled(Button)(({ theme, selected }) => ({
 
 function RMDQualityPage() {
   const [selectedRegulation, setSelectedRegulation] = useState(null);
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState(null);
+  const rightSectionRef = useRef(null);
 
   const handleRegulationClick = async (regulation) => {
     setSelectedRegulation(regulation);
-    if (regulation.id === 'BF-RMD-GM-01') {
-      const module = await import('../data/BF-RMD-GM-01-content');
-      setContent(module.default);
-    } else {
-      setContent(regulation.content);
+    try {
+      const module = await import(`../data/${regulation.id}_Content`);
+      setContent(<module.default />);
+      // 콘텐츠가 로드된 후 스크롤을 최상단으로 이동
+      if (rightSectionRef.current) {
+        rightSectionRef.current.scrollTop = 0;
+      }
+    } catch (error) {
+      console.error("콘텐츠 로딩 오류:", error);
+      setContent(
+        <Typography variant="body1">
+          콘텐츠를 불러올 수 없습니다. ({regulation.id})
+        </Typography>
+      );
     }
   };
 
@@ -100,16 +110,14 @@ function RMDQualityPage() {
             </Box>
           ))}
         </LeftSection>
-        <RightSection>
+        <RightSection ref={rightSectionRef}>
           <Box sx={{ paddingBottom: '20px' }}>
             {selectedRegulation ? (
               <Box>
                 <Typography variant="h5" gutterBottom>
                   {`${selectedRegulation.id}. ${selectedRegulation.title}`}
                 </Typography>
-                <Typography variant="body1">
-                  {content}
-                </Typography>
+                {content}
               </Box>
             ) : (
               <Typography variant="h6">

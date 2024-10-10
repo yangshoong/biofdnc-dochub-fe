@@ -1,18 +1,19 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import rmdRegulations from '../data/rmdRegulations';
 
 function RegulationViewer() {
   const [content, setContent] = useState('');
 
-  const loadContent = useCallback(async (id) => {
+  const loadContent = async (id) => {
     try {
       const module = await import(`../data/${id}-content`);
-      setContent(module.default);
+      console.log("Loaded content:", module.default);  // 디버깅용 로그
+      setContent(<module.default />);  // 컴포넌트로 렌더링
     } catch (error) {
-      console.error(`Failed to load content for ${id}:`, error);
-      setContent('Content not found');
+      console.error("콘텐츠 로딩 오류:", error);
+      setContent(`콘텐츠를 불러올 수 없습니다. (${id})`);
     }
-  }, []);
+  };
 
   return (
     <div>
@@ -20,15 +21,15 @@ function RegulationViewer() {
         <div key={regulation.category}>
           <h2>{regulation.category}</h2>
           {regulation.items.map((item) => (
-            <button key={item.id} onClick={() => loadContent(item.id)}>
-              {item.title}
-            </button>
+            <div key={item.id}>
+              <button onClick={() => loadContent(item.id)}>{item.title}</button>
+            </div>
           ))}
         </div>
       ))}
       <div>
         <h3>Content</h3>
-        <p>{content}</p>
+        {typeof content === 'string' ? <p>{content}</p> : content}
       </div>
     </div>
   );
