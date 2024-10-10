@@ -98,46 +98,47 @@ function BF_RMD_GM_02_Content() {
         </Table>
       </TableContainer>
       <SectionTitle>1. 목적</SectionTitle>
-      <Paragraph>
-        본 규정은 (주)바이오에프디엔씨(이하 '당사')의 화장품 원료 제조 및 품질관리를 효율적으로 수행하기 위한 조직과 직무를 규정하고, 직무의 분담 범위와 권한 및 책임을 명확히 하여 품질이 보장된 우수 화장품 원료를 제조 공급하는 것을 목적으로 한다.
-      </Paragraph>
+      <StyledList>
+        <StyledListItem>
+          본 규정은 (주)바이오에프디엔씨(이하 '당사')의 화장품 원료 제조 및 품질관리를 효율적으로 수행하기 위한 조직과 직무를 규정하고, 직무의 분담 범위와 권한 및 책임을 명확히 하여 품질이 보장된 우수 화장품 원료를 제조 공급하는 것을 목적으로 한다.
+        </StyledListItem>
+      </StyledList>
 
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사에서 수행되는 화장품 원료의 제조, 품질관리, 보관 및 출하 등 모든 관련 활동에 직접 또는 간접적으로 관여하는 모든 조직과 업무담당자의 책임에 적용한다.
       </Paragraph>
-
+      <Divider sx={{ marginY: '20px' }} />
       <SectionTitle>3. 용어의 정의</SectionTitle>
       <StyledList>
         <StyledListItem>
-          <strong>3.1 품질경영시스템:</strong> 품질에 관하여 조직을 지휘하고 관리하기 위한 경영시스템
+          <strong>3.1 품질경영시스템</strong>: 품질에 관하여 조직을 지휘하고 관리하기 위한 경영시스템
         </StyledListItem>
         <StyledListItem>
-          <strong>3.2 품질방침:</strong> 최고경영자에 의해 공식적으로 표명된 품질관련 조직의 전반적인 의도 및 방향
+          <strong>3.2 품질방침</strong>: 최고경영자에 의해 공식적으로 표명된 품질관련 조직의 전반적인 의도 및 방향
         </StyledListItem>
         <StyledListItem>
-          <strong>3.3 품질목표:</strong> 품질에 관해 추구하거나 지향하는 것
+          <strong>3.3 품질목표</strong>: 품질에 관해 추구하거나 지향하는 것
         </StyledListItem>
         <StyledListItem>
-          <strong>3.4 품질계획:</strong> 품질목표를 설정하고 달성하기 위해 필요한 운영프로세스 및 관련 자원을 규정하는 품질경영의 일부
+          <strong>3.4 품질계획</strong>: 품질목표를 설정하고 달성하기 위해 필요한 운영프로세스 및 관련 자원을 규정하는 품질경영의 일부
         </StyledListItem>
         <StyledListItem>
-          <strong>3.5 품질관리:</strong> 품질요구사항을 충족시키는데 중점을 둔 품질경영의 일부
+          <strong>3.5 품질관리</strong>: 품질요구사항을 충족시키는데 중점을 둔 품질경영의 일부
         </StyledListItem>
         <StyledListItem>
-          <strong>3.6 품질보증:</strong> 품질요구사항이 충족될 것이라는 확신을 제공하는데 중점을 둔 품질경영의 일부
+          <strong>3.6 품질보증</strong>: 품질요구사항이 충족될 것이라는 확신을 제공하는데 중점을 둔 품질경영의 일부
         </StyledListItem>
         <StyledListItem>
-          <strong>3.7 품질개선:</strong> 품질요구사항을 충족시키는 능력을 증진시키는데 중점을 둔 품질경영의 일부
+          <strong>3.7 품질개선</strong>: 품질요구사항을 충족시키는 능력을 증진시키는데 중점을 둔 품질경영의 일부
         </StyledListItem>
         <StyledListItem>
-          <strong>3.8 시정:</strong> 발견된 부적합을 제거하기 위한 조치
+          <strong>3.8 시정</strong>: 발견된 부적합을 제거하기 위한 조치
         </StyledListItem>
         <StyledListItem>
-          <strong>3.9 예방조치:</strong> 잠재적 부적합 또는 기타 바람직하지 않은 잠재적 상황의 원인을 제거하기 위한 조치
+          <strong>3.9 예방조치</strong>: 잠재적 부적합 또는 기타 바람직하지 않은 잠재적 상황의 원인을 제거하기 위한 조치
         </StyledListItem>
       </StyledList>
-
       <SectionTitle>4. 각 부문 책임자 및 업무 분장</SectionTitle>
 
       <SubsectionTitle>4.1 대표이사</SubsectionTitle>
@@ -195,7 +196,7 @@ function BF_RMD_GM_02_Content() {
         <StyledListItem>4.4.3 업무 수행 중 발생한 문제점 보고</StyledListItem>
         <StyledListItem>4.4.4 품질 향상을 위한 제안 및 개선 활동 참여</StyledListItem>
       </StyledList>
-
+      <Divider sx={{ marginY: '20px' }} />
       <SectionTitle>5. 각 부서별 담당자 업무분장</SectionTitle>
 
       <SubsectionTitle>5.1 품질보증부</SubsectionTitle>
