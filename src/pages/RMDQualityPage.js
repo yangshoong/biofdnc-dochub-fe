@@ -29,6 +29,7 @@ const RightSection = styled(Box)(({ theme }) => ({
   width: '65%', // 우측 본문의 가로 폭을 늘림
   overflowY: 'auto',
   paddingLeft: theme.spacing(2), // 좌측 패딩 추가
+  marginRight: theme.spacing(5), // 우측 여백 추가
   '&::-webkit-scrollbar': {
     display: 'none',
   },
