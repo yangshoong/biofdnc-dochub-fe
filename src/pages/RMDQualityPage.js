@@ -24,6 +24,7 @@ const Container = styled(Box)(({ theme }) => ({
 const LeftSection = styled(Box)(({ theme }) => ({
   width: '35%',
   overflowY: 'auto',
+  paddingLeft: theme.spacing(10),
   paddingRight: theme.spacing(15),
   borderRight: `1px solid ${theme.palette.divider}`,
   height: '85%',

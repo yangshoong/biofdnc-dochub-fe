@@ -84,7 +84,7 @@ const navItems = [
   },
   { path: '/audit', label: 'Audit', icon: <AssignmentIcon />,
     subItems: [
-      { path: '/audit/amorepacific', label: '아모레퍼시픽' },
+      { path: '/audit/amorepacific', label: 'AMOREPACIFIC' },
       { path: '/audit/givaudan', label: 'GIVAUDAN' },
     ],
   },

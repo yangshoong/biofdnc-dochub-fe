@@ -13,6 +13,7 @@ import RMDQualityPage from './pages/RMDQualityPage';
 import Header from './components/Header'; // Header 컴포넌트 추가
 import theme from './theme';
 import RegulationViewer from './components/RegulationViewer';
+import AmorepacificAudit from './pages/AmorepacificAudit';
 
 function App() {
   const user = useAuthStore(state => state.user);
@@ -41,6 +42,7 @@ function App() {
             </PrivateRoute>
           } />
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/audit/amorepacific" element={<AmorepacificAudit />} />
         </Routes>
       </Router>
     </ThemeProvider>
