@@ -97,71 +97,163 @@ function BF_RMD_QC_05_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-//         1. 목적
-// 본 규정은 (주)바이오에프디엔씨(이하 '당사'라 함)에서 사용되는 자재의 입고검사 업무에 관한 사항을 간소화하여 규정함으로써 효율적인 품질관리를 수행하는 데 그 목적이 있다.
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
+      <Paragraph>
+        본 규정은 (주)바이오에프디엔씨(이하 '당사'라 함)에서 사용되는 자재의 입고검사 업무에 관한 사항을 간소화하여 규정함으로써 효율적인 품질관리를 수행하는 데 그 목적이 있다.
+      </Paragraph>
 
-// 2. 적용범위 
-// 본 규정은 당사에서 생산되는 제품에 사용되는 모든 자재에 대해 적용한다.
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
+      <Paragraph>
+        본 규정은 당사에서 생산되는 제품에 사용되는 모든 자재에 대해 적용한다.
+      </Paragraph>
 
-// 3. 책임과 권한
-// 3.1 대표이사
-// 3.1.1 자재 입고검사 관련 규정을 승인한다.
-// 3.2 품질보증책임자
-// 3.2.1 자재 입고검사 업무를 총괄한다.
-// 3.2.2 이상 발생 시 최종 판정한다.
-// 3.3 생산관리담당자
-// 3.3.1 이상 발생 시 품질보증책임자와 협의하여 처리한다.
-// 3.4 입고담당자
-// 3.4.1 자재의 입고검사 업무를 수행하고 그 결과를 기록한다.
-// 3.4.2 이상 발생 시 생산관리담당자와 품질보증책임자에게 보고한다.
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
+      <SubsectionTitle>3.1 대표이사</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>3.1.1 자재 입고검사 관련 규정을 승인한다.</StyledListItem>
+      </StyledList>
+      <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>3.2.1 자재 입고검사 업무를 총괄한다.</StyledListItem>
+        <StyledListItem>3.2.2 이상 발생 시 최종 판정한다.</StyledListItem>
+      </StyledList>
+      <SubsectionTitle>3.3 생산관리담당자</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>3.3.1 이상 발생 시 품질보증책임자와 협의하여 처리한다.</StyledListItem>
+      </StyledList>
+      <SubsectionTitle>3.4 입고담당자</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>3.4.1 자재의 입고검사 업무를 수행하고 그 결과를 기록한다.</StyledListItem>
+        <StyledListItem>3.4.2 이상 발생 시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
+      </StyledList>
 
-// 4. 입고 검사 절차
-// 4.1 입고담당자는 입고된 자재에 대해 "자재 입고검사 체크리스트"를 사용하여 검사를 실시한다.
-// 4.2 검사 항목은 다음을 포함한다:
-//     - 자재명 확인
-//     - 수량 확인
-//     - 외관 상태 확인
-//     - 포장 상태 확인
-//     - 라벨 정보 확인 (제조일자, 유효기간 등)
-// 4.3 입고담당자는 검사 결과를 체크리스트에 기록한다.
-// 4.4 이상이 발견된 경우, 입고담당자는 즉시 생산관리담당자와 품질보증책임자에게 보고한다.
-// 4.5 품질보증책임자는 보고된 이상에 대해 최종 판정한다.
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 입고 검사 절차</SectionTitle>
+      <StyledList>
+        <StyledListItem>4.1 입고담당자는 입고된 자재에 대해 "자재 입고검사 체크리스트"를 사용하여 검사를 실시한다.</StyledListItem>
+        <StyledListItem>4.2 검사 항목은 다음을 포함한다:
+          <StyledList>
+            <StyledListItem>- 자재명 확인</StyledListItem>
+            <StyledListItem>- 수량 확인</StyledListItem>
+            <StyledListItem>- 외관 상태 확인</StyledListItem>
+            <StyledListItem>- 포장 상태 확인</StyledListItem>
+            <StyledListItem>- 라벨 정보 확인 (제조일자, 유효기간 등)</StyledListItem>
+          </StyledList>
+        </StyledListItem>
+        <StyledListItem>4.3 입고담당자는 검사 결과를 체크리스트에 기록한다.</StyledListItem>
+        <StyledListItem>4.4 이상이 발견된 경우, 입고담당자는 즉시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
+        <StyledListItem>4.5 품질보증책임자는 보고된 이상에 대해 최종 판정한다.</StyledListItem>
+      </StyledList>
 
-// 5. 부적합품의 처리
-// 5.1 부적합으로 판정된 자재는 반품 처리한다.
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 부적합품의 처리</SectionTitle>
+      <StyledList>
+        <StyledListItem>5.1 부적합으로 판정된 자재는 반품 처리한다.</StyledListItem>
+      </StyledList>
 
-// 6. 기록 및 문서보관
-// 6.1 작성된 "자재 입고검사 체크리스트"는 4년간 보존한다.
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 기록 및 문서보관</SectionTitle>
+      <StyledList>
+        <StyledListItem>6.1 작성된 "자재 입고검사 체크리스트"는 4년간 보존한다.</StyledListItem>
+      </StyledList>
 
-// 7. 첨부양식
-// 첨부 1) 자재 입고검사 체크리스트
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 첨부양식</SectionTitle>
+      <Paragraph>첨부 1) 자재 입고검사 체크리스트</Paragraph>
 
-// ---
-
-// 첨부 1) 자재 입고검사 체크리스트
-
-// 자재명: ________________  공급업체: ________________
-// 입고일자: ______________  입고수량: ________________
-
-// | 검사 항목 | 적합 | 부적합 | 비고 |
-// |-----------|------|--------|------|
-// | 자재명 일치 |      |        |      |
-// | 수량 일치 |      |        |      |
-// | 외관 상태 양호 |      |        |      |
-// | 포장 상태 양호 |      |        |      |
-// | 라벨 정보 정확 |      |        |      |
-
-// 검사 결과: □ 적합  □ 부적합
-
-// 입고담당자: ________________  검사일자: ________________
-
-// 이상 발생 시 보고 여부: □ 예  □ 아니오
-// 보고 일시: ________________
-
-// 품질보증책임자 확인: ________________  확인일자: ________________
-// (이상 발생 시에만 확인)
-
-// 비고: 
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell colSpan={4} align="center">자재 입고검사 체크리스트</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell>자재명:</TableCell>
+              <TableCell>________________</TableCell>
+              <TableCell>공급업체:</TableCell>
+              <TableCell>________________</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>입고일자:</TableCell>
+              <TableCell>______________</TableCell>
+              <TableCell>입고수량:</TableCell>
+              <TableCell>________________</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell colSpan={4}></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>검사 항목</TableCell>
+              <TableCell>적합</TableCell>
+              <TableCell>부적합</TableCell>
+              <TableCell>비고</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>자재명 일치</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>수량 일치</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>외관 상태 양호</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>포장 상태 양호</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>라벨 정보 정확</TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell colSpan={4}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Box>검사 결과: □ 적합  □ 부적합</Box>
+                    <Box>
+                      <span>입고담당자: ________________</span>
+                      <span style={{ marginLeft: '20px' }}>검사일자: ________________</span>
+                    </Box>
+                  </Box>
+                  <Box>
+                    <Box>이상 발생 시 보고 여부: □ 예  □ 아니오</Box>
+                    <Box>보고 일시: ________________</Box>
+                  </Box>
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <span>품질보증책임자 확인: ________________</span>
+                    <span>확인일자: ________________</span>
+                  </Box>
+                  <Box>(이상 발생 시에만 확인)</Box>
+                  <Box>비고: </Box>
+                </Box>
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
     </Box>
   );
 }
