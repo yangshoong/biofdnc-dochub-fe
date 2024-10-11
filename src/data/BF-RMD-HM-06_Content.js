@@ -97,17 +97,21 @@ function BF_RMD_HM_06_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 함)의 제품 제조, 관리 및 보관 업무에 종사하는 업무담당자의 건강유지 및 업무담당자가 지켜야 할 위생사항 및 위생기준을 규정함으로써 우수한 제품 제조 및 품질관리 기준을 달성하는 데 목적이 있다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사의 제품 제조 관련 모든 업무담당자에게 적용한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 업무담당자 위생관리 규정의 승인</StyledListItem>
@@ -138,7 +142,9 @@ function BF_RMD_HM_06_Content() {
         <StyledListItem>3.5.1 본 규정에 따른 개인위생 준수</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 업무 절차</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 업무 절차</SectionTitle>
       <SubsectionTitle>4.1 위생관리 담당자의 지정 및 업무 수행</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.1.1 제조생산책임자는 제품 제조 및 품질관리에 관한 지식과 경험을 소유하고 작업장 및 개인 위생관리 업무를 적절히 수행할 수 있는 자를 위생관리 담당자로 지정한다.</StyledListItem>
@@ -197,7 +203,9 @@ function BF_RMD_HM_06_Content() {
         </Paragraph>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 기록관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 기록관리</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 본 규정을 실행한 결과 기록은 "기록관리 규정"에 따라 관리한다.</StyledListItem>
         <StyledListItem>5.2 위생관리기록서</StyledListItem>
@@ -209,7 +217,9 @@ function BF_RMD_HM_06_Content() {
         </StyledList>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 관련 문서</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 관련 문서</SectionTitle>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>

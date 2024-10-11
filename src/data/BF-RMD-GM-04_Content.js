@@ -97,16 +97,20 @@ function BF_RMD_GM_04_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 함)의 화장품 원료 생산 및 설비 관리, 위생관리, 원료와 부자재 및 완제품 관리, 품질관리, 내부감사 등에 관련된 교육훈련 절차를 규정하고 효율적으로 실행함으로써 품질경영시스템의 효과적인 운영을 보장하는데 그 목적이 있다.
       </Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사의 모든 업무담당자에게 적용된다.
       </Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>3. 책임과 권한</SectionTitle>
       
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
@@ -138,11 +142,15 @@ function BF_RMD_GM_04_Content() {
         <StyledListItem>3.4.2 교육훈련 내용을 업무에 적용하고 개선사항을 제안한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>4. 용어 정의</SectionTitle>
       <SubsectionTitle>4.1 직무교육 (OJT: On The Job Training)</SubsectionTitle>
       <Paragraph>
         직무 수행에 필요한 기능 또는 문제점 해결방법 등을 상사가 부하직원을 대상으로 집단 또는 개인적으로 업무 현장에서 지도 육성하는 활동.
       </Paragraph>
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>5. 업무 절차</SectionTitle>
 
       <SubsectionTitle>5.1 교육훈련 종류별 실행 내용</SubsectionTitle>
@@ -295,16 +303,22 @@ function BF_RMD_GM_04_Content() {
         <StyledListItem>5.3.1 교육주관 부서장은 실시한 교육에 대한 결과를 교육 후 1주일 이내에 "사내 외 교육훈련 보고서"를 작성하여 품질보증팀장의 승인을 득한다.</StyledListItem>
         <StyledListItem>5.3.2 승인을 득한 교육훈련 보고서는 품질보증부서에서 이를 접수하여 보관한다.</StyledListItem>
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>6. 기록관리</SectionTitle>
       <StyledList>
         <StyledListItem>본 규정을 실행한 결과 기록은 "기록관리 절차서"에 따라 관리한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>7. 관련 문서</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 문서 및 자료관리 절차서</StyledListItem>
         <StyledListItem>7.2 기록관리 절차서</StyledListItem>
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>8. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부 1) 일반 업무담당자 교육 내용</StyledListItem>

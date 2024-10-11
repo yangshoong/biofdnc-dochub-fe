@@ -97,12 +97,16 @@ function BF_RMD_GM_07_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다.)의 품질경영시스템 관련 문서 및 자료가 올바르게 작성되고 필요한 장소에서 올바르게 사용되어 업무의 효율을 꾀하는데 그 목적이 있다.</Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>이 규정은 품질 관련 업무에 사용되는 문서와 자료의 작성, 접수, 승인, 배포, 변경 및 유지 관리에 대하여 적용한다.</Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>3. 용어의 정의</SectionTitle>
       <StyledList>
         <StyledListItem>3.1 품질경영시스템: 품질에 관하여 조직을 지휘하고 관리하기 위한 경영시스템</StyledListItem>
@@ -110,6 +114,8 @@ function BF_RMD_GM_07_Content() {
         <StyledListItem>3.3 기록: 달성된 결과를 기술하거나 수행된 활동의 증거를 제공하는 문서</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>4. 책임과 권한</SectionTitle>
       <SubsectionTitle>4.1 해당 부서장</SubsectionTitle>
       <StyledList>
@@ -138,7 +144,9 @@ function BF_RMD_GM_07_Content() {
         <StyledListItem>4.4.2 다른 부서 발행 문서의 접수 및 유지 관리</StyledListItem>
         <StyledListItem>4.4.3 자료 및 외부 출처 문서의 수집, 접수 및 유지 관리</StyledListItem>
       </StyledList>
-      <SectionTitle>4. 문서의 분류 체계</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 문서의 분류 체계</SectionTitle>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -184,34 +192,40 @@ function BF_RMD_GM_07_Content() {
         </Table>
       </TableContainer>
 
-      <SectionTitle>5. 업무 절차</SectionTitle>
-      <SubsectionTitle>5.1 문서의 작성</SubsectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 업무 절차</SectionTitle>
+      <SubsectionTitle>6.1 문서의 작성</SubsectionTitle>
       <Paragraph>각 업무를 담당하는 자가 본 "문서 및 자료관리 규정"에 따라 작성한다.</Paragraph>
 
-      <SubsectionTitle>5.2 문서의 승인</SubsectionTitle>
+      <SubsectionTitle>6.2 문서의 승인</SubsectionTitle>
       <Paragraph>문서는 상기 4항에 따라 작성자, 검토자, 승인자가 승인한다.</Paragraph>
 
-      <SubsectionTitle>5.3 문서의 개정</SubsectionTitle>
+      <SubsectionTitle>6.3 문서의 개정</SubsectionTitle>
       <Paragraph>문서를 개정할 때는 개정사유 및 개정 연월일을 기재하고, 권한을 가진 사람의 승인을 받는다.</Paragraph>
 
-      <SubsectionTitle>5.4 문서의 발행 및 배포</SubsectionTitle>
+      <SubsectionTitle>6.4 문서의 발행 및 배포</SubsectionTitle>
       <Paragraph>품질보증부서는 승인된 문서를 접수 받아 "문서등록대장"에 등록 후 해당부서에 발행, 배포한다.</Paragraph>
 
-      <SubsectionTitle>5.5 문서의 관리</SubsectionTitle>
+      <SubsectionTitle>6.5 문서의 관리</SubsectionTitle>
       <Paragraph>문서 활용부서는 모든 문서를 본 규정에 정해진 절차에 따라 관리하며 관련 기록을 유지한다.</Paragraph>
 
-      <SubsectionTitle>5.6 문서의 보관·보존 및 폐기</SubsectionTitle>
+      <SubsectionTitle>6.6 문서의 보관·보존 및 폐기</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.6.1 품질경영시스템 문서의 원본 및 목록은 품질보증부에서 보관 및 유지 관리한다.</StyledListItem>
-        <StyledListItem>5.6.2 배포문서는 해당 부서에서 보관 및 유지관리한다.</StyledListItem>
-        <StyledListItem>5.6.3 원료, 자재 및 제조에 관한 기록 및 문서는 해당 제품의 사용기한 만료 후 1년까지 보관한다.</StyledListItem>
-        <StyledListItem>5.6.4 기타 품질 관련 기록은 4년간 보존한다.</StyledListItem>
+        <StyledListItem>6.6.1 품질경영시스템 문서의 원본 및 목록은 품질보증부에서 보관 및 유지 관리한다.</StyledListItem>
+        <StyledListItem>6.6.2 배포문서는 해당 부서에서 보관 및 유지관리한다.</StyledListItem>
+        <StyledListItem>6.6.3 원료, 자재 및 제조에 관한 기록 및 문서는 해당 제품의 사용기한 만료 후 1년까지 보관한다.</StyledListItem>
+        <StyledListItem>6.6.4 기타 품질 관련 기록은 4년간 보존한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle>6. 기록 보관</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 기록 보관</SectionTitle>
       <Paragraph>문서 및 자료관리와 관련된 기록은 "기록 관리 규정"에 따른다.</Paragraph>
 
-      <SectionTitle>7. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>8. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 문서배포대장</StyledListItem>
         <StyledListItem>첨부2) 서명등록부</StyledListItem>

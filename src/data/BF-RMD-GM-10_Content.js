@@ -97,17 +97,21 @@ function BF_RMD_GM_10_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 한다) 내에서 발생한 폐기물에 대하여 적절하게 처리하여 당사 제품, 반제품 또는 실험실에 미치는 영향을 최소화한다. 
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사 화장품 원료 제조소 내에서 규정된 요구사항에 적합하지 않은 부적합품, 회수 또는 반품된 제품 중 폐기하기로 결정된 제품 그리고 당사 제조공정 및 실험실, 시설 등으로 발생된 폐기물에 적용한다.  
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 폐기물 처리 및 관리 규정의 최종 승인</StyledListItem>
@@ -132,7 +136,9 @@ function BF_RMD_GM_10_Content() {
         <StyledListItem>3.4.1 폐기처리 등에 대한 시정 및 예방 조치를 취하고 그 결과를 기록 관리한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 폐기물 관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 폐기물 관리</SectionTitle>
       <StyledList>
         <StyledListItem>4.1 부적합 제품, 반제품, 원료 및 자재의 조사는 승인된 자가 수행한다.</StyledListItem>
         <StyledListItem>4.2 품질에 문제가 있거나 회수, 반품된 제품의 폐기 또는 재작업 여부는 품질보증책임자에 의해 승인한다.</StyledListItem>
@@ -150,7 +156,9 @@ function BF_RMD_GM_10_Content() {
         </StyledList>
         <StyledListItem>4.5 제품 품질 및 안전에 미치는 영향에 따라 폐기물 유형을 분류한 목록을 첨부와 같이 작성하고, 유해 폐기물은 제품에 영향을 미치지 않도록 특별히 보관, 이송 및 처리한다.</StyledListItem>
       </StyledList>
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 폐기물 처리 방법</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 폐기물 처리 방법</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 제조 공정 및 기타 공정 발생 폐기물은 지정된 폐기물 보관 장소에 보관한다.</StyledListItem>
         <StyledListItem>5.2 반제품 및 제품을 오염시키지 않도록 폐기물을 폐기물 보관 용기에 모아 폐기물 보관 장소에 이동한다.</StyledListItem>
@@ -160,13 +168,17 @@ function BF_RMD_GM_10_Content() {
         <StyledListItem>5.6 위탁처리 결과를 "폐기물 완료 보고서"에 기록하고, 지정 폐기물 처리 내역을 "폐기물 관리법"에 따라 해당 관청에 보고한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 기록 및 문서 관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 기록 및 문서 관리</SectionTitle>
       <StyledList>
         <StyledListItem>6.1 본 규정에 의하여 작성된 기록은 4년간 보관한다.</StyledListItem>
         <StyledListItem>6.2 기타 사항은 "기록관리 규정"에 따른다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>7. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 첨부</SectionTitle>
       <SubsectionTitle>7.1 폐기물 유형별 목록</SubsectionTitle>
       <TableContainer component={Paper}>
         <Table>

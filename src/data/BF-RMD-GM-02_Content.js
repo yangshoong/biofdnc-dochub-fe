@@ -97,18 +97,21 @@ function BF_RMD_GM_02_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
-      <StyledList>
-        <StyledListItem>
+      
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
+      <Paragraph>
           본 규정은 (주)바이오에프디엔씨(이하 '당사')의 화장품 원료 제조 및 품질관리를 효율적으로 수행하기 위한 조직과 직무를 규정하고, 직무의 분담 범위와 권한 및 책임을 명확히 하여 품질이 보장된 우수 화장품 원료를 제조 공급하는 것을 목적으로 한다.
-        </StyledListItem>
-      </StyledList>
+      </Paragraph>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사에서 수행되는 화장품 원료의 제조, 품질관리, 보관 및 출하 등 모든 관련 활동에 직접 또는 간접적으로 관여하는 모든 조직과 업무담당자의 책임에 적용한다.
       </Paragraph>
-      <Divider sx={{ marginY: '20px' }} />
+
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>3. 용어의 정의</SectionTitle>
       <StyledList>
         <StyledListItem>
@@ -139,6 +142,9 @@ function BF_RMD_GM_02_Content() {
           <strong>3.9 예방조치</strong>: 잠재적 부적합 또는 기타 바람직하지 않은 잠재적 상황의 원인을 제거하기 위한 조치
         </StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>4. 각 부문 책임자 및 업무 분장</SectionTitle>
 
       <SubsectionTitle>4.1 대표이사</SubsectionTitle>
@@ -196,7 +202,9 @@ function BF_RMD_GM_02_Content() {
         <StyledListItem>4.4.3 업무 수행 중 발생한 문제점 보고</StyledListItem>
         <StyledListItem>4.4.4 품질 향상을 위한 제안 및 개선 활동 참여</StyledListItem>
       </StyledList>
-      <Divider sx={{ marginY: '20px' }} />
+
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>5. 각 부서별 담당자 업무분장</SectionTitle>
 
       <SubsectionTitle>5.1 품질보증부</SubsectionTitle>

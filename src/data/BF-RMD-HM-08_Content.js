@@ -97,17 +97,21 @@ function BF_RMD_HM_08_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다.) 제조소에서 작업소 및 보관소, 품질관리 구역의 환경을 위생 관리하는데 필요한 업무 지침을 정함으로서 제품 오염을 방지하여 우수한 품질의 제품을 생산하는데 그 목적이 있다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사의 제품 제조 관련 모든 업무담당자에 적용한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 본 규정에 대한 최종 승인 권한을 가진다.</StyledListItem>
@@ -132,7 +136,9 @@ function BF_RMD_HM_08_Content() {
         <StyledListItem>3.4.2 위생 상태 부적합 사항 발생 시 즉시 보고한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 작업소의 관리체제 기준</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 작업소의 관리체제 기준</SectionTitle>
       <StyledList>
         <StyledListItem>4.1 각 작업소는 청결하고 위생적인 상태로 유지한다.</StyledListItem>
         <StyledListItem>4.2 각 작업소는 환기가 잘되고 청소, 소독을 철저히 하여 청결하게 유지한다.</StyledListItem>
@@ -141,7 +147,9 @@ function BF_RMD_HM_08_Content() {
         <StyledListItem>4.5 쥐, 해충 및 먼지 등을 막을 수 있는 시설을 갖춘다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 작업소 구분</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 작업소 구분</SectionTitle>
       <Paragraph>
         작업소 및 그 부속 시설은 제조의 대상과 형태 등에 따라 아래와 같이 구분한다.
       </Paragraph>
@@ -214,7 +222,9 @@ function BF_RMD_HM_08_Content() {
         </Table>
       </TableContainer>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 청소 도구 및 세척제, 소독제의 구분</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 청소 도구 및 세척제, 소독제의 구분</SectionTitle>
       <SubsectionTitle>6.1 청소 도구</SubsectionTitle>
       <StyledList>
         <StyledListItem>6.1.1 빗자루: 작업소 및 보관소의 바닥 등의 이물질이나 먼지 등을 제거하는데 사용한다.</StyledListItem>
@@ -241,13 +251,17 @@ function BF_RMD_HM_08_Content() {
         <StyledListItem>6.4.2 청소 도구의 세척 및 소독: 불결한 청소도구는 오히려 작업소를 오염시킬 수 있으므로 세척 후 건조하여 청결하게 보관한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>7. 작업소별 청소 및 소독방법, 점검방법 및 주기</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 작업소별 청소 및 소독방법, 점검방법 및 주기</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 작업소별 청소 방법, 점검 방법 및 주기는 첨부 2와 같이 실시한다.</StyledListItem>
         <StyledListItem>7.2 휴무 시 작업 전 먼지제거 및 청소를 실시하고 점검 후 이상이 없을 경우 작업에 들어간다. 만일 이상이 발견되면 재 청소 및 재 소독을 실시한 후 작업에 들어간다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>8. 청소, 소독 시 유의 사항</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>8. 청소, 소독 시 유의 사항</SectionTitle>
       <StyledList>
         <StyledListItem>8.1 청소, 소독 시에는 눈에 보이지 않는 곳, 하기 힘든 곳 등에 특히 유의하여 세밀하게 한다.</StyledListItem>
         <StyledListItem>8.2 물청소 후에는 물기를 완전히 제거한다.</StyledListItem>
@@ -256,19 +270,25 @@ function BF_RMD_HM_08_Content() {
         <StyledListItem>8.5 청소 후에는 그 상태를 필히 재확인하여 이상이 없도록 한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>9. 이상 발생 시 관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>9. 이상 발생 시 관리</SectionTitle>
       <StyledList>
         <StyledListItem>9.1 작업소 및 보관소의 위생상태가 제품이나 보관품목의 품질에 영향을 줄 수 있다고 판단될 때는 작업을 금한다.</StyledListItem>
         <StyledListItem>9.2 작업소 및 보관소별 관리담당자는 점검 결과 이상 발생시 생산관리책임자에게 보고하여 즉시 조치를 받는다.</StyledListItem>
         <StyledListItem>9.3 생산관리책임자는 이상 발생 사항의 중대성 등을 고려하여 즉시 조치를 취한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>10. 기록 및 문서 보관</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>10. 기록 및 문서 보관</SectionTitle>
       <Paragraph>
         본 규정에 의해 처리된 문서는 명확한 기록, 관리, 유지하여야 하며, 기타 사항은 "기록 관리 규정"에 준한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>11. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>11. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 청소 및 소독에 사용되는 소독제/세제</StyledListItem>
       </StyledList>

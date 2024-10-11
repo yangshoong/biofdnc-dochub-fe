@@ -97,16 +97,20 @@ function BF_RMD_GM_06_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다)의 모든 품질경영 활동계획에 따라 실행되며, 품질경영시스템과 일치하는가를 확인하고 평가함으로써 품질경영시스템의 유효성을 판단하고, 유지·개선하는데 그 목적이 있다.
       </Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사의 품질경영시스템의 적합성 및 유효성을 평가하기 위해 실시하는 내부감사에 대하여 적용한다.
       </Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
@@ -135,6 +139,8 @@ function BF_RMD_GM_06_Content() {
         <StyledListItem>3.4.2 시정조치 이행 및 확인</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>4. 내부감사 관리체계</SectionTitle>
       <StyledList>
         <StyledListItem>4.1 당사의 품질경영체계가 계획된 사항에 부합하는지를 주기적으로 검증하기 위하여 내부감사를 계획 및 실행한다.</StyledListItem>
@@ -143,6 +149,8 @@ function BF_RMD_GM_06_Content() {
         <StyledListItem>4.4 감사원은 시정조치에 대한 후속 감사활동을 행하고 이를 기록한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>5. 내부감사 계획 수립</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 품질보증책임자는 "연간감사계획서"를 매년 12월 말까지 수립하여 각 부서에 통보한다.</StyledListItem>
@@ -153,6 +161,8 @@ function BF_RMD_GM_06_Content() {
         <StyledListItem>5.6 특별 내부 품질 감사는 특별 내부 품질 감사의 실시사유 발생 시 실시한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>6. 내부감사의 절차</SectionTitle>
       <SubsectionTitle>6.1 준비단계</SubsectionTitle>
       <StyledList>
@@ -171,6 +181,8 @@ function BF_RMD_GM_06_Content() {
         <StyledListItem>6.3.2 부적합에 대하여 해당부서에 시정조치 요구를 한다.</StyledListItem>
         <StyledListItem>6.3.3 부적합 관련 부서는 문제점의 원인조사 및 재발방지 대책을 수립한다.</StyledListItem>
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>7. 특별 내부감사</SectionTitle>
       <SubsectionTitle>7.1 실시사유</SubsectionTitle>
       <StyledList>
@@ -181,23 +193,31 @@ function BF_RMD_GM_06_Content() {
       </StyledList>
       <Paragraph>7.2 특별 내부품질감사의 절차는 정기 내부품질감사와 동일하게 시행한다.</Paragraph>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>8. 감사 결과 보고 기록 및 처리</SectionTitle>
       <StyledList>
         <StyledListItem>8.1 정기 및 특별 내부품질감사 시 발견한 부적합사항은 평가단계를 거쳐 "내부감사 보고서"에 그 내용을 작성하여 피감사 부서장의 확인을 받고 처리한다.</StyledListItem>
         <StyledListItem>8.2 발견된 부적합사항은 관련 부서의 협의 후 원인, 시정조치 결과에 따른 후속 감사활동을 행하고 재발방지 대책 등을 수립하여 대표이사에게 보고한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>9. 감사 결과의 시정조치</SectionTitle>
       <StyledList>
         <StyledListItem>9.1 피감사팀으로부터 시정조치 요구서가 접수되면 감사팀장은 그 이행여부 및 유효성을 확인한다.</StyledListItem>
         <StyledListItem>9.2 감사팀장은 시정조치 확인결과를 검토하여 조치결과가 완료되면 종결처리하고, 미흡하거나 부적합 사항이 발견된 경우 해당 피감사팀장에게 재시정을 요구한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>10. 기록 및 문서 관리</SectionTitle>
       <StyledList>
         <StyledListItem>10.1 본 규정에 의해 작성된 기록은 4년간 보존한다.</StyledListItem>
         <StyledListItem>10.2 기타사항은 "문서 관리 규정"에 준한다.</StyledListItem>
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>11. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>11.1 연간 내부감사 계획서</StyledListItem>

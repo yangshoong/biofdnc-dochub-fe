@@ -97,17 +97,21 @@ function BF_RMD_HM_07_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 함)의 제조 환경을 적절히 유지하여 제조 공정에서의 제품 오염을 방지할 수 있도록 작업장 및 설비의 청소 및 소독방법과 위생에 관한 사항을 규정함으로써 우수한 화장품 원료를 제조하는 데 그 목적이 있다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사의 모든 제품 제조 및 포장 등의 작업실과 원료, 자재, 반제품, 제품 보관소 및 품질관리 구역 등에 대해서 적용한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 작업장 위생관리에 대한 총괄 책임</StyledListItem>
@@ -138,7 +142,9 @@ function BF_RMD_HM_07_Content() {
         <StyledListItem>3.5.2 작업장 위생 상태의 일일 점검 및 기록</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 업무 절차</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 업무 절차</SectionTitle>
       <SubsectionTitle>4.1 작업장 시설 및 설비의 설치</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.1.1 제품 생산용 건물과 작업장은 청소 및 소독하기 쉽도록 설계 및 설치, 운영한다.</StyledListItem>
@@ -174,12 +180,16 @@ function BF_RMD_HM_07_Content() {
         "방충 및 방서 관리 규정"에 따라 작업장의 해충 및 설치류 침입을 방지한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 기록관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 기록관리</SectionTitle>
       <Paragraph>
         본 규정을 실행한 결과 기록은 "기록관리 규정"에 따라 관리한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 관련 문서</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 관련 문서</SectionTitle>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -209,7 +219,9 @@ function BF_RMD_HM_07_Content() {
         </Table>
       </TableContainer>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>7. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 외부방문객 출입관리대장</StyledListItem>
         <StyledListItem>첨부2) 작업장 청소 및 위생점검 기록서</StyledListItem>

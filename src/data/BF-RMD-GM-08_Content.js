@@ -97,15 +97,19 @@ function BF_RMD_GM_08_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 함)에서 생산되는 화장품 원료에 대한 불만의 처리에 대하여 필요한 사항을 정하여 적절하고 신속한 처리와 불만의 재발 방지 및 품질이 보증된 우수 화장품 원료를 제조, 공급하는 것을 목적으로 한다.
       </Paragraph>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사에서 제조, 출하하는 화장품 원료의 품질 및 운송 등에 관한 불만이 발생한 경우 불만의 접수, 원인조사, 조치, 보고, 회신 등 불만처리 전반에 걸쳐 각 관련부서에서 취해야 할 사항과 그 절차에 대하여 적용한다.
       </Paragraph>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
@@ -134,6 +138,8 @@ function BF_RMD_GM_08_Content() {
         <StyledListItem>3.4.3 불만 사항의 처리내용을 불만을 제기한 고객에게 회신한다.</StyledListItem>
         <StyledListItem>3.4.4 불만 사항의 원인분석 및 그에 따른 재발방지 조치를 취한다.</StyledListItem>
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>4. 용어의 정의</SectionTitle>
       <SubsectionTitle>4.1 불만</SubsectionTitle>
       <Paragraph>
@@ -143,6 +149,8 @@ function BF_RMD_GM_08_Content() {
       <Paragraph>
         거래선, 고객, 유통업체 등 당사 제품을 구입한 주체.
       </Paragraph>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>5. 불만 사항의 접수</SectionTitle>
       <SubsectionTitle>5.1 고객 정보 입수</SubsectionTitle>
@@ -161,6 +169,8 @@ function BF_RMD_GM_08_Content() {
         <StyledListItem>5.2.3 고객이 불만 제품의 제공을 거부할 경우, 원인 규명 및 조치가 신속히 이루어질 수 없음을 고객에게 알린다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>6. 불만 사항의 현상 파악, 분석 및 처리</SectionTitle>
       <Paragraph>
         6.1 고객 불만 내용 및 불만 제품을 통보 받은 품질보증책임자는 다음과 같이 관련부서와 협의하여 접수된 불만 사항을 처리한다.
@@ -171,6 +181,8 @@ function BF_RMD_GM_08_Content() {
         <StyledListItem>6.1.3 재발 방지 대책 수립</StyledListItem>
         <StyledListItem>6.1.4 처리 방법 결정</StyledListItem>
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>7. 불만처리 처리기한</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 고객불만 접수 즉시 품질보증책임자에게 통보한다.</StyledListItem>
@@ -179,10 +191,14 @@ function BF_RMD_GM_08_Content() {
         <StyledListItem>7.4 업무담당자는 7일 이내에 고객에게 처리 방안을 통보하고 처리한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>8. 불만처리 결과의 회신</SectionTitle>
       <StyledList>
         <StyledListItem>8.1 업무담당자는 상기 6항에 따른 원인 조사 결과 및 불만 처리대책을 품질보증부서로부터 전달받아 해당 고객에게 회신한다.</StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>9. 불만처리의 후속조치</SectionTitle>
       <StyledList>
@@ -190,11 +206,15 @@ function BF_RMD_GM_08_Content() {
         <StyledListItem>9.2 품질보증책임자는 고객 불만에 대한 재발 방지 대책이 계획대로 실행되었는지 확인한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>10. 기록 및 문서보관</SectionTitle>
       <StyledList>
         <StyledListItem>10.1 본 규정에 의해 작성된 기록은 ERP 시스템에 4년간 보관한다.</StyledListItem>
         <StyledListItem>10.2 불만처리 관련 문서의 작성, 검토, 승인, 배포, 개정은 "문서 및 자료관리 규정"에 따른다.</StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>11. 관련문서</SectionTitle>
       <StyledList>

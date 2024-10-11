@@ -97,23 +97,29 @@ function BF_RMD_HM_04_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 함)의 제품 제조에 종사하는 업무담당자의 건강관리 방법을 규정함으로써 우수한 제품을 제조 및 품질관리하는 데 목적이 있다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         당사의 제품 제조 관련 모든 업무담당자에 적용한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 신규 업무담당자 채용 시 건강진단</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 신규 업무담당자 채용 시 건강진단</SectionTitle>
       <StyledList>
         <StyledListItem>3.1 신규 업무담당자 채용 시에는 관련 법규에 따라 필요한 건강 정보를 확인한다.</StyledListItem>
         <StyledListItem>3.2 건강진단 결과 아래 4.3.1 항에 부합하지 않을 경우 채용하지 않는 것을 원칙으로 한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 업무담당자 건강관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 업무담당자 건강관리</SectionTitle>
       <Paragraph>
         기존 업무담당자의 건강 상태를 다음과 같이 정기 및 수시로 파악한다.
       </Paragraph>
@@ -152,7 +158,9 @@ function BF_RMD_HM_04_Content() {
         <StyledListItem>4.4.4 제품을 취급, 접촉 및 흡입 등으로 가려움증, 피부 발작, 두통 등 과민반응을 나타내는 특이 체질을 가진 업무담당자 발견 시는 작업을 중지시키거나 타 작업장으로 재배치한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 책임과 권한</SectionTitle>
       <SubsectionTitle>5.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>5.1.1 업무담당자 건강관리 규정의 승인</StyledListItem>
@@ -176,12 +184,16 @@ function BF_RMD_HM_04_Content() {
         <StyledListItem>5.4.2 개인 건강 상태 자진 신고</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 기록관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 기록관리</SectionTitle>
       <StyledList>
         <StyledListItem>6.1 업무담당자 건강 관리 기록은 "기록관리규정"에 따라 관리한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>7. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 첨부</SectionTitle>
       <Paragraph>
         첨부 1) 질병 발생 신고 및 조치서
       </Paragraph>

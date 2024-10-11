@@ -97,18 +97,22 @@ function BF_RMD_GM_11_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사"라 함)에서 생산한 화장품 원료 중 결함이 발견된 제품의 회수, 반품, 폐기 또는 그 밖의 필요한 조치를 할 때 절차와 기준 등을 마련하여 체계적이고 신속한 업무처리로 제품의 위해성을 사전에 방지하며, 재발방지대책을 수립하여 제품의 품질향상 및 당사의 신뢰도를 높이는데 그 목적이 있다. 
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <StyledList>
         <StyledListItem>2.1 당사 제조소에서 제조, 판매된 화장품 원료 중 회수의 필요가 결정된 제품에 적용한다.</StyledListItem>
         <StyledListItem>2.2 당사 제조소에서 제조 후 출하한 화장품 원료 중 유통 및 영업 상의 이유로 반품되는 모든 제품에 적용한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 품질보증책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 회수 및 반품 처리에 관한 최종 승인</StyledListItem>
@@ -135,7 +139,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>3.3.3 내수제품의 경우 해당 납품처에 제품명, 제조번호를 통보하여 제품의 회수를 요청한다.</StyledListItem>
         <StyledListItem>3.3.4 제품 회수처리 내역을 해당 고객사에 통보한다.</StyledListItem>
       </StyledList>
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 용어의 정의</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 용어의 정의</SectionTitle>
       <SubsectionTitle>4.1 회수(리콜)</SubsectionTitle>
       <Paragraph>
         회수라 함은 판매한 제품 가운데 품질결함이나 안전성 문제 등으로 나타난 제조번호의 제품(필요 시 여타 제조번호 포함)을 제조소로 거두어들이는 활동을 말한다.
@@ -158,7 +164,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>4.3.3 표시상의 결함: 표시상의 결함이란 합리적인 설명·지시·경고 기타의 표시를 하였더라면 당해 원료에 의하여 발생될 수 있는 고객사의 제품 피해나 위험을 줄이거나 피할 수 있었음에도 이를 하지 아니한 경우를 말한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 회수절차</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 회수절차</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 회수의 필요성이 발생되거나 당사의 고객사로부터 회수요청을 받았을 경우에는 신속하게 관련 회수사유를 품질보증책임자에게 보고한다.</StyledListItem>
         <StyledListItem>5.2 품질보증책임자는 신속하게 제품 수거 및 원인규명, 개선조치를 하도록 해당 부서에 지시한다.</StyledListItem>
@@ -170,7 +178,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>5.8 제조생산책임자는 결정된 최종 회수품의 처리 방법에 따라 회수품을 처리한다.</StyledListItem>
         <StyledListItem>5.9 업무담당자는 제품 회수처리 내역을 해당 고객사에 통보한다.</StyledListItem>
       </StyledList>
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 제품회수 체제 관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 제품회수 체제 관리</SectionTitle>
       <SubsectionTitle>6.1 품질보증책임자는 다음 사항을 이행하는 회수 책임자 역할을 한다.</SubsectionTitle>
       <StyledList>
         <StyledListItem>6.1.1 전체 회수과정에 대한 고객사와의 조정역할</StyledListItem>
@@ -180,7 +190,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>6.1.5 회수과정의 주기적인 평가 (모의회수)</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>7. 제품 회수과정의 주기적 평가</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 제품 회수과정의 주기적 평가</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 품질보증책임자는 매년 1회 모의제품회수를 실시한다.</StyledListItem>
         <StyledListItem>7.2 모의제품회수 훈련 종료 후 훈련결과를 첨부 "모의회수 실시 결과 보고서"에 작성한다.</StyledListItem>
@@ -188,7 +200,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>7.4 개선 지시를 받은 해당 책임자는 해당 조치를 취하고 품질보증책임자에게 그 결과를 보고한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>8. 회수품 분류</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>8. 회수품 분류</SectionTitle>
       <SubsectionTitle>8.1 재입고 가능한 제품</SubsectionTitle>
       <Paragraph>
         내용물에 이상이 없으며 포장상태가 양호하여 상품가치에 이상이 없는 제품을 말한다.
@@ -209,7 +223,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>- 1차 포장재가 파손된 제품</StyledListItem>
         <StyledListItem>- 화재, 수해를 입은 제품</StyledListItem>
       </StyledList>
-      <SectionTitle sx={{ marginTop: '40px' }}>9. 반품관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>9. 반품관리</SectionTitle>
       <SubsectionTitle>9.1 반품접수</SubsectionTitle>
       <Paragraph>
         해당하는 제품이 반품으로 입고되면 '회수반품접수 및 관리대장'에 기록하여 접수한다.
@@ -233,7 +249,9 @@ function BF_RMD_GM_11_Content() {
         <StyledListItem>9.2.4 담당자는 반품내역과 폐기내역을 대조하여 확인하고 품질보증책임자에게 보고하여 검토를 받은 후 최종승인을 득하여 '폐기물 처리 규정'에 따라 처리한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>10. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>10. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 회수처리 결과 보고서</StyledListItem>
         <StyledListItem>첨부2) 모의회수 실시 결과 보고서</StyledListItem>

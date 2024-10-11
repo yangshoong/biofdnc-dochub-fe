@@ -24,7 +24,7 @@ const Container = styled(Box)(({ theme }) => ({
 const LeftSection = styled(Box)(({ theme }) => ({
   width: '35%',
   overflowY: 'auto',
-  paddingRight: theme.spacing(2),
+  paddingRight: theme.spacing(15),
   borderRight: `1px solid ${theme.palette.divider}`,
   height: '85%',
   '&::-webkit-scrollbar': {
@@ -37,9 +37,11 @@ const LeftSection = styled(Box)(({ theme }) => ({
 const RightSection = styled(Box)(({ theme }) => ({
   width: '65%',
   overflowY: 'auto',
-  paddingLeft: theme.spacing(2),
-  marginRight: theme.spacing(5),
+  paddingLeft: theme.spacing(10),
+  marginRight: theme.spacing(20),
   height: '85%',
+  // backgroundColor 속성 제거 또는 주석 처리
+  // backgroundColor: '#f9f9f9', // 이 줄을 제거하거나 주석 처리합니다
   '&::-webkit-scrollbar': {
     display: 'none',
   },
@@ -115,14 +117,13 @@ function RMDQualityPage() {
             {selectedRegulation ? (
               <Box>
                 <Typography variant="h5" gutterBottom>
-                  {`${selectedRegulation.id}. ${selectedRegulation.title}`}
+                  {`${selectedRegulation.title}`}
                 </Typography>
                 {content}
               </Box>
             ) : (
-              <Typography variant="h6">
-                규정을 선택하면 내용이 표시됩니다.
-              </Typography>
+                <Typography variant="h6">
+                </Typography>
             )}
           </Box>
         </RightSection>

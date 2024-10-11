@@ -97,15 +97,19 @@ function BF_RMD_GM_03_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <StyledList>
         <StyledListItem>1.1 본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다)의 제품에 규정된 요구사항의 적합성과 품질경영시스템의 효과적인 운영을 입증할 수 있도록 기록의 유지 및 관리를 하는데 그 목적이 있다.</StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>2. 적용범위</SectionTitle>
       <StyledList>
         <StyledListItem>2.1 이 규정은 당사의 모든 기록의 식별, 수집, 색인, 열람, 파일링, 보관, 유지 및 폐기에 대한 업무에 적용한다.</StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
@@ -129,6 +133,9 @@ function BF_RMD_GM_03_Content() {
       <StyledList>
         <StyledListItem>3.4.1 해당 업무 관련 기록의 작성, 유지 및 관리</StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>4. 세부절차</SectionTitle>
 
       <SubsectionTitle>4.1 기록의 파악</SubsectionTitle>
@@ -159,6 +166,8 @@ function BF_RMD_GM_03_Content() {
         <StyledListItem>4.3.2.4 파일명이나 분류 체계는 해당 부서의 업무 특성과 시스템의 기능을 고려하여 결정한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>5. 기록의 보관 및 보존</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 문서 기록은 사무실 내 지정된 파일 보관함에 손상, 손실 및 노후로부터 보호될 수 있도록 보관한다.</StyledListItem>
@@ -173,6 +182,8 @@ function BF_RMD_GM_03_Content() {
         <StyledListItem>5.7 중요한 디지털 기록의 경우, 필요에 따라 출력하거나 별도의 저장 매체에 백업하여 보관할 수 있다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>6. 기록 보존 연한</SectionTitle>
       <StyledList>
         <StyledListItem>6.1 기록의 관리에 대한 기록보관은 각각의 절차서 또는 지침서에서 정한 기록보존 연한에 따른다.</StyledListItem>
@@ -180,12 +191,16 @@ function BF_RMD_GM_03_Content() {
         <StyledListItem>6.3 디지털 기록의 경우, 각 시스템의 기능을 활용하여 보존 연한을 설정하고 관리한다.</StyledListItem>
       </StyledList>
 
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>7. 전자문서 시스템 관리</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 전자문서 시스템 사용 시 접근 권한을 관리하고 데이터의 무결성을 보장한다.</StyledListItem>
         <StyledListItem>7.2 전자문서 시스템의 백업 및 복구 절차를 수립하고 정기적으로 실행한다.</StyledListItem>
         <StyledListItem>7.3 전자문서의 보안을 위해 암호화 등의 적절한 조치를 취한다.</StyledListItem>
       </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>8. 기록의 폐기</SectionTitle>
       <StyledList>

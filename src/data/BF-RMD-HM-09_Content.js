@@ -97,17 +97,21 @@ function BF_RMD_HM_09_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다.) 제조소 내 제품 제조 및 품질관리에 관련된 설비(기계, 기구 등) 위생관리 기준을 명확히 하여 최적의 위생상태를 유지 관리 하는데 그 목적이 있다. 
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사 제조소 내에서 사용되는 칭량, 제조, 충진, 포장 등과 품질관리에 관련된 설비(기계, 기구)에 적용한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 본 규정에 대한 최종 승인을 담당한다.</StyledListItem>
@@ -130,14 +134,18 @@ function BF_RMD_HM_09_Content() {
         <StyledListItem>3.5.1 생산 설비의 세척상태를 평가한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 기계, 기구의 선정</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 기계, 기구의 선정</SectionTitle>
       <StyledList>
         <StyledListItem>4.1 기계, 기구를 선택할 때는 제품의 변질 및 품질저하를 일으키지 않고 인체에 유해하지 않는 재질, 형태로 선정한다.</StyledListItem>
         <StyledListItem>4.2 내용물이 접하는 부분의 재질은 스테인레스 스틸(316L 또는 304 등급), 유리, PTFE, 또는 승인된 등급의 실리콘을 원칙으로 한다.</StyledListItem>
         <StyledListItem>4.3 설비(기계, 기구)는 세척 및 소독이 용이하고 위생상 관리가 용이해야 한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 세척 및 소독 구분, 시기 및 관리 담당자</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 세척 및 소독 구분, 시기 및 관리 담당자</SectionTitle>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -171,13 +179,17 @@ function BF_RMD_HM_09_Content() {
         </Table>
       </TableContainer>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 세척 도구 및 세척제, 소독제의 종류와 용도</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 세척 도구 및 세척제, 소독제의 종류와 용도</SectionTitle>
       <StyledList>
         <StyledListItem>6.1 세척도구: 솔/브러쉬, 걸레, 위생수건, 수세미</StyledListItem>
         <StyledListItem>6.2 세척용수: 상수 및 정제수</StyledListItem>
         <StyledListItem>6.3 세제 및 소독액: 중성 세제, 70% 에탄올</StyledListItem>
       </StyledList>
-      <SectionTitle sx={{ marginTop: '40px' }}>7. 세척방법 및 유의사항</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 세척방법 및 유의사항</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 고정설비와 이동가능설비는 상수, 정제수, 세제(중성세제), 70% 에탄올 등으로 세척한다.</StyledListItem>
         <StyledListItem>7.2 세척, 소독 시에는 눈에 보이지 않는 곳, 하기 힘든 곳 등에 특히 유의하면서 세밀하게 세척한다.</StyledListItem>
@@ -185,19 +197,25 @@ function BF_RMD_HM_09_Content() {
         <StyledListItem>7.4 사용하지 않은 설비를 사용할 시는 필히 사용 전 재 세척 또는 소독을 실시한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>8. 세척의 평가 및 조치</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>8. 세척의 평가 및 조치</SectionTitle>
       <StyledList>
         <StyledListItem>8.1 각 설비(기계, 기구) 작업 담당자는 세척 완료 후 세척 및 소독 상태를 점검한다.</StyledListItem>
         <StyledListItem>8.2 부적합 시 작업 담당자는 즉시 재 세척 및 재 소독을 실시한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>9. 세척의 평가 방법</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>9. 세척의 평가 방법</SectionTitle>
       <SubsectionTitle>9.1 육안 평가</SubsectionTitle>
       <Paragraph>
         설비 세척 후 육안 및 백색 거즈로 세척부위를 문질러서 세척여부를 확인한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>10. 소독액 제조 방법 및 확인 절차</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>10. 소독액 제조 방법 및 확인 절차</SectionTitle>
       <SubsectionTitle>10.1 70% 에탄올 제조 (1 kg 제조, 95% 에탄올 사용)</SubsectionTitle>
       <Paragraph>
         에탄올 736ml + 정제수 264ml을 칭량하여 희석 용기에 넣고 스테인레스/유리 봉으로 혼합한다.
@@ -208,17 +226,23 @@ function BF_RMD_HM_09_Content() {
         <StyledListItem>10.2.2 규정된 복장을 갖추고 작업한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>11. 기록 및 문서관리</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>11. 기록 및 문서관리</SectionTitle>
       <Paragraph>
         11.1 기록 사항은 "기록 관리 규정"에 준한다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>12. 관련 문서</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>12. 관련 문서</SectionTitle>
       <StyledList>
         <StyledListItem>12.1 기록 관리 규정</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>13. 첨부</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>13. 첨부</SectionTitle>
       <SubsectionTitle>13.1 설비 세척 및 소독관리 표준</SubsectionTitle>
 
 <TableContainer component={Paper}>

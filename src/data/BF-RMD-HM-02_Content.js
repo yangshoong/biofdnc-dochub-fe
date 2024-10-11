@@ -97,17 +97,21 @@ function BF_RMD_HM_02_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle sx={{ marginTop: '40px' }}>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨 (이하 "당사"라 함)의 화장품 원료 생산에 종사하는 업무담당자들이 작업의 종류에 따라 착용할 위생복, 위생모, 위생화 등에 대한 규격과 착용방법, 관리방법을 규정함으로써 작업장을 청결하고 위생적으로 유지하는데 그 목적이 있다. 
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>2. 적용범위</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 당사의 모든 작업장 및 보관소에 출입하는 업무담당자 및 외부 방문자에게 적용된다.
       </Paragraph>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>3. 책임과 권한</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 위생복 착용 규정의 승인</StyledListItem>
@@ -132,7 +136,9 @@ function BF_RMD_HM_02_Content() {
         <StyledListItem>3.4.2 개인 위생 유지 및 관리</StyledListItem>
         <StyledListItem>3.4.3 위생복 착용 관련 문제점 보고</StyledListItem>
       </StyledList>
-      <SectionTitle sx={{ marginTop: '40px' }}>4. 위생복 착용 규정</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>4. 위생복 착용 규정</SectionTitle>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -198,7 +204,9 @@ function BF_RMD_HM_02_Content() {
         </Table>
       </TableContainer>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>5. 위생복 착용 지침</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>5. 위생복 착용 지침</SectionTitle>
       <SubsectionTitle>5.1 위생화 및 위생복 탈의</SubsectionTitle>
       <StyledList>
         <StyledListItem>5.1.1 현관에 설치된 신발장에서 실외화를 슬리퍼로 갈아신고, 현장에 입실 시 위생화로 갈아 신는다.</StyledListItem>
@@ -217,7 +225,9 @@ function BF_RMD_HM_02_Content() {
         <StyledListItem>5.2.2 일반구역에서 제조구역으로 출입할 경우에는 상기 4항에 따라 위생복 및 위생화로 갱의한 후 출입한다.</StyledListItem>
       </StyledList>
 
-      <SectionTitle sx={{ marginTop: '40px' }}>6. 위생복 관리 지침</SectionTitle>
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 위생복 관리 지침</SectionTitle>
       <SubsectionTitle>6.1 구입 및 유지관리</SubsectionTitle>
       <Paragraph>
         위생복을 1인당 2벌 구입하여, 적절한 시기에 세탁하여 교체할 수 있도록 한다.

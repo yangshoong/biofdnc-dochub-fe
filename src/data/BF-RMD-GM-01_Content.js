@@ -97,7 +97,7 @@ function BF_RMD_GM_01_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>목차</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>목차</SectionTitle>
       <StyledList>
         <StyledListItem>
           1. 총칙
@@ -185,7 +185,7 @@ function BF_RMD_GM_01_Content() {
         </StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '20px' }} />
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>1. 총칙</SectionTitle>
       <SubsectionTitle>1.1. 목적</SubsectionTitle>
@@ -302,7 +302,7 @@ function BF_RMD_GM_01_Content() {
         </StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '20px' }} />
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>2. 조직 및 인적 자원 관리</SectionTitle>
 
@@ -366,7 +366,7 @@ function BF_RMD_GM_01_Content() {
         <StyledListItem>2.4.9. 작업 중 개인위생 상태를 주기적으로 점검하고 기록한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '20px' }} />
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>3. 시설 및 설비 관리</SectionTitle>
 
@@ -410,7 +410,7 @@ function BF_RMD_GM_01_Content() {
         <StyledListItem>3.2.3. 세척 및 소독에 사용되는 물품의 적절성을 주기적으로 평가한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '20px' }} />
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>4. 원부자재 및 제조 관리</SectionTitle>
       <SubsectionTitle>4.1. 원부자재의 관리</SubsectionTitle>
@@ -479,7 +479,7 @@ function BF_RMD_GM_01_Content() {
         </StyledList>
       </StyledList>
 
-      <Divider sx={{ marginY: '20px' }} />
+      <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>5. 품질관리</SectionTitle>
 

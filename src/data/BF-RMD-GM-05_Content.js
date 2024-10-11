@@ -97,22 +97,31 @@ function BF_RMD_GM_05_Content() {
           </TableBody>
         </Table>
       </TableContainer>
-      <SectionTitle>1. 목적</SectionTitle>
+      <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
         본 규정은 (주)바이오에프디엔씨(이하 "당사" 라 함)의 화장품 원료 제조에 사용되는 원료, 자재 및 제품의 제조번호 부여에 관한 절차를 수립함으로써 제조와 유통의 추적관리가 가능하도록 하는데 그 목적이 있다.
       </Paragraph>
 
+
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
         본 규정은 화장품 원료 제조에 사용하는 원료, 자재, 반제품, 제품에 적용한다.
       </Paragraph>
 
+
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>3. 용어의 정의</SectionTitle>
       <SubsectionTitle>3.1 제조번호(Batch No.)</SubsectionTitle>
       <Paragraph>
         동일한 제조공정으로 제조되어 균질한 품질을 갖는 원자재, 반제품, 제품의 일정한 제조단위에 부여되는 고유한 제조번호를 말한다.
       </Paragraph>
 
+
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>4. 책임과 권한</SectionTitle>
       <SubsectionTitle>4.1 품질보증책임자</SubsectionTitle>
       <StyledList>
@@ -134,7 +143,10 @@ function BF_RMD_GM_05_Content() {
       <StyledList>
         <StyledListItem>4.4.1 제품 식별 및 추적성 관리 업무를 실행한다.</StyledListItem>
         <StyledListItem>4.4.2 제조번호 부여 및 관리 업무를 수행한다.</StyledListItem>
+      
       </StyledList>
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>5. 업무절차</SectionTitle>
       <SubsectionTitle>5.1 원칙</SubsectionTitle>
       <Paragraph>
@@ -199,11 +211,17 @@ function BF_RMD_GM_05_Content() {
         <StyledListItem>5.2.3.3 포장재에 날인되는 제조번호는 ERP 시스템에서 생성된 번호를 사용하되, 고객사의 요구가 있을 경우 별도의 형식을 사용할 수 있다.</StyledListItem>
       </StyledList>
 
+
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>6. 적합 및 부적합품 식별</SectionTitle>
       <StyledList>
         <StyledListItem>6.1 원료, 자재, 반제품 및 제품에 시험중 라벨을 부착 후 "적합" 또는 "부적합"을 표시하여 식별</StyledListItem>
       </StyledList>
 
+
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>7. 기록 및 문서 보관</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 각종 식별번호는 각 제품 및 해당 서류에 기록하여 식별 및 추적성이 보장되도록 관리한다.</StyledListItem>
@@ -212,6 +230,9 @@ function BF_RMD_GM_05_Content() {
         <StyledListItem>7.4 모든 기록은 "기록 관리 규정"에 따라 보관한다.</StyledListItem>
       </StyledList>
 
+
+      <Divider sx={{ marginY: '50px' }} />
+      
       <SectionTitle>8. 관련 문서</SectionTitle>
       <StyledList>
         <StyledListItem>8.1 부적합품 관리 규정</StyledListItem>
