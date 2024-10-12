@@ -7,6 +7,7 @@ const PageWrapper = styled(Box)({
   paddingTop: '100px',
   paddingLeft: '300px',
   minHeight: '60vh',
+  backgroundColor: '#fff', // 배경색을 흰색으로 명시적 설정
 });
 
 const Container = styled(Box)(({ theme }) => ({
@@ -14,11 +15,12 @@ const Container = styled(Box)(({ theme }) => ({
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
   padding: theme.spacing(2),
-  height: '95%', // 헤더 높이를 제외한 높이
+  height: '95%',
   position: 'fixed',
   top: '150px',
   left: '200px',
   right: 0,
+  backgroundColor: '#fff', // Container의 배경색도 흰색으로 설정
 }));
 
 const LeftSection = styled(Box)(({ theme }) => ({
@@ -41,8 +43,7 @@ const RightSection = styled(Box)(({ theme }) => ({
   paddingLeft: theme.spacing(10),
   marginRight: theme.spacing(20),
   height: '85%',
-  // backgroundColor 속성 제거 또는 주석 처리
-  // backgroundColor: '#f9f9f9', // 이 줄을 제거하거나 주석 처리합니다
+  backgroundColor: '#fff', // 배경색을 흰색으로 명시적 설정
   '&::-webkit-scrollbar': {
     display: 'none',
   },
@@ -74,7 +75,6 @@ function RMDQualityPage() {
     try {
       const module = await import(`../data/${regulation.id}_Content`);
       setContent(<module.default />);
-      // 콘텐츠가 로드된 후 스크롤을 최상단으로 이동
       if (rightSectionRef.current) {
         rightSectionRef.current.scrollTop = 0;
       }
@@ -114,7 +114,7 @@ function RMDQualityPage() {
           ))}
         </LeftSection>
         <RightSection ref={rightSectionRef}>
-          <Box sx={{ paddingBottom: '20px' }}>
+          <Box sx={{ paddingBottom: '20px', backgroundColor: '#fff' }}> {/* 내부 Box에도 배경색 적용 */}
             {selectedRegulation ? (
               <Box>
                 <Typography variant="h5" gutterBottom>
@@ -123,8 +123,8 @@ function RMDQualityPage() {
                 {content}
               </Box>
             ) : (
-                <Typography variant="h6">
-                </Typography>
+              <Typography variant="h6">
+              </Typography>
             )}
           </Box>
         </RightSection>

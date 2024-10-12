@@ -27,7 +27,12 @@ function RegulationViewer() {
           ))}
         </div>
       ))}
-      <div>
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        borderRadius: '5px',
+        boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
+      }}>
         <h3>Content</h3>
         {typeof content === 'string' ? <p>{content}</p> : content}
       </div>
