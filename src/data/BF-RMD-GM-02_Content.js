@@ -36,9 +36,9 @@ function BF_RMD_GM_02_Content() {
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
         <Box>
           <Typography>문서번호: BF-RMD-GM-02</Typography>
-          <Typography>개정번호: 00</Typography>
-        </Box>
+                  </Box>
         <Box>
+          <Typography>개정번호: 00</Typography>
           <Typography>제·개정일: 2024.07.01</Typography>
         </Box>
       </Box>

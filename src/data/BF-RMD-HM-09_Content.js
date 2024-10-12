@@ -39,6 +39,7 @@ function BF_RMD_HM_09_Content() {
           <Typography>개정번호: 00</Typography>
         </Box>
         <Box>
+          <Typography>개정번호: 00</Typography>
           <Typography>제·개정일: 2024.07.01</Typography>
         </Box>
       </Box>

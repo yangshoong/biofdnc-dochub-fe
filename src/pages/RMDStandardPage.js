@@ -69,9 +69,14 @@ function RMDStandardPage() {
   const [selectedRegulation, setSelectedRegulation] = useState(null);
   const [content, setContent] = useState(null);
   const rightSectionRef = useRef(null);
+  const contentRef = useRef(null);  // 여기에 contentRef를 추가합니다.
 
   const handleRegulationClick = async (regulation) => {
-    setSelectedRegulation(regulation);
+    setSelectedRegulation({
+      ...regulation,
+      revisionNumber: '00', // 이 값은 실제 데이터에 따라 달라질 수 있습니다
+      revisionDate: '2024.07.01' // 이 값은 실제 데이터에 따라 달라질 수 있습니다
+    });
     try {
       const module = await import(`../data/${regulation.id}_Content`);
       setContent(<module.default />);
@@ -86,6 +91,70 @@ function RMDStandardPage() {
         </Typography>
       );
     }
+  };
+
+  const handlePrint = () => {
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+      <html>
+        <head>
+          <title>${selectedRegulation.title}</title>
+          <style>
+            @page {
+              size: auto;
+              margin: 30mm 0mm; 
+            }
+            @media print {
+              body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+              }
+            }
+            body { 
+              font-family: Arial, sans-serif; 
+              margin: 0mm 25mm; /* 좌우 여백만 유지 */
+              -webkit-print-color-adjust: exact;
+            }
+            h1 { 
+              font-size: 24px; 
+              text-align: center; 
+              margin-bottom: 20px;
+            }
+            table { 
+              border-collapse: collapse; 
+              width: 100%; 
+              margin-bottom: 20px;
+            }
+            th, td { 
+              border: 1px solid black; 
+              padding: 6px; 
+              text-align: left; 
+              font-size: 12px;
+            }
+            th {
+              background-color: #f2f2f2;
+            }
+            /* 추가된 스타일 */
+            .document-header {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 20px;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>${selectedRegulation.title}</h1>
+          ${contentRef.current.innerHTML}
+        </body>
+      </html>
+    `);
+    printWindow.document.close();
+    
+    printWindow.onload = function() {
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    };
   };
 
   return (
@@ -114,16 +183,24 @@ function RMDStandardPage() {
           ))}
         </LeftSection>
         <RightSection ref={rightSectionRef}>
-          <Box sx={{ paddingBottom: '20px', backgroundColor: '#fff' }}> {/* 내부 Box에도 배경색 적용 */}
+          <Box sx={{ paddingBottom: '20px', backgroundColor: '#fff' }}>
             {selectedRegulation ? (
               <Box>
-                <Typography variant="h5" gutterBottom>
-                  {`${selectedRegulation.title}`}
-                </Typography>
-                {content}
+                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+                  <Typography variant="h5">
+                    {`${selectedRegulation.title}`}
+                  </Typography>
+                  <Button variant="contained" onClick={handlePrint}>
+                    출력
+                  </Button>
+                </Box>
+                <Box ref={contentRef}>
+                  {content}
+                </Box>
               </Box>
             ) : (
               <Typography variant="h6">
+                규정을 선택해주세요.
               </Typography>
             )}
           </Box>
