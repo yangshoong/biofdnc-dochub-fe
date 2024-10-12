@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import rmdRegulations from '../data/rmdRegulations';
+import rmdRegulations from '../data/rmdStandards';
 
-function RegulationViewer() {
+function StandardViewer() {
   const [content, setContent] = useState('');
 
   const loadContent = async (id) => {
@@ -40,4 +40,4 @@ function RegulationViewer() {
   );
 }
 
-export default RegulationViewer;
+export default StandardViewer;

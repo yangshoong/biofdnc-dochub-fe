@@ -9,7 +9,6 @@ import {
   ListItemIcon,
   ListItemText,
   IconButton,
-  InputBase,
   Paper,
   Avatar,
   Menu,
@@ -23,8 +22,9 @@ import CategoryIcon from '@mui/icons-material/Category';
 import DescriptionIcon from '@mui/icons-material/Description';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import PersonIcon from '@mui/icons-material/Person';
-import SearchIcon from '@mui/icons-material/Search';
 import useAuthStore from '../store/authStore';
+import FactCheckIcon from '@mui/icons-material/FactCheck';
+import RuleIcon from '@mui/icons-material/Rule';
 
 const NavRail = styled(Box)(({ theme }) => ({
   width: '100px',
@@ -63,23 +63,15 @@ const navItems = [
   { path: '/product', label: 'Product', icon: <CategoryIcon /> },
   { path: '/record', label: 'Record', icon: <DescriptionIcon />,
     subItems: [
-      { path: '/record/hygiene', label: '위생관리' },
-      { path: '/record/safety-check', label: '퇴실시안전점검' },
-      { path: '/record/cleaning', label: '작업장청소' },
-      { path: '/record/5s-checklist', label: '5S Check List' },
-      { path: '/record/purified-water', label: '정제수' },
-      { path: '/record/deviation', label: '일탈' },
       { path: '/record/nonconformance', label: '부적합' },
       { path: '/record/complaint', label: '클레임' },
       { path: '/record/change-management', label: '변경관리(4M)' },
-      { path: '/record/vendor-evaluation', label: '거래처평가' },
     ],
   },
   {
-    path: '/quality', label: 'Quality', icon: <AssignmentIcon />,
+    path: '/standards', label: 'Standards', icon: <RuleIcon />,
     subItems: [
-      { path: '/quality/iso9001', label: 'ISO9001' },
-      { path: '/quality/rmd-quality', label: '원료제조팀규정' },
+      { path: '/standards/rmd-standard', label: '원료제조팀규정' },
     ],
   },
   { path: '/audit', label: 'Audit', icon: <AssignmentIcon />,
@@ -95,7 +87,6 @@ const navItems = [
 function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
-  const [showSearch, setShowSearch] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const { user, logout } = useAuthStore();
   const [openSubMenu, setOpenSubMenu] = useState(null);
@@ -141,33 +132,6 @@ function Navbar() {
 
   return (
     <NavRail component="nav">
-      <IconButton onClick={() => setShowSearch(!showSearch)} sx={{ mb: 2 }}>
-        <SearchIcon />
-      </IconButton>
-      {showSearch && (
-        <Paper
-          component="form"
-          sx={{
-            p: '2px 4px',
-            display: 'flex',
-            alignItems: 'center',
-            width: 500, // 검색창 길이를 더 길게 수정
-            position: 'absolute',
-            left: '80px',
-            top: '10px',
-            zIndex: 1000,
-          }}
-        >
-          <InputBase
-            sx={{ ml: 1, flex: 1 }}
-            placeholder="검색..."
-            inputProps={{ 'aria-label': '검색' }}
-          />
-          <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
-            <SearchIcon />
-          </IconButton>
-        </Paper>
-      )}
       <List>
         {navItems.map((item) => (
           <ListItem key={item.path} disablePadding>

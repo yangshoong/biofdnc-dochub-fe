@@ -9,10 +9,10 @@ import Navbar from './components/Navbar';
 import PrivateRoute from './components/PrivateRoute';
 import useAuthStore from './store/authStore';
 import SignupPage from './pages/SignupPage';
-import RMDQualityPage from './pages/RMDQualityPage';
+import RMDStandardPage from './pages/RMDStandardPage';
 import Header from './components/Header'; // Header 컴포넌트 추가
 import theme from './theme';
-import RegulationViewer from './components/RegulationViewer';
+import StandardViewer from './components/StandardViewer';
 import AmorepacificAudit from './pages/AmorepacificAudit';
 
 function App() {
@@ -31,18 +31,18 @@ function App() {
               <MainPage />
             </PrivateRoute>
           } />
-          <Route path="/quality/rmd-quality" element={
+          
+          <Route path="/standards/rmd-standard" element={
             <PrivateRoute>
-              <RMDQualityPage />
+              <RMDStandardPage />
             </PrivateRoute>
           } />
-          <Route path="/regulations" element={
+          <Route path="/audit/amorepacific" element={
             <PrivateRoute>
-              <RegulationViewer />
+              <AmorepacificAudit />
             </PrivateRoute>
           } />
           <Route path="*" element={<Navigate to="/" replace />} />
-          <Route path="/audit/amorepacific" element={<AmorepacificAudit />} />
         </Routes>
       </Router>
     </ThemeProvider>

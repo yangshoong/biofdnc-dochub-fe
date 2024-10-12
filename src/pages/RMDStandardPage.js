@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { styled } from '@mui/system';
 import { Box, Typography, Divider, Button } from '@mui/material';
-import rmdRegulations from '../data/rmdRegulations';
+import rmdRegulations from '../data/rmdStandards';
 
 const PageWrapper = styled(Box)({
   paddingTop: '100px',
@@ -65,7 +65,7 @@ const RegulationButton = styled(Button)(({ theme, selected }) => ({
   color: selected ? theme.palette.primary.main : 'inherit',
 }));
 
-function RMDQualityPage() {
+function RMDStandardPage() {
   const [selectedRegulation, setSelectedRegulation] = useState(null);
   const [content, setContent] = useState(null);
   const rightSectionRef = useRef(null);
@@ -133,4 +133,4 @@ function RMDQualityPage() {
   );
 }
 
-export default RMDQualityPage;
+export default RMDStandardPage;

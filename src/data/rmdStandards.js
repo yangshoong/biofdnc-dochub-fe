@@ -1,6 +1,6 @@
-// src/data/rmdRegulations.js
+// src/data/rmdStandards.js
 
-const rmdRegulations = [
+const RMDStandards = [
   {
     category: '일반관리기준서',
     items: [
@@ -64,4 +64,4 @@ const rmdRegulations = [
   }
 ];
 
-export default rmdRegulations;
+export default RMDStandards;
