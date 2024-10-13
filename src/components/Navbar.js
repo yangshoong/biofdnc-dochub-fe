@@ -38,6 +38,7 @@ const NavRail = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   alignItems: 'center',
   padding: theme.spacing(2, 0),
+  zIndex: theme.zIndex.appBar + 1, // Add this line
 }));
 
 const NavItem = styled(ListItemButton)(({ theme, active }) => ({
