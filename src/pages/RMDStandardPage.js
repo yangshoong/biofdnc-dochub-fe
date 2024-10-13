@@ -1,14 +1,16 @@
 import React, { useState, useRef } from 'react';
 import { styled } from '@mui/system';
-import { Box, Typography, Divider, Button, TextField, InputAdornment } from '@mui/material';
+import { Box, Typography, Divider, Button, TextField, InputAdornment, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import ClearIcon from '@mui/icons-material/Clear';
+import ReactDOMServer from 'react-dom/server';
 import rmdRegulations from '../data/rmdStandards';
 
 const PageWrapper = styled(Box)({
   paddingTop: '100px',
   paddingLeft: '300px',
   minHeight: '60vh',
-  backgroundColor: '#fff', // 배경색을 흰색으로 명시적 설정
+  backgroundColor: '#fff',
 });
 
 const Container = styled(Box)(({ theme }) => ({
@@ -21,7 +23,7 @@ const Container = styled(Box)(({ theme }) => ({
   top: '150px',
   left: '200px',
   right: 0,
-  backgroundColor: '#fff', // Container의 배경색도 흰색으로 설정
+  backgroundColor: '#fff',
 }));
 
 const LeftSection = styled(Box)(({ theme }) => ({
@@ -44,7 +46,7 @@ const RightSection = styled(Box)(({ theme }) => ({
   paddingLeft: theme.spacing(10),
   marginRight: theme.spacing(20),
   height: '85%',
-  backgroundColor: '#fff', // 배경색을 흰색으로 명시적 설정
+  backgroundColor: '#fff',
   '&::-webkit-scrollbar': {
     display: 'none',
   },
@@ -71,46 +73,77 @@ const LeftSectionHeader = styled(Box)({
   top: 0,
   backgroundColor: '#fff',
   zIndex: 1,
-  paddingBottom: '10px', // Adjusted padding
+  paddingBottom: '10px',
 });
 
 const StyledTextField = styled(TextField)({
   '& .MuiInputBase-root': {
-    height: '32px', // Adjusted height to match the text
-    fontSize: '0.875rem', // Adjusted font size (14px)
+    height: '32px',
+    fontSize: '0.875rem',
+    width: '200px', // 고정 너비 설정
   },
   '& .MuiInputBase-input': {
-    padding: '4px 8px', // Adjusted padding
+    padding: '4px 8px',
   },
 });
 
 function RMDStandardPage() {
   const [selectedRegulation, setSelectedRegulation] = useState(null);
   const [content, setContent] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
   const rightSectionRef = useRef(null);
   const contentRef = useRef(null);
-  const [searchTerm, setSearchTerm] = useState('');
 
   const handleRegulationClick = async (regulation) => {
     setSelectedRegulation({
       ...regulation,
-      revisionNumber: '00', // 이 값은 실제 데이터에 따라 달라질 수 있습니다
-      revisionDate: '2024.07.01' // 이 값은 실제 데이터에 따라 달라질 수 있습니다
+      revisionNumber: '00',
+      revisionDate: '2024.07.01',
     });
     try {
       const module = await import(`../data/${regulation.id}_Content`);
-      setContent(<module.default />);
+      let contentComponent = <module.default />;
+      // 하이라이트 기능 제거
+      setContent(contentComponent);
       if (rightSectionRef.current) {
         rightSectionRef.current.scrollTop = 0;
       }
     } catch (error) {
-      console.error("콘텐츠 로딩 오류:", error);
+      console.error('콘텐츠 로딩 오류:', error);
       setContent(
         <Typography variant="body1">
           콘텐츠를 불러올 수 없습니다. ({regulation.id})
         </Typography>
       );
     }
+  };
+
+  const handleSearch = async (e) => {
+    const term = e.target.value;
+    setSearchTerm(term);
+
+    if (!term) {
+      setSearchResults([]);
+      return;
+    }
+
+    const results = [];
+    for (const category of rmdRegulations) {
+      for (const item of category.items) {
+        try {
+          const module = await import(`../data/${item.id}_Content`);
+          const contentComponent = <module.default />;
+          const htmlString = ReactDOMServer.renderToString(contentComponent);
+          if (htmlString.toLowerCase().includes(term.toLowerCase())) {
+            results.push({ ...item, category: category.category });
+          }
+        } catch (error) {
+          console.error('콘텐츠 로딩 오류:', error);
+        }
+      }
+    }
+    setSearchResults(results);
   };
 
   const handlePrint = () => {
@@ -133,8 +166,8 @@ function RMDStandardPage() {
             body { 
               font-family: Arial, sans-serif; 
               margin: 0mm 25mm;
-              font-size: 12px; /* 폰트 크기를 12px로 조정 */
-              line-height: 1.6; /* 줄 간격을 늘려줌 */
+              font-size: 12px;
+              line-height: 1.6;
               -webkit-print-color-adjust: exact;
             }
             h1 { 
@@ -170,12 +203,23 @@ function RMDStandardPage() {
       </html>
     `);
     printWindow.document.close();
-    
-    printWindow.onload = function() {
+
+    printWindow.onload = function () {
       printWindow.focus();
       printWindow.print();
       printWindow.close();
     };
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Escape') {
+      clearSearch();
+    }
+  };
+
+  const clearSearch = () => {
+    setSearchTerm('');
+    setSearchResults([]);
   };
 
   return (
@@ -192,34 +236,69 @@ function RMDStandardPage() {
                 size="small"
                 placeholder="검색"
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={handleSearch}
+                onKeyDown={handleKeyDown}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
                       <SearchIcon fontSize="small" />
                     </InputAdornment>
                   ),
+                  endAdornment: searchTerm && (
+                    <InputAdornment position="end">
+                      <IconButton
+                        aria-label="clear search"
+                        onClick={clearSearch}
+                        edge="end"
+                        size="small"
+                      >
+                        <ClearIcon fontSize="small" />
+                      </IconButton>
+                    </InputAdornment>
+                  ),
                 }}
               />
             </Box>
           </LeftSectionHeader>
-          {rmdRegulations.map((category) => (
-            <Box key={category.category}>
-              <Divider />
-              <CategoryTitle variant="subtitle1">{category.category}</CategoryTitle>
-              {category.items.map((item) => (
-                <RegulationButton
-                  key={item.id}
-                  variant="text"
-                  fullWidth
-                  onClick={() => handleRegulationClick(item)}
-                  selected={selectedRegulation?.id === item.id}
-                >
-                  {`${item.id}. ${item.title}`}
-                </RegulationButton>
-              ))}
+          {searchTerm ? (
+            <Box>
+              {searchResults.length > 0 ? (
+                searchResults.map((item) => (
+                  <RegulationButton
+                    key={item.id}
+                    variant="text"
+                    fullWidth
+                    onClick={() => handleRegulationClick(item)}
+                    selected={selectedRegulation?.id === item.id}
+                  >
+                    {`${item.id}. ${item.title}`}
+                  </RegulationButton>
+                ))
+              ) : (
+                <Typography variant="body2" sx={{ marginTop: '10px' }}>
+                  검색 결과가 없습니다.
+                </Typography>
+              )}
             </Box>
-          ))}
+          ) : (
+            rmdRegulations.map((category) => (
+              <Box key={category.category}>
+                <Divider />
+                <CategoryTitle variant="subtitle1">{category.category}</CategoryTitle>
+                {category.items.map((item) => (
+                  <RegulationButton
+                    key={item.id}
+                    variant="text"
+                    fullWidth
+                    onClick={() => handleRegulationClick(item)}
+                    selected={selectedRegulation?.id === item.id}
+                  >
+                    {`${item.id}. ${item.title}`}
+                  </RegulationButton>
+                ))}
+              </Box>
+            ))
+          )}
         </LeftSection>
         <RightSection ref={rightSectionRef}>
           <Box sx={{ paddingBottom: '20px', backgroundColor: '#fff' }}>
@@ -230,7 +309,7 @@ function RMDStandardPage() {
                     {`${selectedRegulation.title}`}
                   </Typography>
                   <Box>
-                    <Button variant="contained" onClick={handlePrint}>
+                    <Button variant="contained" onClick={handlePrint} sx={{ marginRight: '10px' }}>
                       출력
                     </Button>
                   </Box>
