@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/system';
 
-cconst API_URL = process.env.REACT_APP_API_URL + '/auth/signup'; // 엔드포인트 업데이트
+const API_URL = process.env.REACT_APP_API_URL + '/auth/signup'; // 엔드포인트 업데이트
 
 const theme = createTheme({
   palette: {
