@@ -1,8 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { styled } from '@mui/system';
 import { Box, Typography, Divider, Button, TextField, InputAdornment, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ReactDOMServer from 'react-dom/server';
 import rmdRegulations from '../data/rmdStandards';
 
@@ -73,17 +75,39 @@ const LeftSectionHeader = styled(Box)({
   top: 0,
   backgroundColor: '#fff',
   zIndex: 1,
-  paddingBottom: '10px',
+  paddingBottom: '20px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'stretch',
+});
+
+const SearchContainer = styled(Box)({
+  display: 'flex',
+  alignItems: 'center',
+  marginBottom: '20px',
 });
 
 const StyledTextField = styled(TextField)({
   '& .MuiInputBase-root': {
-    height: '32px',
+    height: '36px',
     fontSize: '0.875rem',
-    width: '200px', // 고정 너비 설정
   },
   '& .MuiInputBase-input': {
     padding: '4px 8px',
+  },
+  width: '200px', // 고정된 너비 설정
+});
+
+const SearchNavigation = styled(Box)({
+  display: 'flex',
+  alignItems: 'center',
+  marginLeft: '10px',
+});
+
+const NavigationArrow = styled(IconButton)({
+  padding: '4px',
+  '&:hover': {
+    backgroundColor: 'rgba(0, 0, 0, 0.04)',
   },
 });
 
@@ -92,6 +116,8 @@ function RMDStandardPage() {
   const [content, setContent] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [highlightedNodes, setHighlightedNodes] = useState([]);
+  const [currentHighlightIndex, setCurrentHighlightIndex] = useState(-1);
   const rightSectionRef = useRef(null);
   const contentRef = useRef(null);
 
@@ -117,6 +143,65 @@ function RMDStandardPage() {
         </Typography>
       );
     }
+  };
+
+  const highlightSearchTerm = () => {
+    if (searchTerm && contentRef.current) {
+      const textNodes = [];
+      const walker = document.createTreeWalker(
+        contentRef.current,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+
+      let node;
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue.toLowerCase().includes(searchTerm.toLowerCase())) {
+          textNodes.push(node);
+        }
+      }
+
+      // Remove previous highlights
+      highlightedNodes.forEach((node) => {
+        if (node.parentElement) {
+          node.parentElement.replaceWith(node);
+        }
+      });
+
+      const newHighlightedNodes = textNodes.map((textNode) => {
+        const regex = new RegExp(`(${searchTerm})`, 'gi');
+        const newNode = document.createElement('span');
+        newNode.innerHTML = textNode.nodeValue.replace(regex, '<mark style="background-color: yellow;">$1</mark>');
+        textNode.parentNode.replaceChild(newNode, textNode);
+        return newNode;
+      });
+
+      setHighlightedNodes(newHighlightedNodes);
+      setCurrentHighlightIndex(newHighlightedNodes.length > 0 ? 0 : -1);
+
+      if (newHighlightedNodes.length > 0) {
+        newHighlightedNodes[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
+  useEffect(() => {
+    highlightSearchTerm();
+  }, [content, searchTerm]);
+
+  const navigateHighlight = (direction) => {
+    if (highlightedNodes.length === 0) return;
+
+    let newIndex;
+    if (direction === 'next') {
+      newIndex = (currentHighlightIndex + 1) % highlightedNodes.length;
+    } else {
+      newIndex = (currentHighlightIndex - 1 + highlightedNodes.length) % highlightedNodes.length;
+    }
+
+    setCurrentHighlightIndex(newIndex);
+    highlightedNodes[newIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   const handleSearch = async (e) => {
@@ -227,10 +312,7 @@ function RMDStandardPage() {
       <Container>
         <LeftSection>
           <LeftSectionHeader>
-            <Box display="flex" alignItems="flex-end" justifyContent="space-between">
-              <Typography variant="h6" style={{ marginBottom: '0' }}>
-                원료제조팀 규정
-              </Typography>
+            <SearchContainer>
               <StyledTextField
                 variant="outlined"
                 size="small"
@@ -258,7 +340,23 @@ function RMDStandardPage() {
                   ),
                 }}
               />
-            </Box>
+              {searchTerm && highlightedNodes.length > 0 && (
+                <SearchNavigation>
+                  <Typography variant="body2" sx={{ mr: 1 }}>
+                    {currentHighlightIndex + 1} / {highlightedNodes.length}
+                  </Typography>
+                  <NavigationArrow onClick={() => navigateHighlight('prev')} size="small">
+                    <ArrowUpwardIcon fontSize="small" />
+                  </NavigationArrow>
+                  <NavigationArrow onClick={() => navigateHighlight('next')} size="small">
+                    <ArrowDownwardIcon fontSize="small" />
+                  </NavigationArrow>
+                </SearchNavigation>
+              )}
+            </SearchContainer>
+            <Typography variant="h6" style={{ marginBottom: '10px' }}>
+              원료제조팀 규정
+            </Typography>
           </LeftSectionHeader>
           {searchTerm ? (
             <Box>
