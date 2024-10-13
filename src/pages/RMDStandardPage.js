@@ -312,6 +312,9 @@ function RMDStandardPage() {
       <Container>
         <LeftSection>
           <LeftSectionHeader>
+            <Typography variant="h5" style={{ marginBottom: '30px' }}>
+              원료제조팀 규정
+            </Typography>
             <SearchContainer>
               <StyledTextField
                 variant="outlined"
@@ -354,9 +357,6 @@ function RMDStandardPage() {
                 </SearchNavigation>
               )}
             </SearchContainer>
-            <Typography variant="h6" style={{ marginBottom: '10px' }}>
-              원료제조팀 규정
-            </Typography>
           </LeftSectionHeader>
           {searchTerm ? (
             <Box>

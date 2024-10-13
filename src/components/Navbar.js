@@ -25,6 +25,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import useAuthStore from '../store/authStore';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import RuleIcon from '@mui/icons-material/Rule';
+import { alpha } from '@mui/material/styles';
 
 const NavRail = styled(Box)(({ theme }) => ({
   width: '100px',
@@ -41,28 +42,30 @@ const NavRail = styled(Box)(({ theme }) => ({
   zIndex: theme.zIndex.appBar + 1, // Add this line
 }));
 
-const NavItem = styled(ListItemButton)(({ theme, active }) => ({
+const NavItem = styled(ListItemButton)(({ theme, active, disabled }) => ({
   flexDirection: 'column',
   alignItems: 'center',
   borderRadius: '16px',
   width: '64px',
   height: '56px',
   margin: theme.spacing(1, 0),
+  opacity: disabled ? 0.5 : 1,
+  pointerEvents: disabled ? 'none' : 'auto',
   '&.Mui-selected': {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
+    backgroundColor: disabled ? 'transparent' : theme.palette.primary.main,
+    color: disabled ? theme.palette.text.disabled : theme.palette.primary.contrastText,
   },
   '& .MuiListItemIcon-root': {
     minWidth: 'auto',
-    color: active ? theme.palette.primary.contrastText : 'inherit',
+    color: disabled ? theme.palette.text.disabled : (active ? theme.palette.primary.contrastText : 'inherit'),
   },
 }));
 
 const navItems = [
-  { path: '/main', label: 'Home', icon: <HomeIcon /> },
-  { path: '/ingredient', label: 'Ingredient', icon: <InventoryIcon /> },
-  { path: '/product', label: 'Product', icon: <CategoryIcon /> },
-  { path: '/record', label: 'Record', icon: <DescriptionIcon />,
+  { path: '/main', label: 'Home', icon: <HomeIcon />, disabled: true },
+  { path: '/ingredient', label: 'Ingredient', icon: <InventoryIcon />, disabled: true },
+  { path: '/product', label: 'Product', icon: <CategoryIcon />, disabled: true },
+  { path: '/record', label: 'Record', icon: <DescriptionIcon />, disabled: true,
     subItems: [
       { path: '/record/nonconformance', label: '부적합' },
       { path: '/record/complaint', label: '클레임' },
@@ -78,10 +81,9 @@ const navItems = [
   { path: '/audit', label: 'Audit', icon: <AssignmentIcon />,
     subItems: [
       { path: '/audit/amorepacific', label: 'AMOREPACIFIC' },
-      { path: '/audit/givaudan', label: 'GIVAUDAN' },
     ],
   },
-  { path: '/user', label: 'User', icon: <PersonIcon /> },
+  { path: '/user', label: 'User', icon: <PersonIcon />, disabled: true },
 ];
 
 
@@ -138,11 +140,12 @@ function Navbar() {
           <ListItem key={item.path} disablePadding>
             <NavItem
               component={Link}
-              to={item.path}
-              selected={location.pathname.startsWith(item.path)}
-              active={location.pathname.startsWith(item.path) ? 1 : 0}
-              onMouseEnter={(event) => handleMouseEnter(event, item)}
+              to={item.disabled ? '#' : item.path}
+              selected={!item.disabled && location.pathname.startsWith(item.path)}
+              active={!item.disabled && location.pathname.startsWith(item.path) ? 1 : 0}
+              onMouseEnter={(event) => !item.disabled && handleMouseEnter(event, item)}
               onMouseLeave={handleMouseLeave}
+              disabled={item.disabled}
             >
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText
@@ -150,7 +153,7 @@ function Navbar() {
                 primaryTypographyProps={{ variant: 'caption', align: 'center' }}
               />
             </NavItem>
-            {item.subItems && openSubMenu === item.label && (
+            {!item.disabled && item.subItems && openSubMenu === item.label && (
               <Popper
                 open={true}
                 anchorEl={anchorEl}
