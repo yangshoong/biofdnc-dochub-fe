@@ -99,7 +99,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
   },
 }));
 
-const API_URL = 'http://localhost:5000/api/auth/login'; // 엔드포인트 업데이트
+const API_URL = process.env.REACT_APP_API_URL + '/auth/login'; // 엔드포인트 업데이트
 
 function LoginPage() {
   const navigate = useNavigate();
