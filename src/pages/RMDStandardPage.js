@@ -69,7 +69,7 @@ function RMDStandardPage() {
   const [selectedRegulation, setSelectedRegulation] = useState(null);
   const [content, setContent] = useState(null);
   const rightSectionRef = useRef(null);
-  const contentRef = useRef(null);  // 여기에 contentRef를 추가합니다.
+  const contentRef = useRef(null);
 
   const handleRegulationClick = async (regulation) => {
     setSelectedRegulation({
@@ -112,7 +112,9 @@ function RMDStandardPage() {
             }
             body { 
               font-family: Arial, sans-serif; 
-              margin: 0mm 25mm; /* 좌우 여백만 유지 */
+              margin: 0mm 25mm;
+              font-size: 12px; /* 폰트 크기를 12px로 조정 */
+              line-height: 1.6; /* 줄 간격을 늘려줌 */
               -webkit-print-color-adjust: exact;
             }
             h1 { 
@@ -134,7 +136,6 @@ function RMDStandardPage() {
             th {
               background-color: #f2f2f2;
             }
-            /* 추가된 스타일 */
             .document-header {
               display: flex;
               justify-content: space-between;
@@ -190,9 +191,11 @@ function RMDStandardPage() {
                   <Typography variant="h5">
                     {`${selectedRegulation.title}`}
                   </Typography>
-                  <Button variant="contained" onClick={handlePrint}>
-                    출력
-                  </Button>
+                  <Box>
+                    <Button variant="contained" onClick={handlePrint}>
+                      출력
+                    </Button>
+                  </Box>
                 </Box>
                 <Box ref={contentRef}>
                   {content}

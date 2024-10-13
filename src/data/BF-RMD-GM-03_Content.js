@@ -1,33 +1,42 @@
 import React from 'react';
-import { Box, Typography, Divider, List, ListItem, ListItemText, ListItemIcon, TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
+import { Box, Typography, Divider, List, ListItem, TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
 import { styled } from '@mui/system';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 // 스타일링을 위한 커스텀 컴포넌트
 const SectionTitle = styled(Typography)({
   fontWeight: 'bold',
   fontSize: '1.2rem',
   margin: '20px 0 10px 0',
+  breakAfter: 'avoid',
+  pageBreakAfter: 'avoid',
 });
 
 const SubsectionTitle = styled(Typography)({
   fontWeight: 'bold',
   fontSize: '1rem',
   margin: '10px 0',
+  breakAfter: 'avoid',
+  pageBreakAfter: 'avoid',
 });
 
 const StyledList = styled(List)({
   paddingLeft: '20px',
+  breakInside: 'auto',
+  pageBreakInside: 'auto',
 });
 
 const StyledListItem = styled(ListItem)({
   paddingLeft: '20px',
   display: 'flex',
-  alignItems: 'center',
+  alignItems: 'flex-start',
+  breakInside: 'auto',
+  pageBreakInside: 'auto',
 });
 
 const Paragraph = styled(Typography)({
   marginBottom: '10px',
+  breakInside: 'auto',
+  pageBreakInside: 'auto',
 });
 
 function BF_RMD_GM_03_Content() {
