@@ -176,7 +176,7 @@ function BF_RMD_GM_03_Content() {
         <StyledListItem>5.3 기록은 내용별로 분류 보관한다. 디지털 기록의 경우, 각 시스템에서 제공하는 분류 기능(폴더 구조, 태그, 메타데이터 등)을 활용하여 체계적으로 분류한다.</StyledListItem>
         <StyledListItem>5.4 기록은 생성 시점부터 보존 연한을 설정하여 관리한다.</StyledListItem>
         <StyledListItem sx={{ paddingLeft: '40px' }}>5.4.1 문서 기록의 경우, 보존 연한에 따라 적절히 라벨링하여 관리한다.</StyledListItem>
-        <StyledListItem sx={{ paddingLeft: '40px' }}>5.4.2 디지털 기록의 경우, 각 시스템에서 제공하는 기능을 활용하여 생성 시점에 보존 연한을 설정하고, 시스템이 자동으로 보존 기간을 추적하고 관리할 수 있도록 한다.</StyledListItem>
+        <StyledListItem sx={{ paddingLeft: '40px' }}>5.4.2 디지털 기록의 경우, 각 시스템에서 제공하는 기능을 활용하여 생성 시점에 보존 연한을 설정하고, 시스템이 자동으로 보존 기간을 추적하고 관리할 수 있도록 한다. </StyledListItem>
         <StyledListItem sx={{ paddingLeft: '40px' }}>5.4.3 보존 연한이 만료된 기록은 규정된 절차에 따라 검토 후 폐기하거나 보존 연장을 결정한다.</StyledListItem>
         <StyledListItem>5.5 보존되어야 할 기록이 자주 열람되거나 사용될 경우에는 각 부서에서 보관관리 할 수 있다. 디지털 기록의 경우, 각 시스템의 접근 권한 설정 기능을 활용하여 필요한 부서에서 열람 및 관리할 수 있도록 한다.</StyledListItem>
         <StyledListItem>5.6 디지털 기록의 경우, 데이터의 무결성을 보장하기 위해 각 시스템에서 제공하는 보안 기능(접근 권한 관리, 변경 이력 추적, 암호화 등)을 활용한다.</StyledListItem>
@@ -189,7 +189,7 @@ function BF_RMD_GM_03_Content() {
       <StyledList>
         <StyledListItem>6.1 기록의 관리에 대한 기록보관은 각각의 절차서 또는 지침서에서 정한 기록보존 연한에 따른다.</StyledListItem>
         <StyledListItem>6.2 기타의 기록 보존 연한이 규정되지 않은 기록은 최소 4년간 보존한다.</StyledListItem>
-        <StyledListItem>6.3 디지털 기록의 경우, 각 시스템의 기능을 활용하여 보존 연한을 설정하고 관리한다.</StyledListItem>
+        <StyledListItem>6.3 디지털 기록의 경우, 각 시스템의 기능을 활용하여 보존 연한을 설정하고 관리한다.시스템에서 자동으로 보존 연한을 설정하고 관리할 수 없는 경우, 따로 보존 연한을 두지 않는다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
