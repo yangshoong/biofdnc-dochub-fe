@@ -176,10 +176,11 @@ function BF_RMD_PM_09_Content() {
         <StyledListItem>6.1.3 제조담당자는 제품 출하 시 다음 사항을 확인한다.</StyledListItem>
       </StyledList>
       <StyledList sx={{ paddingLeft: '40px' }}>
-        <StyledListItem>6.1.3.1 제품명 및 제조번호</StyledListItem>
-        <StyledListItem>6.1.3.2 제조일 또는 포장일, 출하수량</StyledListItem>
-        <StyledListItem>6.1.3.3 제품의 포장상태 및 파렛트 적재상태</StyledListItem>
-        <StyledListItem>6.1.3.4 출하방법</StyledListItem>
+        <StyledListItem>6.1.3.1 제품명</StyledListItem>
+        <StyledListItem>6.1.3.2 제조일자 및 사용기한</StyledListItem>
+        <StyledListItem>6.1.3.3 시험성적서</StyledListItem>
+        <StyledListItem>6.1.3.4 제품의 포장상태 및 파렛트 적재상태</StyledListItem>
+        <StyledListItem>6.1.3.5 Lot. No.</StyledListItem>
       </StyledList>
       <StyledList>
         <StyledListItem>6.1.4 제품 출하 시 선입선출을 원칙으로 한다.</StyledListItem>

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { styled } from '@mui/system';
-import { Box, Typography, Divider, Button } from '@mui/material';
+import { Box, Typography, Divider, Button, TextField, InputAdornment } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 import rmdRegulations from '../data/rmdStandards';
 
 const PageWrapper = styled(Box)({
@@ -65,11 +66,30 @@ const RegulationButton = styled(Button)(({ theme, selected }) => ({
   color: selected ? theme.palette.primary.main : 'inherit',
 }));
 
+const LeftSectionHeader = styled(Box)({
+  position: 'sticky',
+  top: 0,
+  backgroundColor: '#fff',
+  zIndex: 1,
+  paddingBottom: '10px', // Adjusted padding
+});
+
+const StyledTextField = styled(TextField)({
+  '& .MuiInputBase-root': {
+    height: '32px', // Adjusted height to match the text
+    fontSize: '0.875rem', // Adjusted font size (14px)
+  },
+  '& .MuiInputBase-input': {
+    padding: '4px 8px', // Adjusted padding
+  },
+});
+
 function RMDStandardPage() {
   const [selectedRegulation, setSelectedRegulation] = useState(null);
   const [content, setContent] = useState(null);
   const rightSectionRef = useRef(null);
   const contentRef = useRef(null);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleRegulationClick = async (regulation) => {
     setSelectedRegulation({
@@ -162,9 +182,27 @@ function RMDStandardPage() {
     <PageWrapper>
       <Container>
         <LeftSection>
-          <Typography variant="h6" gutterBottom>
-            원료제조팀 규정
-          </Typography>
+          <LeftSectionHeader>
+            <Box display="flex" alignItems="flex-end" justifyContent="space-between">
+              <Typography variant="h6" style={{ marginBottom: '0' }}>
+                원료제조팀 규정
+              </Typography>
+              <StyledTextField
+                variant="outlined"
+                size="small"
+                placeholder="검색"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <SearchIcon fontSize="small" />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+            </Box>
+          </LeftSectionHeader>
           {rmdRegulations.map((category) => (
             <Box key={category.category}>
               <Divider />
