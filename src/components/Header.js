@@ -45,7 +45,7 @@ function Header() {
 
   return (
     <HeaderContainer>
-      <Logo>BIO-FD&C Product Document Hub</Logo>
+      <Logo>BIO-FD&C Document Hub</Logo>
       {/* 다른 요소들 */}
     </HeaderContainer>
   );
