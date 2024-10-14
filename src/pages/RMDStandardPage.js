@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { styled } from '@mui/system';
 import { Box, Typography, Divider, Button, TextField, InputAdornment, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
@@ -120,6 +120,7 @@ function RMDStandardPage() {
   const [currentHighlightIndex, setCurrentHighlightIndex] = useState(-1);
   const rightSectionRef = useRef(null);
   const contentRef = useRef(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleRegulationClick = async (regulation) => {
     setSelectedRegulation({
@@ -145,8 +146,58 @@ function RMDStandardPage() {
     }
   };
 
-  const highlightSearchTerm = () => {
-    if (searchTerm && contentRef.current) {
+  const handleSearch = async (e) => {
+    if (e.key === 'Enter') {
+      const term = e.target.value;
+      setSearchTerm(term);
+
+      if (!term) {
+        setSearchResults([]);
+        setHighlightedNodes([]);
+        setCurrentHighlightIndex(-1);
+        return;
+      }
+
+      const results = [];
+      for (const category of rmdRegulations) {
+        for (const item of category.items) {
+          try {
+            const module = await import(`../data/${item.id}_Content`);
+            const contentComponent = <module.default />;
+            const htmlString = ReactDOMServer.renderToString(contentComponent);
+            if (htmlString.toLowerCase().includes(term.toLowerCase())) {
+              results.push({ ...item, category: category.category });
+            }
+          } catch (error) {
+            console.error('콘텐츠 로딩 오류:', error);
+          }
+        }
+      }
+      setSearchResults(results);
+      highlightSearchTerm(term);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Escape') {
+      clearSearch();
+    }
+  };
+
+  const clearSearch = () => {
+    setSearchQuery('');
+    setSearchTerm('');
+    setSearchResults([]);
+    setHighlightedNodes([]);
+    setCurrentHighlightIndex(-1);
+  };
+
+  const highlightSearchTerm = useCallback((term) => {
+    if (term && contentRef.current) {
       const textNodes = [];
       const walker = document.createTreeWalker(
         contentRef.current,
@@ -157,7 +208,7 @@ function RMDStandardPage() {
 
       let node;
       while ((node = walker.nextNode())) {
-        if (node.nodeValue.toLowerCase().includes(searchTerm.toLowerCase())) {
+        if (node.nodeValue.toLowerCase().includes(term.toLowerCase())) {
           textNodes.push(node);
         }
       }
@@ -170,7 +221,7 @@ function RMDStandardPage() {
       });
 
       const newHighlightedNodes = textNodes.map((textNode) => {
-        const regex = new RegExp(`(${searchTerm})`, 'gi');
+        const regex = new RegExp(`(${term})`, 'gi');
         const newNode = document.createElement('span');
         newNode.innerHTML = textNode.nodeValue.replace(regex, '<mark style="background-color: yellow;">$1</mark>');
         textNode.parentNode.replaceChild(newNode, textNode);
@@ -184,11 +235,13 @@ function RMDStandardPage() {
         newHighlightedNodes[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
-  };
+  }, []);
 
   useEffect(() => {
-    highlightSearchTerm();
-  }, [content, searchTerm]);
+    if (searchTerm) {
+      highlightSearchTerm(searchTerm);
+    }
+  }, [searchTerm, content, highlightSearchTerm]);
 
   const navigateHighlight = (direction) => {
     if (highlightedNodes.length === 0) return;
@@ -202,33 +255,6 @@ function RMDStandardPage() {
 
     setCurrentHighlightIndex(newIndex);
     highlightedNodes[newIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
-  };
-
-  const handleSearch = async (e) => {
-    const term = e.target.value;
-    setSearchTerm(term);
-
-    if (!term) {
-      setSearchResults([]);
-      return;
-    }
-
-    const results = [];
-    for (const category of rmdRegulations) {
-      for (const item of category.items) {
-        try {
-          const module = await import(`../data/${item.id}_Content`);
-          const contentComponent = <module.default />;
-          const htmlString = ReactDOMServer.renderToString(contentComponent);
-          if (htmlString.toLowerCase().includes(term.toLowerCase())) {
-            results.push({ ...item, category: category.category });
-          }
-        } catch (error) {
-          console.error('콘텐츠 로딩 오류:', error);
-        }
-      }
-    }
-    setSearchResults(results);
   };
 
   const handlePrint = () => {
@@ -296,17 +322,6 @@ function RMDStandardPage() {
     };
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Escape') {
-      clearSearch();
-    }
-  };
-
-  const clearSearch = () => {
-    setSearchTerm('');
-    setSearchResults([]);
-  };
-
   return (
     <PageWrapper>
       <Container>
@@ -320,16 +335,19 @@ function RMDStandardPage() {
                 variant="outlined"
                 size="small"
                 placeholder="검색"
-                value={searchTerm}
-                onChange={handleSearch}
-                onKeyDown={handleKeyDown}
+                value={searchQuery}
+                onChange={handleInputChange}
+                onKeyDown={(e) => {
+                  handleKeyDown(e);
+                  handleSearch(e);
+                }}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
                       <SearchIcon fontSize="small" />
                     </InputAdornment>
                   ),
-                  endAdornment: searchTerm && (
+                  endAdornment: searchQuery && (
                     <InputAdornment position="end">
                       <IconButton
                         aria-label="clear search"

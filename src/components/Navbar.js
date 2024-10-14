@@ -23,9 +23,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import PersonIcon from '@mui/icons-material/Person';
 import useAuthStore from '../store/authStore';
-import FactCheckIcon from '@mui/icons-material/FactCheck';
 import RuleIcon from '@mui/icons-material/Rule';
-import { alpha } from '@mui/material/styles';
 
 const NavRail = styled(Box)(({ theme }) => ({
   width: '100px',
@@ -65,19 +63,13 @@ const navItems = [
   { path: '/main', label: 'Home', icon: <HomeIcon />, disabled: true },
   { path: '/ingredient', label: 'Ingredient', icon: <InventoryIcon />, disabled: true },
   { path: '/product', label: 'Product', icon: <CategoryIcon />, disabled: true },
-  { path: '/record', label: 'Record', icon: <DescriptionIcon />, disabled: true,
-    subItems: [
-      { path: '/record/nonconformance', label: '부적합' },
-      { path: '/record/complaint', label: '클레임' },
-      { path: '/record/change-management', label: '변경관리(4M)' },
-    ],
-  },
   {
     path: '/standards', label: 'Standards', icon: <RuleIcon />,
     subItems: [
       { path: '/standards/rmd-standard', label: '원료제조팀규정' },
     ],
   },
+  { path: '/record', label: 'Record', icon: <DescriptionIcon />, disabled: true },
   { path: '/audit', label: 'Audit', icon: <AssignmentIcon />, disabled: true },
   { path: '/user', label: 'User', icon: <PersonIcon />, disabled: true },
 ];
