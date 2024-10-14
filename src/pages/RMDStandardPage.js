@@ -7,6 +7,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ReactDOMServer from 'react-dom/server';
 import rmdRegulations from '../data/rmdStandards';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const PageWrapper = styled(Box)({
   paddingTop: '100px',
@@ -85,6 +86,7 @@ const SearchContainer = styled(Box)({
   display: 'flex',
   alignItems: 'center',
   marginBottom: '20px',
+  width: '100%',
 });
 
 const StyledTextField = styled(TextField)({
@@ -96,6 +98,7 @@ const StyledTextField = styled(TextField)({
     padding: '4px 8px',
   },
   width: '200px', // 고정된 너비 설정
+  flexGrow: 1,
 });
 
 const SearchNavigation = styled(Box)({
@@ -121,6 +124,32 @@ function RMDStandardPage() {
   const rightSectionRef = useRef(null);
   const contentRef = useRef(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+  const [searchData, setSearchData] = useState([]);
+
+  useEffect(() => {
+    loadSearchData();
+  }, []);
+
+  const loadSearchData = async () => {
+    setIsLoading(true);
+    try {
+      const data = [];
+      for (const category of rmdRegulations) {
+        for (const item of category.items) {
+          const module = await import(`../data/${item.id}_Content`);
+          const contentComponent = <module.default />;
+          const htmlString = ReactDOMServer.renderToString(contentComponent);
+          data.push({ ...item, category: category.category, content: htmlString });
+        }
+      }
+      setSearchData(data);
+    } catch (error) {
+      console.error('데이터 로딩 오류:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const handleRegulationClick = async (regulation) => {
     setSelectedRegulation({
@@ -146,7 +175,7 @@ function RMDStandardPage() {
     }
   };
 
-  const handleSearch = async (e) => {
+  const handleSearch = (e) => {
     if (e.key === 'Enter') {
       const term = e.target.value;
       setSearchTerm(term);
@@ -158,21 +187,9 @@ function RMDStandardPage() {
         return;
       }
 
-      const results = [];
-      for (const category of rmdRegulations) {
-        for (const item of category.items) {
-          try {
-            const module = await import(`../data/${item.id}_Content`);
-            const contentComponent = <module.default />;
-            const htmlString = ReactDOMServer.renderToString(contentComponent);
-            if (htmlString.toLowerCase().includes(term.toLowerCase())) {
-              results.push({ ...item, category: category.category });
-            }
-          } catch (error) {
-            console.error('콘텐츠 로딩 오류:', error);
-          }
-        }
-      }
+      const results = searchData.filter(item =>
+        item.content.toLowerCase().includes(term.toLowerCase())
+      );
       setSearchResults(results);
       highlightSearchTerm(term);
     }
@@ -180,20 +197,6 @@ function RMDStandardPage() {
 
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === 'Escape') {
-      clearSearch();
-    }
-  };
-
-  const clearSearch = () => {
-    setSearchQuery('');
-    setSearchTerm('');
-    setSearchResults([]);
-    setHighlightedNodes([]);
-    setCurrentHighlightIndex(-1);
   };
 
   const highlightSearchTerm = useCallback((term) => {
@@ -322,6 +325,17 @@ function RMDStandardPage() {
     };
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Escape') {
+      clearSearch();
+    }
+  };
+
+  const clearSearch = () => {
+    setSearchTerm('');
+    setSearchResults([]);
+  };
+
   return (
     <PageWrapper>
       <Container>
@@ -337,17 +351,15 @@ function RMDStandardPage() {
                 placeholder="검색"
                 value={searchQuery}
                 onChange={handleInputChange}
-                onKeyDown={(e) => {
-                  handleKeyDown(e);
-                  handleSearch(e);
-                }}
+                onKeyDown={handleSearch}
+                disabled={isLoading}
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
                       <SearchIcon fontSize="small" />
                     </InputAdornment>
                   ),
-                  endAdornment: searchQuery && (
+                  endAdornment: searchTerm && (
                     <InputAdornment position="end">
                       <IconButton
                         aria-label="clear search"
@@ -361,6 +373,9 @@ function RMDStandardPage() {
                   ),
                 }}
               />
+              {isLoading && (
+                <CircularProgress size={24} style={{ marginLeft: '10px' }} />
+              )}
               {searchTerm && highlightedNodes.length > 0 && (
                 <SearchNavigation>
                   <Typography variant="body2" sx={{ mr: 1 }}>
