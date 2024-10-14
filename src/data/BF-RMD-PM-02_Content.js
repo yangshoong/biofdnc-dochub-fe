@@ -34,7 +34,7 @@ function BF_RMD_PM_02_Content() {
   return (
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <Box>
+        <Box>{/* 건물,시설 및 설비관리규정*/}
           <Typography>문서번호: BF-RMD-PM-02</Typography>
           
         </Box>

@@ -34,7 +34,7 @@ function BF_RMD_GM_09_Content() {
   return (
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <Box>
+        <Box>{/* 위수탁생산 및 서비스관리 규정*/}
           <Typography>문서번호: BF-RMD-GM-09</Typography>
           
         </Box>

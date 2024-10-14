@@ -35,6 +35,7 @@ function BF_RMD_GM_04_Content() {
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
         <Box>
+          {/*교육훈련 규정 */}
           <Typography>문서번호: BF-RMD-GM-04</Typography>
           
         </Box>

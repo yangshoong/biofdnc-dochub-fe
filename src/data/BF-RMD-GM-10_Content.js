@@ -34,7 +34,7 @@ function BF_RMD_GM_10_Content() {
   return (
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <Box>
+        <Box>{/* 폐기물 처리 및 관리 규정*/}
           <Typography>문서번호: BF-RMD-GM-10</Typography>
           
         </Box>

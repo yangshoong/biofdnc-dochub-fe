@@ -34,7 +34,7 @@ function BF_RMD_HM_03_Content() {
   return (
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <Box>
+        <Box>{/* 작업원 수세 및 소독관리 규정*/}
           <Typography>문서번호: BF-RMD-HM-03</Typography>
           
         </Box>
