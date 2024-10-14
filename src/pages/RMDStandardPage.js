@@ -89,6 +89,13 @@ const SearchContainer = styled(Box)({
   width: '100%',
 });
 
+const SearchInputContainer = styled(Box)({
+  display: 'flex',
+  alignItems: 'center',
+  width: '300px', // 검색창의 고정 너비
+  marginRight: '10px',
+});
+
 const StyledTextField = styled(TextField)({
   '& .MuiInputBase-root': {
     height: '36px',
@@ -97,14 +104,13 @@ const StyledTextField = styled(TextField)({
   '& .MuiInputBase-input': {
     padding: '4px 8px',
   },
-  width: '200px', // 고정된 너비 설정
   flexGrow: 1,
 });
 
 const SearchNavigation = styled(Box)({
   display: 'flex',
   alignItems: 'center',
-  marginLeft: '10px',
+  whiteSpace: 'nowrap',
 });
 
 const NavigationArrow = styled(IconButton)({
@@ -345,37 +351,39 @@ function RMDStandardPage() {
               원료제조팀 규정
             </Typography>
             <SearchContainer>
-              <StyledTextField
-                variant="outlined"
-                size="small"
-                placeholder="검색"
-                value={searchQuery}
-                onChange={handleInputChange}
-                onKeyDown={handleSearch}
-                disabled={isLoading}
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <SearchIcon fontSize="small" />
-                    </InputAdornment>
-                  ),
-                  endAdornment: searchTerm && (
-                    <InputAdornment position="end">
-                      <IconButton
-                        aria-label="clear search"
-                        onClick={clearSearch}
-                        edge="end"
-                        size="small"
-                      >
-                        <ClearIcon fontSize="small" />
-                      </IconButton>
-                    </InputAdornment>
-                  ),
-                }}
-              />
-              {isLoading && (
-                <CircularProgress size={24} style={{ marginLeft: '10px' }} />
-              )}
+              <SearchInputContainer>
+                <StyledTextField
+                  variant="outlined"
+                  size="small"
+                  placeholder="검색"
+                  value={searchQuery}
+                  onChange={handleInputChange}
+                  onKeyDown={handleSearch}
+                  disabled={isLoading}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <SearchIcon fontSize="small" />
+                      </InputAdornment>
+                    ),
+                    endAdornment: searchTerm && (
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="clear search"
+                          onClick={clearSearch}
+                          edge="end"
+                          size="small"
+                        >
+                          <ClearIcon fontSize="small" />
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
+                />
+                {isLoading && (
+                  <CircularProgress size={24} style={{ marginLeft: '10px' }} />
+                )}
+              </SearchInputContainer>
               {searchTerm && highlightedNodes.length > 0 && (
                 <SearchNavigation>
                   <Typography variant="body2" sx={{ mr: 1 }}>
