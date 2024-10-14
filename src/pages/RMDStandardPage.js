@@ -338,8 +338,11 @@ function RMDStandardPage() {
   };
 
   const clearSearch = () => {
+    setSearchQuery('');
     setSearchTerm('');
     setSearchResults([]);
+    setHighlightedNodes([]);
+    setCurrentHighlightIndex(-1);
   };
 
   return (
@@ -358,7 +361,10 @@ function RMDStandardPage() {
                   placeholder="검색"
                   value={searchQuery}
                   onChange={handleInputChange}
-                  onKeyDown={handleSearch}
+                  onKeyDown={(e) => {
+                    handleSearch(e);
+                    handleKeyDown(e);
+                  }}
                   disabled={isLoading}
                   InputProps={{
                     startAdornment: (
@@ -366,7 +372,7 @@ function RMDStandardPage() {
                         <SearchIcon fontSize="small" />
                       </InputAdornment>
                     ),
-                    endAdornment: searchTerm && (
+                    endAdornment: searchQuery && (
                       <InputAdornment position="end">
                         <IconButton
                           aria-label="clear search"
