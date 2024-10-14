@@ -1,7 +1,6 @@
 import React from 'react';
-import { Box, Typography, Divider, List, ListItem, ListItemText, ListItemIcon, TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
+import { Box, Typography, Divider, List, ListItem,TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
 import { styled } from '@mui/system';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 // 스타일링을 위한 커스텀 컴포넌트
 const SectionTitle = styled(Typography)({

@@ -343,6 +343,15 @@ function RMDStandardPage() {
     setSearchResults([]);
     setHighlightedNodes([]);
     setCurrentHighlightIndex(-1);
+
+    // Remove highlights from the content
+    if (contentRef.current) {
+      const highlights = contentRef.current.querySelectorAll('mark');
+      highlights.forEach(highlight => {
+        const textNode = document.createTextNode(highlight.textContent);
+        highlight.parentNode.replaceChild(textNode, highlight);
+      });
+    }
   };
 
   return (

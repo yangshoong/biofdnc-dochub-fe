@@ -12,7 +12,6 @@ import SignupPage from './pages/SignupPage';
 import RMDStandardPage from './pages/RMDStandardPage';
 import Header from './components/Header'; // Header 컴포넌트 추가
 import theme from './theme';
-import StandardViewer from './components/StandardViewer';
 import AmorepacificAudit from './pages/AmorepacificAudit';
 
 function App() {
