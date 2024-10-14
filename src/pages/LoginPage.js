@@ -178,7 +178,6 @@ function LoginPage() {
               BIO-FD&C
             </Typography>
             <Typography variant="subtitle3" component="p" sx={{ mt: -0 }}>
-              Product Document Hub
             </Typography>
           </Box>
           {error && (
