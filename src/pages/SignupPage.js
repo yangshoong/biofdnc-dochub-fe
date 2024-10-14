@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/system';
 
-const API_URL = process.env.REACT_APP_API_URL + '/signup'; // 엔드포인트 업데이트
+const API_URL = process.env.REACT_APP_API_URL + '/auth/signup'; // 엔드포인트 업데이트
 
 const theme = createTheme({
   palette: {
@@ -174,7 +174,11 @@ function SignupPage() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ 
+                mt: 3, 
+                mb: 2,
+                py: 1.5  // 이 줄을 추가합니다.
+              }}
             >
               가입하기
             </Button>
