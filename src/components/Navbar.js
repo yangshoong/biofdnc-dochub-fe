@@ -78,11 +78,7 @@ const navItems = [
       { path: '/standards/rmd-standard', label: '원료제조팀규정' },
     ],
   },
-  { path: '/audit', label: 'Audit', icon: <AssignmentIcon />,
-    subItems: [
-      { path: '/audit/amorepacific', label: 'AMOREPACIFIC' },
-    ],
-  },
+  { path: '/audit', label: 'Audit', icon: <AssignmentIcon />, disabled: true },
   { path: '/user', label: 'User', icon: <PersonIcon />, disabled: true },
 ];
 
