@@ -185,7 +185,7 @@ function BF_RMD_GM_03_Content() {
       <StyledList>
         <StyledListItem>6.1 기록의 관리에 대한 기록보관은 각각의 절차서 또는 지침서에서 정한 기록보존 연한에 따른다.</StyledListItem>
         <StyledListItem>6.2 기타의 기록 보존 연한이 규정되지 않은 기록은 최소 4년간 보존한다.</StyledListItem>
-        <StyledListItem>6.3 디지털 기록의 경우, 각 시스템의 기능을 활용하여 보존 연한을 설정하고 관리한다.시스템에서 자동으로 보존 연한을 설정하고 관리할 수 없는 경우, 따로 보존 연한을 두지 않는다.</StyledListItem>
+        <StyledListItem>6.3 디지털 기록의 경우, 각 시스템의 기능을 활용하여 보존 연한을 설정하고 관리한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
