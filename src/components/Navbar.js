@@ -64,9 +64,9 @@ const navItems = [
   { path: '/ingredient', label: 'Ingredient', icon: <InventoryIcon />, disabled: true },
   { path: '/product', label: 'Product', icon: <CategoryIcon />, disabled: true },
   {
-    path: '/standards', label: 'Standards', icon: <RuleIcon />,
+    path: '/standard', label: 'Standard', icon: <RuleIcon />,
     subItems: [
-      { path: '/standards/rmd-standard', label: '원료제조팀규정' },
+      { path: '/standard/rmd-standard', label: '원료제조팀규정' },
     ],
   },
   { path: '/record', label: 'Record', icon: <DescriptionIcon />, disabled: true },
