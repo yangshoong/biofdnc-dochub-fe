@@ -124,7 +124,7 @@ function BF_RMD_GM_02_Content() {
           <strong>3.3 품질목표</strong>: 품질에 관해 추구하거나 지향하는 것
         </StyledListItem>
         <StyledListItem>
-          <strong>3.4 품질계획</strong>: 품질목표를 설정하고 달성하기 위해 필요한 운영프로세스 및 관련 자원을 규정하는 품질경영의 일부
+          <strong>3.4 품질계획</strong>: 품질목표를 설정하고 달성하기 위한 운영프로세스 및 자원을 규정하는 품질경영의 일부
         </StyledListItem>
         <StyledListItem>
           <strong>3.5 품질관리</strong>: 품질요구사항을 충족시키는데 중점을 둔 품질경영의 일부

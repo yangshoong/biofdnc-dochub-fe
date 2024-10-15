@@ -55,6 +55,10 @@ const RightSection = styled(Box)(({ theme }) => ({
   },
   '-ms-overflow-style': 'none',
   'scrollbar-width': 'none',
+  '& p, & li': {  // 추가된 스타일
+    lineHeight: '1.8',  // 줄간격 증가
+    marginBottom: '0.8em',  // 단락 간 간격 추가
+  },
 }));
 
 const CategoryTitle = styled(Typography)(({ theme }) => ({
@@ -117,6 +121,17 @@ const NavigationArrow = styled(IconButton)({
   padding: '4px',
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.04)',
+  },
+});
+
+const ContentContainer = styled(Box)({
+  '& > *': {
+    maxWidth: '800px',  // 본문 최대 너비 제한
+    margin: '0 auto',  // 중앙 정렬
+  },
+  '& h1, & h2, & h3, & h4, & h5, & h6': {
+    marginTop: '1.5em',
+    marginBottom: '0.8em',
   },
 });
 
@@ -468,9 +483,9 @@ function RMDStandardPage() {
                     </Button>
                   </Box>
                 </Box>
-                <Box ref={contentRef}>
+                <ContentContainer ref={contentRef}>
                   {content}
-                </Box>
+                </ContentContainer>
               </Box>
             ) : (
               <Typography variant="h6">
