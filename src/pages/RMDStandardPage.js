@@ -57,7 +57,7 @@ const RightSection = styled(Box)(({ theme }) => ({
   'scrollbar-width': 'none',
   '& p, & li': {  // 추가된 스타일
     lineHeight: '1.8',  // 줄간격 증가
-    marginBottom: '0.8em',  // 단락 간 간격 추가
+    marginBottom: '0.5em',  // 단락 간 간격 추가
   },
 }));
 

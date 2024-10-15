@@ -25,6 +25,10 @@ const StyledListItem = styled(ListItem)({
   alignItems: 'center',
 });
 
+const Paragraph = styled(Typography)({
+  marginBottom: '10px',
+});
+
 function BF_RMD_GM_03_Content() {
   return (
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
@@ -95,16 +99,16 @@ function BF_RMD_GM_03_Content() {
         </Table>
       </TableContainer>
       <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
-      <StyledList>
-        <StyledListItem>1.1 본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다)의 제품에 규정된 요구사항의 적합성과 품질경영시스템의 효과적인 운영을 입증할 수 있도록 기록의 유지 및 관리를 하는데 그 목적이 있다.</StyledListItem>
-      </StyledList>
+      <Paragraph>
+        본 규정은 (주)바이오에프디엔씨(이하 '당사'라 한다)의 제품에 규정된 요구사항의 적합성과 품질경영시스템의 효과적인 운영을 입증할 수 있도록 기록의 유지 및 관리를 하는데 그 목적이 있다.
+      </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>2. 적용범위</SectionTitle>
-      <StyledList>
-        <StyledListItem>2.1 이 규정은 당사의 모든 기록의 식별, 수집, 색인, 열람, 파일링, 보관, 유지 및 폐기에 대한 업무에 적용한다.</StyledListItem>
-      </StyledList>
+      <Paragraph>
+        이 규정은 당사의 모든 기록의 식별, 수집, 색인, 열람, 파일링, 보관, 유지 및 폐기에 대한 업무에 적용한다.
+      </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
 
