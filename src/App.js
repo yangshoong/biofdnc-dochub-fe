@@ -31,7 +31,7 @@ function App() {
             </PrivateRoute>
           } />
           
-          <Route path="/standards/rmd-standard" element={
+          <Route path="/standard/rmd-standard" element={
             <PrivateRoute>
               <RMDStandardPage />
             </PrivateRoute>
