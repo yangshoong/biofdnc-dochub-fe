@@ -194,11 +194,11 @@ function BF_RMD_HM_06_Content() {
       <SubsectionTitle>4.4 업무담당자 건강진단 및 관리</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.4.1 신규 업무담당자 건강 진단</StyledListItem>
-        <Paragraph>
+        <Paragraph sx={{ paddingLeft: '20px' }}>
           신규 업무담당자 채용 시에는 건강검진을 받게 하거나, 문진을 하여 "업무담당자 건강관리 규정"에 따라 업무 배치를 결정한다.
         </Paragraph>
         <StyledListItem>4.4.2 정기 건강진단</StyledListItem>
-        <Paragraph>
+        <Paragraph sx={{ paddingLeft: '20px' }}>
           "업무담당자 건강관리 규정"에 따라 제품 품질에 영향을 미치는 작업 담당자는 정기적으로 건강진단을 실시하고 건강진단 결과 제품 품질 및 안전성에 영향을 미칠 수 있는 질환이 발견되면 제품을 직접 취급하는 업무에서 격리시킨다.
         </Paragraph>
       </StyledList>

@@ -168,7 +168,7 @@ function BF_RMD_PM_14_Content() {
       
       <SectionTitle>6. 기록 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>6.1 제품 라벨 출력에 관한 기록은 전용 라벨 출력 프로그램에 저장되며, 4년간 보관한다.</StyledListItem>
+        <StyledListItem>6.1 제품 라벨 출력에 관한 기록은 전용 라벨 출력 프로그램에 저장된다.</StyledListItem>
       </StyledList>
 
     </Box>

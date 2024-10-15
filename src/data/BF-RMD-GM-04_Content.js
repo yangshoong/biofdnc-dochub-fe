@@ -157,7 +157,7 @@ function BF_RMD_GM_04_Content() {
       <SubsectionTitle>5.1 교육훈련 종류별 실행 내용</SubsectionTitle>
 
       <SubsectionTitle sx={{ paddingLeft: '20px' }}>5.1.1 신입 업무담당자 입문교육 (오리엔테이션)</SubsectionTitle>
-      <Paragraph>교육 내용은 다음과 같다:</Paragraph>
+      <Paragraph sx={{ paddingLeft: '20px' }}>교육 내용은 다음과 같다:</Paragraph>
       <StyledList>
         <StyledListItem>1) 회사연혁 및 회사조직 소개</StyledListItem>
         <StyledListItem>2) 화장품 원료의 개요</StyledListItem>
@@ -167,7 +167,7 @@ function BF_RMD_GM_04_Content() {
       </StyledList>
 
       <SubsectionTitle sx={{ paddingLeft: '20px' }}>5.1.2 직무교육 (OJT)</SubsectionTitle>
-      <Paragraph>신입업무담당자와 직무 변경된 업무담당자를 대상으로 하는 교육으로 다음 내용에 대해 지도사원이 교육훈련을 실시한다:</Paragraph>
+      <Paragraph sx={{ paddingLeft: '20px' }}>신입업무담당자와 직무 변경된 업무담당자를 대상으로 하는 교육으로 다음 내용에 대해 지도사원이 교육훈련을 실시한다:</Paragraph>
       <StyledList>
         <StyledListItem>1) 품질경영시스템 관련 규정</StyledListItem>
         <StyledListItem>2) 칭량, 제조, 충진 또는 포장관련 업무, 품질관리, 자재관리 방법</StyledListItem>
@@ -177,7 +177,7 @@ function BF_RMD_GM_04_Content() {
       </StyledList>
 
       <SubsectionTitle sx={{ paddingLeft: '20px' }}>5.1.3 기존 업무담당자 교육</SubsectionTitle>
-      <Paragraph>기존 업무담당자들의 품질의식 향상을 위하여 다음과 같이 정기교육을 실행한다:</Paragraph>
+      <Paragraph sx={{ paddingLeft: '20px' }}>기존 업무담당자들의 품질의식 향상을 위하여 다음과 같이 정기교육을 실행한다:</Paragraph>
       <StyledList>
         <StyledListItem>1) 실시 주기: 최소 1회/년 (필요에 따라 추가 교육 실시 가능)</StyledListItem>
         <StyledListItem>2) 대상: 제조, 충진 및 포장, 원자재, 완제품 보관관리 및 품질관리 관련 전 업무담당자</StyledListItem>

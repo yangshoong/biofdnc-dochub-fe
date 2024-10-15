@@ -289,8 +289,8 @@ function BF_RMD_HM_09_Content() {
     <TableBody>
       <TableRow>
         <TableCell rowSpan={2}>2.1 제조탱크</TableCell>
-        <TableCell>세척방법</TableCell>
-        <TableCell>
+        <TableCell sx={{ width: '15%' }}>세척방법</TableCell>
+        <TableCell sx={{ width: '65%' }}>
           <ol type="a">
             <li>제품 배출 후 헤라로 제품 잔여물을 제거한다.</li>
             <li>상수를 탱크에 넣고 80'C로 가온 후 30분 교반한다.</li>
