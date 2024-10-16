@@ -190,27 +190,42 @@ function BF_RMD_GM_10_Content() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell rowSpan={5}>제조 및 실험시 발생한 폐기물</TableCell>
-              <TableCell>일반 폐기물</TableCell>
+              <TableCell rowSpan={7}>일반 폐기물</TableCell>
+              <TableCell>종이류: 포장재, 골판지, 폐지 등</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>종이류: 포장재, 골판지 등</TableCell>
+              <TableCell>플라스틱류: 제품용기, PP밴드, 일반 플라스틱 등</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>플라스틱류: 제품용기, PP밴드, 플라스틱 등</TableCell>
+              <TableCell>금속류: 알루미늄 캔, 철 캔, 원료드럼 등</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>금속류: 원료드럼, 기타 금속 등</TableCell>
+              <TableCell>유리류: 일반 유리병, 제품병 등</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>유리류: 제품병, 원료병, 실험초자 등</TableCell>
+              <TableCell>목재류: 폐목재, 나무 팔레트 등</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell rowSpan={3}>유해 폐기물</TableCell>
-              <TableCell>유해 폐기물류: 폐실험약품, 폐윤활유 등</TableCell>
+              <TableCell>실험 소모품: 일회용 장갑, 마스크, 종이타올 등</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>폐 미생물배지</TableCell>
+              <TableCell>기타: 음식물 쓰레기, 일반 쓰레기 등</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell rowSpan={6}>지정 폐기물</TableCell>
+              <TableCell>폐유: 폐윤활유, 폐유기용제 등</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>폐산 및 폐알칼리: 실험실에서 발생한 산성 또는 알칼리성 폐액</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>폐실험약품: 유효기간 경과 또는 사용 불가능한 실험실 약품</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>폐 미생물배지: 실험 후 발생한 미생물 배양 배지</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>실험 소모품: 피펫 팁, 실험용 튜브, 주사기 등</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>폐제품류: 폐 반제품, 폐제품</TableCell>
