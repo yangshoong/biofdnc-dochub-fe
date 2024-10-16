@@ -176,6 +176,47 @@ function BF_RMD_PM_09_Content() {
         <StyledListItem>5.6.6 재검사 결과 "부적합"으로 판정된 제품은 폐기처리 한다.</StyledListItem>
         <StyledListItem>5.6.7 제품 보관 중 포장이 훼손되었거나 장기보관으로 인해 이상이 생겼다고 판단될 경우에는 별도 구분 보관 후 품질보증 부서에 시험의뢰 하고 그 결과에 따라 조치한다.</StyledListItem>
       </StyledList>
+      <SubsectionTitle>5.7 제품 보관</SubsectionTitle>
+      <Paragraph>5.7.1 제품 보관조건</Paragraph>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>구 분</TableCell>
+              <TableCell>조 건</TableCell>
+              <TableCell>비 고</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell>일반 제품</TableCell>
+              <TableCell>온도 : 1 ~ 30℃</TableCell>
+              <TableCell>제품보관소내 보관</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>저온 보관 제품</TableCell>
+              <TableCell>온도 : 15℃ 이하</TableCell>
+              <TableCell>냉장고</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <StyledList>
+        <StyledListItem>5.7.1.1 온습도 상태를 매일 1회 점검하여 기록한다.</StyledListItem>
+      </StyledList>
+      <Paragraph>5.7.2 제품 보관 관리</Paragraph>
+      <StyledList>
+        <StyledListItem>5.7.2.1 혼동의 방지</StyledListItem>
+        <StyledList>
+          <StyledListItem>5.7.2.1.1 각 제품의 종류에 따라 구분하여 보관한다.</StyledListItem>
+          <StyledListItem>5.7.2.1.2 제품 간 적절한 공간과 거리를 확보한다.</StyledListItem>
+        </StyledList>
+        <StyledListItem>5.7.2.2 오염 및 변질의 예방</StyledListItem>
+        <StyledList>
+          <StyledListItem>5.7.2.2.1 제품은 창고바닥이 아닌 파렛트/선반 위에 보관하고 통풍, 방습 및 청소가 용이한 장소에 보관한다.</StyledListItem>
+          <StyledListItem>5.7.2.2.2 별도로 저장방법이 지정된 제품은 지정사항을 준수한다.</StyledListItem>
+        </StyledList>
+      </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       

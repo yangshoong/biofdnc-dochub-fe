@@ -138,29 +138,19 @@ function BF_RMD_PM_04_Content() {
       
       <SectionTitle>4. 업무 절차</SectionTitle>
       <SubsectionTitle>4.1 원료 인수 및 입고 검수</SubsectionTitle>
-      <Paragraph>
-        4.1.1 원료입고 담당자는 원료 인수 시 다음 사항을 확인하고 이상이 없을 경우, 거래명세서에 외관확인 도장 또는 기재 후 서명하고, 입고 내역을 ERP에 입력한다.
-      </Paragraph>
       <StyledList>
-        <StyledListItem>4.1.1.1 입고품이 거래 명세서, 발주서 등의 구매 문서와 일치하는지 여부</StyledListItem>
-        <StyledListItem>4.1.1.2 원료의 포장 용기 및 박스의 파손 여부</StyledListItem>
-        <StyledListItem>4.1.1.3 원료의 오염 흔적</StyledListItem>
+        <StyledListItem>4.1.1 원료입고 담당자는 원료 인수 시 다음 사항을 확인하고 이상이 없을 경우, 거래명세서에 외관확인 도장 또는 기재 후 서명하고, 입고 내역을 ERP에 입력한다.</StyledListItem>
+        <StyledList sx={{ paddingLeft: '40px' }}>
+          <StyledListItem>4.1.1.1 입고품이 거래 명세서, 발주서 등의 구매 문서와 일치하는지 여부</StyledListItem>
+          <StyledListItem>4.1.1.2 원료의 포장 용기 및 박스의 파손 여부</StyledListItem>
+          <StyledListItem>4.1.1.3 원료의 오염 흔적</StyledListItem>
+        </StyledList>
+        <StyledListItem>만일 원료에 이상이 있을 경우 협력업체에 통보하여 반품 또는 교환 등의 조치를 취한다</StyledListItem>
+        <StyledListItem>4.1.2 원료 용기 및 외 포장 청소</StyledListItem>
+        <StyledListItem>상기 4.1.1항 확인 결과 적합한 원료는 용기 및 외 포장의 오염물질을 제거한 후 입고한다.</StyledListItem>
+        <StyledListItem>4.1.3 입고검수 결과 적합 원료는 시험중대기소에 보관하고 품질보증부서에 입고검사를 의뢰한다. 입고검사 의뢰 시 협력업체로부터 해당 입고품에 대한 성적서를 입수하여 품질보증 부서에 전달한다.</StyledListItem>
+        <StyledListItem>4.1.4 원료 입고검사 담당자는 입고품에 표시라벨을 부착하여 식별한다.</StyledListItem>
       </StyledList>
-      <Paragraph>
-        만일 원료에 이상이 있을 경우 협력업체에 통보하여 반품 또는 교환 등의 조치를 취한다
-      </Paragraph>
-      <Paragraph>
-        4.1.2 원료 용기 및 외 포장 청소
-      </Paragraph>
-      <Paragraph>
-        상기 4.1.1항 확인 결과 적합한 원료는 용기 및 외 포장의 오염물질을 제거한 후 입고한다. 
-      </Paragraph>
-      <Paragraph>
-        4.1.3 입고검수 결과 적합 원료는 시험중대기소에 보관하고 품질보증부서에 입고검사를 의뢰한다. 입고검사 의뢰 시 협력업체로부터 해당 입고품에 대한 성적서를 입수하여 품질보증 부서에 전달한다.
-      </Paragraph>
-      <Paragraph>
-        4.1.4 원료 입고검사 담당자는 입고품에 표시라벨을 부착하여 식별한다.
-      </Paragraph>
 
       <SubsectionTitle>4.2 원료 검체 채취 및 품질 시험</SubsectionTitle>
       <StyledList>
@@ -210,18 +200,20 @@ function BF_RMD_PM_04_Content() {
         </Table>
       </TableContainer>
       <StyledList>
-        <StyledListItem>4.5.2 온도 및 기타 관리 상태를 매일 1회 점검하여 기록한다.</StyledListItem>
-        <StyledListItem>4.5.3 원료 보관상 유의사항</StyledListItem>
+        <StyledListItem>4.5.1.1 온습도 상태를 매일 1회 점검하여 기록한다.</StyledListItem>
       </StyledList>
-      <Paragraph>4.5.3.1 혼동의 방지</Paragraph>
+      <Paragraph>4.5.2 원료 보관 관리</Paragraph>
       <StyledList>
-        <StyledListItem>4.5.3.1.1 각 원료의 종류, 로트, 입고순서에 따라 구분하여 보관한다.</StyledListItem>
-        <StyledListItem>4.5.3.1.2 원료 간 적절한 공간과 거리를 확보한다.</StyledListItem>
-      </StyledList>
-      <Paragraph>4.5.3.2 오염 및 변질의 예방</Paragraph>
-      <StyledList>
-        <StyledListItem>4.5.3.2.1 원료는 창고바닥이 아닌 파렛트/선반 위에 보관하고 통풍, 방습 및 청소가 용이한 장소에 보관한다.</StyledListItem>
-        <StyledListItem>4.5.3.2.2 별도로 저장방법이 지정된 것은 지정사항을 준수한다.</StyledListItem>
+        <StyledListItem>4.5.2.1 혼동의 방지</StyledListItem>
+        <StyledList>
+          <StyledListItem>4.5.2.1.1 각 원료의 종류에 따라 구분하여 보관한다.</StyledListItem>
+          <StyledListItem>4.5.2.1.2 원료 간 적절한 공간과 거리를 확보한다.</StyledListItem>
+        </StyledList>
+        <StyledListItem>4.5.2.2 오염 및 변질의 예방</StyledListItem>
+        <StyledList>
+          <StyledListItem>4.5.2.2.1 원료는 창고바닥이 아닌 파렛트/선반 위에 보관하고 통풍, 방습 및 청소가 용이한 장소에 보관한다.</StyledListItem>
+          <StyledListItem>4.5.2.2.2 별도로 저장방법이 지정된 것은 지정사항을 준수한다.</StyledListItem>
+        </StyledList>
       </StyledList>
 
       <SubsectionTitle>4.6 원료 출고</SubsectionTitle>
