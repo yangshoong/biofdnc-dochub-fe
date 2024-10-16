@@ -164,6 +164,18 @@ function BF_RMD_PM_09_Content() {
         <StyledListItem>5.5.1 제조담당자는 매 분기당 1회 실재고를 확인한다.</StyledListItem>
         <StyledListItem>5.5.2 만일 실재고가 일치하지 않을 경우 그 원인을 분석하여 조치하고 제조생산책임자에게 보고한다.</StyledListItem>
       </StyledList>
+      <StyledList>
+        <StyledListItem>5.6 제품의 재고 조사 및 사용기한 관리</StyledListItem>
+      </StyledList>
+      <StyledList sx={{ paddingLeft: '40px' }}>
+        <StyledListItem>5.6.1 제품 종류별 사용기한을 설정하여 관리한다.</StyledListItem>
+        <StyledListItem>5.6.2 제조담당자는 매 분기별 제품 입출고 내역과 제품 보관소내의 현품을 비교하여, 재고조사를 한다.</StyledListItem>
+        <StyledListItem>5.6.3 만일 입출고 대장상의 재고와 실재고 상의 재고 차이가 5% 이상 날 경우 그 원인을 분석하고 조치하여, 그 결과를 제조생산책임자에게 보고한다.</StyledListItem>
+        <StyledListItem>5.6.4 재고조사 결과 사용기한에 근접하고 품질이 의심스러운 제품은 품질보증 부서에 의뢰하여 재검사를 실시한다.</StyledListItem>
+        <StyledListItem>5.6.5 재검사 결과 "적합"으로 판정되면 출하 가능한 상태로 관리한다.</StyledListItem>
+        <StyledListItem>5.6.6 재검사 결과 "부적합"으로 판정된 제품은 폐기처리 한다.</StyledListItem>
+        <StyledListItem>5.6.7 제품 보관 중 포장이 훼손되었거나 장기보관으로 인해 이상이 생겼다고 판단될 경우에는 별도 구분 보관 후 품질보증 부서에 시험의뢰 하고 그 결과에 따라 조치한다.</StyledListItem>
+      </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
