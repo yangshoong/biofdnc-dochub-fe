@@ -241,20 +241,6 @@ function BF_RMD_PM_04_Content() {
         <StyledListItem>4.8.2 중량 체크한 데이터를 축척하여 문서로 남겨 모니터링 한다.</StyledListItem>
         <StyledListItem>4.8.3 모니터링 결과 중량편차가 심한 것은 업체변경을 고려한다.</StyledListItem>
       </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>5. 기록관리</SectionTitle>
-      <Paragraph>
-        본 규정을 실행한 결과는 "기록관리규정"에 따라 기록하여 4년간 보관한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>6. 관련문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>6.1 기록관리규정</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

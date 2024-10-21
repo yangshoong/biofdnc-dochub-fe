@@ -167,12 +167,6 @@ function BF_RMD_HM_01_Content() {
         <StyledListItem>6.2.2 점검 결과 문제점 발견 시 외부 방충 전문업체의 지원을 받아 적절한 조치를 취한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 기록 및 문서보관</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 방충 및 방서 점검 결과보고서를 유지한다.</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

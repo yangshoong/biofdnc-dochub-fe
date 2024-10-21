@@ -212,20 +212,13 @@ function BF_RMD_GM_06_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 기록 및 문서 관리</SectionTitle>
+      <SectionTitle>10. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>10.1 본 규정에 의해 작성된 기록은 4년간 보존한다.</StyledListItem>
-        <StyledListItem>10.2 기타사항은 "문서 관리 규정"에 준한다.</StyledListItem>
-      </StyledList>
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>11. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>11.1 연간 내부감사 계획서</StyledListItem>
-        <StyledListItem>11.2 내부감사 일정 계획서</StyledListItem>
-        <StyledListItem>11.3 내부감사 보고서</StyledListItem>
-        <StyledListItem>11.4 시정 및 예방조치 요구서</StyledListItem>
-        <StyledListItem>11.5 내부감사점검표</StyledListItem>
+        <StyledListItem>10.1 연간 내부감사 계획서</StyledListItem>
+        <StyledListItem>10.2 내부감사 일정 계획서</StyledListItem>
+        <StyledListItem>10.3 내부감사 보고서</StyledListItem>
+        <StyledListItem>10.4 시정 및 예방조치 요구서</StyledListItem>
+        <StyledListItem>10.5 내부감사점검표</StyledListItem>
       </StyledList>
     </Box>
   );

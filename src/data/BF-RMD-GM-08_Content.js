@@ -206,21 +206,6 @@ function BF_RMD_GM_08_Content() {
         <StyledListItem>9.2 품질보증책임자는 고객 불만에 대한 재발 방지 대책이 계획대로 실행되었는지 확인한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-
-      <SectionTitle>10. 기록 및 문서보관</SectionTitle>
-      <StyledList>
-        <StyledListItem>10.1 본 규정에 의해 작성된 기록은 ERP 시스템에 4년간 보관한다.</StyledListItem>
-        <StyledListItem>10.2 불만처리 관련 문서의 작성, 검토, 승인, 배포, 개정은 "문서 및 자료관리 규정"에 따른다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-
-      <SectionTitle>11. 관련문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>11.1 "기록 관리 규정"</StyledListItem>
-        <StyledListItem>11.2 "문서 및 자료관리 규정"</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

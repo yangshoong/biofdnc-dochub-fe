@@ -169,16 +169,6 @@ function BF_RMD_GM_05_Content() {
         <StyledListItem>6.2 부적합품은 별도의 식별 표시를 하고 격리 보관한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 기록 및 문서 보관</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 각종 식별번호는 각 제품 및 해당 서류에 기록하여 식별 및 추적성이 보장되도록 관리한다.</StyledListItem>
-        <StyledListItem>7.2 부적합품이 발생하였을 경우 "부적합품 관리 규정"에 준하여 부적합품에 관련된 해당 식별번호를 기록 관리한다.</StyledListItem>
-        <StyledListItem>7.3 소비자 불만 제품이 발생하였을 경우 "불만처리 규정"에 준하여 해당 식별번호를 기록 관리한다.</StyledListItem>
-        <StyledListItem>7.4 모든 기록은 "기록 관리 규정"에 따라 보관한다.</StyledListItem>
-      </StyledList>
-
     </Box>
   );
 }

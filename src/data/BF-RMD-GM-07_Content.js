@@ -220,11 +220,6 @@ function BF_RMD_GM_07_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 기록 보관</SectionTitle>
-      <Paragraph>문서 및 자료관리와 관련된 기록은 "기록 관리 규정"에 따른다.</Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
       <SectionTitle>8. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 문서배포대장</StyledListItem>
