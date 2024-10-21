@@ -186,8 +186,8 @@ function BF_RMD_GM_08_Content() {
       <SectionTitle>7. 불만처리 처리기한</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 고객불만 접수 즉시 품질보증책임자에게 통보한다.</StyledListItem>
-        <StyledListItem>7.2 품질보증책임자는 원인 조사 및 시정조치 계획을 수립하여 대표이사에게 보고한다.</StyledListItem>
-        <StyledListItem>7.3 대표이사는 처리방안을 결정한다.</StyledListItem>
+        <StyledListItem>7.2 품질보증책임자는 관련 부서와 협의하여 원인 조사 및 시정조치 계획을 수립하여 대표이사에게 보고한다.</StyledListItem>
+        <StyledListItem>7.3 대표이사는 보고된 원인 조사 및 시정 조치 계획을 검토하고 승인한다.</StyledListItem>
         <StyledListItem>7.4 업무담당자는 7일 이내에 고객에게 처리 방안을 통보하고 처리한다.</StyledListItem>
       </StyledList>
 
