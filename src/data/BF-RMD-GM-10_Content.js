@@ -154,87 +154,14 @@ function BF_RMD_GM_10_Content() {
           <StyledListItem>4.4.3 폐기물의 용기는 적절한 경우 내용물 및 기타 정보로 적절히 식별한다.</StyledListItem>
           <StyledListItem>4.4.4 폐기물의 처분은 적절한 관리 수준에 의한 합법적인 방법으로 수행한다.</StyledListItem>
         </StyledList>
-        <StyledListItem>4.5 제품 품질 및 안전에 미치는 영향에 따라 폐기물 유형을 분류한 목록을 첨부와 같이 작성하고, 유해 폐기물은 제품에 영향을 미치지 않도록 특별히 보관, 이송 및 처리한다.</StyledListItem>
       </StyledList>
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>5. 폐기물 처리 방법</SectionTitle>
       <StyledList>
-        <StyledListItem>5.1 제조 공정 및 기타 공정 발생 폐기물은 지정된 폐기물 보관 장소에 보관한다.</StyledListItem>
-        <StyledListItem>5.2 반제품 및 제품을 오염시키지 않도록 폐기물을 폐기물 보관 용기에 모아 폐기물 보관 장소에 이동한다.</StyledListItem>
-        <StyledListItem>5.3 폐기물관리 담당자는 폐기물을 폐기물 전문처리 회사에 위탁하여 처리한다.</StyledListItem>
-        <StyledListItem>5.4 폐기물 처리 위탁업체는 위탁하고자 하는 폐기물 처리에 관련된 허가를 소유하고 있는 회사로서 당사와 계약을 체결한다.</StyledListItem>
-        <StyledListItem>5.5 당사 제조 공정 및 품질관리 실험실 등에서 배출되는 폐기물을 옥외 "폐기물 보관 구역"에 보관 후 산업 폐기물 처리업체로 허가를 득하고 당사 협력업체로 선정된 업체에 위탁처리한다.</StyledListItem>
-        <StyledListItem>5.6 위탁처리 결과를 "폐기물 완료 보고서"에 기록하고, 지정 폐기물 처리 내역을 "폐기물 관리법"에 따라 해당 관청에 보고한다.</StyledListItem>
+        <StyledListItem>5.1 발생 폐기물은 지정된 폐기물 보관 장소에 보관한다.</StyledListItem>
+        <StyledListItem>5.2 폐기물관리 담당자는 적절한 방법에 따라 폐기물을 처리한다.</StyledListItem>
       </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>6. 기록 및 문서 관리</SectionTitle>
-      <StyledList>
-        <StyledListItem>6.1 본 규정에 의하여 작성된 기록은 4년간 보관한다.</StyledListItem>
-        <StyledListItem>6.2 기타 사항은 "기록관리 규정"에 따른다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 첨부</SectionTitle>
-      <SubsectionTitle>7.1 폐기물 유형별 목록</SubsectionTitle>
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>구분</TableCell>
-              <TableCell>주된 폐기물</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell rowSpan={7}>일반 폐기물</TableCell>
-              <TableCell>종이류: 포장재, 골판지, 폐지 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>플라스틱류: 제품용기, PP밴드, 일반 플라스틱 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>금속류: 알루미늄 캔, 철 캔, 원료드럼 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>유리류: 일반 유리병, 제품병 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>목재류: 폐목재, 나무 팔레트 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>실험 소모품: 일회용 장갑, 마스크, 종이타올 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>기타: 음식물 쓰레기, 일반 쓰레기 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell rowSpan={6}>지정 폐기물</TableCell>
-              <TableCell>폐유: 폐윤활유, 폐유기용제 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>폐산 및 폐알칼리: 실험실에서 발생한 산성 또는 알칼리성 폐액</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>폐실험약품: 유효기간 경과 또는 사용 불가능한 실험실 약품</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>폐 미생물배지: 실험 후 발생한 미생물 배양 배지</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>실험 소모품: 피펫 팁, 실험용 튜브, 주사기 등</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>폐제품류: 폐 반제품, 폐제품</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-      <SubsectionTitle sx={{ marginTop: '20px' }}>7.2 폐기물 완료 보고서</SubsectionTitle>
 
     </Box>
   );
