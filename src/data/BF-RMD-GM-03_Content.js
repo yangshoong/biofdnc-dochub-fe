@@ -172,7 +172,7 @@ function BF_RMD_GM_03_Content() {
       <SectionTitle>5. 기록의 보관 및 보존</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 문서 기록은 사무실 내 지정된 파일 보관함에 손상, 손실 및 노후로부터 보호될 수 있도록 보관한다.</StyledListItem>
-        <StyledListItem>5.2 디지털 기록은 사용 중인 시스템(ERP, 클라우드 스토리지, 그룹웨어 등)에 안전하게 저장하며, 각 시스템의 백업 정책에 따라 정기적인 백업을 실시한다.</StyledListItem>
+        <StyledListItem>5.2 디지털 기록은 사용 중인 시스템(ERP, 클라우드 스토리지, 그룹웨어 등)에 안전하게 저장한다. 시스템이 백업 기능을 지원하거나 스토리지 형태인 경우, 연 1회 정기적인 백업을 실시한다.</StyledListItem>
         <StyledListItem>5.3 기록은 내용별로 분류 보관한다. 디지털 기록의 경우, 각 시스템에서 제공하는 분류 기능(폴더 구조, 태그, 메타데이터 등)을 활용하여 체계적으로 분류한다.</StyledListItem>
         <StyledListItem>5.4 기록은 생성 시점부터 보존 연한을 설정하여 관리한다.</StyledListItem>
         <StyledListItem sx={{ paddingLeft: '40px' }}>5.4.1 문서 기록의 경우, 보존 연한에 따라 적절히 라벨링하여 관리한다.</StyledListItem>
