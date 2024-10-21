@@ -153,15 +153,12 @@ function BF_RMD_QC_06_Content() {
       <Paragraph>
         별다른 전처리를 하지 않고 채취한 검체를 검액으로 하여 그대로 시험한다.
       </Paragraph>
-      <SubsectionTitle>5.2 수분산 검체</SubsectionTitle>
+      <SubsectionTitle>5.2 원료 검체</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.2.1 수분산 검체란 희석액에 균일한 성상으로 분산 가능한 제형의 검체를 말하며, 수용성 원료, 가용화 제형, O/W (Oil in Water) 유화 제형 등을 포함한다.</StyledListItem>
-        <StyledListItem>5.2.2 검체 1g(ml)에 희석액 9ml을 넣어 10배로 희석하고 필요시 추가로 희석한다.</StyledListItem>
-      </StyledList>
-      <SubsectionTitle>5.3 비수분산 검체</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>5.3.1 비수분산 검체란 희석액에 균일한 성상으로 용이하게 분산되지 않는 제형의 검체를 말하며, 비수용성 원료, W/O (Water in Oil) 유화 제형, 분체 제품 등을 포함한다.</StyledListItem>
-        <StyledListItem>5.3.2 검체 1g(ml)에 분산제(Tween80) 1ml를 넣어 균질화하고 필요 시 유리구슬을 사용한다. 균질화된 검체에 희석액 8ml를 넣어 10배 희석하고 필요시 추가로 희석한다.</StyledListItem>
+        <StyledListItem>5.2.1 원료 검체는 그 특성에 따라 적절한 방법으로 전처리한다.</StyledListItem>
+        <StyledListItem>5.2.2 일반적으로 검체 1g(ml)에 희석액 9ml을 넣어 10배로 희석하고 필요시 추가로 희석한다.</StyledListItem>
+        <StyledListItem>5.2.3 희석액에 균일하게 분산되지 않는 원료의 경우, 분산제(예: Tween80)를 사용하여 균질화할 수 있다.</StyledListItem>
+        <StyledListItem>5.2.4 필요에 따라 유리구슬 등을 사용하여 균질화를 돕는다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
