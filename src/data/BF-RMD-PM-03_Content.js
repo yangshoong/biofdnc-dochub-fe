@@ -150,7 +150,7 @@ function BF_RMD_PM_03_Content() {
       <SubsectionTitle>4.2 입고 절차</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.2.1 발주된 원료, 자재 또는 외주 생산품은 거래명세서와 함께 입고한다. 또한 원료 및 자재는 시험성적서를 첨부하여 입고하도록 한다.</StyledListItem>
-        <StyledListItem>4.2.2 제조담당자는 입고된 구매품에 대하여 거래명세서와 대조하여 일치 여부를 확인하고, 포장 용기 파손 / 오염 여부 확인 후 이상이 없을 경우 품질보증부에 입고검사를 의뢰한다. 만일 이상이 발견되면 해당 공급업체에 통보하여 반품 등의 조치를 취한다.</StyledListItem>
+        <StyledListItem>4.2.2 원료입고담당자는 입고된 구매품에 대하여 거래명세서와 대조하여 일치 여부를 확인하고, 포장 용기 파손 / 오염 여부 확인 후 이상이 없을 경우 품질보증부에 입고검사를 의뢰한다. 만일 이상이 발견되면 해당 공급업체에 통보하여 반품 등의 조치를 취한다.</StyledListItem>
         <StyledListItem>4.2.3 품질관리담당자는 해당 입고검사 기준서에 준하여 품질검사를 실시하고 그 결과를 시험성적서에 기록 관리한다.</StyledListItem>
         <StyledListItem>4.2.4 판정결과 적합품은 입고 처리하고, 부적합품은 "부적합품 관리 규정"에 따라 조치한다.</StyledListItem>
       </StyledList>
