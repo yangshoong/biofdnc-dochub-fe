@@ -141,9 +141,8 @@ function BF_RMD_HM_01_Content() {
       
       <SectionTitle>4. 방충관리 방법</SectionTitle>
       <StyledList>
-        <StyledListItem>4.1 외부 출입구, 작업소 출입구, 원료 및 제품 보관소, 자재 입고 구역에 포충등을 설치한다.</StyledListItem>
-        <StyledListItem>4.2 외벽에 설치된 모든 열리는 창문에는 방충망을 설치한다.</StyledListItem>
-        <StyledListItem>4.3 기타 필요하다고 인정되는 장소에 포충등 및 방충망을 설치한다.</StyledListItem>
+        <StyledListItem>4.1 외부 출입구에 포충등을 설치한다.</StyledListItem>
+        <StyledListItem>4.2 외벽에 설치된 창문에는 방충망을 설치한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
@@ -151,7 +150,6 @@ function BF_RMD_HM_01_Content() {
       <SectionTitle>5. 방서관리</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 외부로 통하는 출입문에는 방서장치를 설치한다.</StyledListItem>
-        <StyledListItem>5.2 출입문은 틈새가 생기지 않도록 하여 쥐의 침입을 방지한다.</StyledListItem>
         <StyledListItem>5.3 파이프나 덕트가 벽을 통과한 곳은 밀폐시킨다.</StyledListItem>
         
       </StyledList>
@@ -160,7 +158,7 @@ function BF_RMD_HM_01_Content() {
       <SectionTitle>6. 방충, 방서 시설의 점검 및 관리</SectionTitle>
       <SubsectionTitle>6.1 정기 점검</SubsectionTitle>
       <Paragraph>
-        업무담당자는 방충 및 방서 시설의 상태를 주 1회 이상 점검한다. 점검 대상에는 방서장치, 방충망, 포충등 등이 포함된다. 점검 결과 문제점 발견 시 제조생산책임자에게 보고하고 적절한 조치를 취한다.
+        업무담당자는 방충 및 방서 시설의 상태를 주 1회 점검한다. 점검 대상에는 방서장치, 방충망, 포충등 등이 포함된다. 점검 결과 문제점 발견 시 제조생산책임자에게 보고하고 적절한 조치를 취한다.
       </Paragraph>
 
       <SubsectionTitle>6.2 방충 관리 위탁 서비스</SubsectionTitle>

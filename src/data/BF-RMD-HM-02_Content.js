@@ -161,22 +161,6 @@ function BF_RMD_HM_02_Content() {
               <TableCell>제조구역</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>작업복</TableCell>
-              <TableCell>폴리에스텔 + 면</TableCell>
-              <TableCell>하늘색/회색</TableCell>
-              <TableCell>상·하의 분리</TableCell>
-              <TableCell>없음</TableCell>
-              <TableCell>일반구역</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>위생복(외부인용)</TableCell>
-              <TableCell>폴리에스텔 또는 방진 Paper</TableCell>
-              <TableCell>흰색</TableCell>
-              <TableCell>상하의 분리</TableCell>
-              <TableCell>없음</TableCell>
-              <TableCell>제조구역</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>위생모</TableCell>
               <TableCell>폴리에스텔 + 면</TableCell>
               <TableCell>흰색</TableCell>
@@ -185,12 +169,12 @@ function BF_RMD_HM_02_Content() {
               <TableCell>제조구역</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>위생화/안전화</TableCell>
+              <TableCell>위생화</TableCell>
               <TableCell>폴리에스텔 + 면 또는 고무</TableCell>
-              <TableCell>위생화 : 흰색, 안전화 : 검정색</TableCell>
+              <TableCell>흰색</TableCell>
               <TableCell>꺾어신지 않음</TableCell>
               <TableCell>없음</TableCell>
-              <TableCell>제조구역(위생화), 일반구역(안전화)</TableCell>
+              <TableCell>제조구역</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>실험가운</TableCell>
@@ -207,36 +191,31 @@ function BF_RMD_HM_02_Content() {
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>5. 위생복 착용 지침</SectionTitle>
-      <SubsectionTitle>5.1 위생화 및 위생복 탈의</SubsectionTitle>
+      <SubsectionTitle>5.1 위생화 및 위생복 착용</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.1.1 현관에 설치된 신발장에서 실외화를 슬리퍼로 갈아신고, 현장에 입실 시 위생화로 갈아 신는다.</StyledListItem>
-        <StyledListItem>5.1.2 탈의실에서 실외복을 상기 4항에 규정된 위생복으로 다음과 같이 갈아 입는다.</StyledListItem>
+        <StyledListItem>5.1.1 작업장 입장 전 신발장에서 외부 신발을 위생화로 갈아 신는다.</StyledListItem>
+        <StyledListItem>5.1.2 탈의장에서 외부 의복을 위생복으로 환복한 후 작업장에 입장한다.</StyledListItem>
         <StyledList>
           <StyledListItem>5.1.2.1 내의 등 모든 개인 복장이 위생복 밖으로 나오지 않도록 착용한다.</StyledListItem>
           <StyledListItem>5.1.2.2 상의가 하의 겉으로 나오도록 착용한다.</StyledListItem>
           <StyledListItem>5.1.2.3 머리카락이 밖으로 나오지 않도록 위생모를 착용한다.</StyledListItem>
           <StyledListItem>5.1.2.4 미생물 실험실, 칭량실, 제조실, 충진실 등의 공정을 출입 시에는 필요 시 마스크, 장갑을 착용한다.</StyledListItem>
-          <StyledListItem>5.1.2.5 외래 방문객은 상기 4항에 규정된 외부인용 위생복을 착용 후에 작업장 출입을 허용한다.</StyledListItem>
         </StyledList>
       </StyledList>
       <SubsectionTitle>5.2 구역간 이동 시 위생복 착용</SubsectionTitle>
       <StyledList>
         <StyledListItem>5.2.1 제조구역 업무담당자가 일반구역으로 이동 시에는 탈의실에서 위생복을 해당 구역에 맞는 작업복 또는 실외복으로 교체한 후 이동한다.</StyledListItem>
-        <StyledListItem>5.2.2 일반구역에서 제조구역으로 출입할 경우에는 상기 4항에 따라 위생복 및 위생화로 갱의한 후 출입한다.</StyledListItem>
+        <StyledListItem>5.2.2 일반구역에서 제조구역으로 출입할 경우에는 위생복 및 위생화로 갱의한 후 출입한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>6. 위생복 관리 지침</SectionTitle>
       <SubsectionTitle>6.1 구입 및 유지관리</SubsectionTitle>
-      <Paragraph>
-        위생복을 1인당 2벌 구입하여, 적절한 시기에 세탁하여 교체할 수 있도록 한다.
-      </Paragraph>
       <SubsectionTitle>6.2 세탁관리</SubsectionTitle>
       <StyledList>
         <StyledListItem>6.2.1 위생복은 최소 매주 1회 세탁한다.</StyledListItem>
         <StyledListItem>6.2.2 세탁은 정해진 일정마다 개인별로 청결히 세탁을 한다.</StyledListItem>
-        <StyledListItem>6.2.3 세탁이 완료된 위생복은 각 작업장 위생관리 담당자가 청결상태를 점검하여 "작업장 위생관리 기록서"에 기록한다. 점검 결과 세탁이 불완전하다고 판정될 경우 출입을 통제한 후 재세탁하도록 한다.</StyledListItem>
       </StyledList>
     </Box>
   );
