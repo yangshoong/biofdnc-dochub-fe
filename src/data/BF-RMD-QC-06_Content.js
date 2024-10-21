@@ -122,12 +122,12 @@ function BF_RMD_QC_06_Content() {
       </StyledList>
       <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.2.1 정제수 및 제품의 미생물시험 및 제조소 공정의 낙하균 시험에 대한 총괄 책임을 가지며 미생물 시험 담당자를 관리감독한다.</StyledListItem>
+        <StyledListItem>3.2.1 정제수 및 제품의 미생물시험에 대한 총괄 책임을 가지며 미생물 시험 담당자를 관리감독한다.</StyledListItem>
         <StyledListItem>3.2.2 미생물 시험 결과를 확인하고 이에 대한 적부 판정의 책임을 진다.</StyledListItem>
       </StyledList>
       <SubsectionTitle>3.3 품질관리담당자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.3.1 정제수 및 제품 그리고 낙하균의 미생물 시험 업무를 수행하며 그 결과를 기록, 확인, 보고하고 해당 부서에 통보한다.</StyledListItem>
+        <StyledListItem>3.3.1 정제수 및 제품 미생물 시험 업무를 수행하며 그 결과를 기록, 확인, 보고하고 해당 부서에 통보한다.</StyledListItem>
         <StyledListItem>3.3.2 시험에 필요한 배지, 시약 등을 유지, 관리한다.</StyledListItem>
         <StyledListItem>3.3.3 미생물 실험실, 크린벤치 등 미생물 시험과 관련된 실험 설비를 관리한다.</StyledListItem>
       </StyledList>

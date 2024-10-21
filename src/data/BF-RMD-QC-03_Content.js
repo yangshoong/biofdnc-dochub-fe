@@ -251,7 +251,7 @@ function BF_RMD_QC_03_Content() {
       <SectionTitle>8. 온도계 및 인큐베이터 관리</SectionTitle>
       <SubsectionTitle>8.1 온도계 관리</SubsectionTitle>
       <StyledList>
-        <StyledListItem>8.1.1 모든 온도계는 연 1회 이상 국가공인기관 또는 공인된 외부 검교정 기관에 의뢰하여 검교정을 실시한다.</StyledListItem>
+        <StyledListItem>8.1.1 표준 온도계는 연 1회 이상 국가공인기관 또는 공인된 외부 검교정 기관에 의뢰하여 검교정을 실시한다.</StyledListItem>
         <StyledListItem>8.1.2 검교정된 표준 온도계를 기준으로 다른 온도계들의 정확도를 주기적으로 비교 점검한다.</StyledListItem>
         <StyledListItem>8.1.3 온도계의 사용 범위와 정확도를 고려하여 적절한 검교정 주기를 설정한다.</StyledListItem>
         <StyledListItem>8.1.4 온도계의 검교정 결과는 기록하고 보관한다.</StyledListItem>
@@ -268,9 +268,10 @@ function BF_RMD_QC_03_Content() {
       
       <SectionTitle>9. 클린벤치 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>9.1 클린벤치는 외부 검사 기관에 의뢰하여 검교정을 실시한다.</StyledListItem>
-        <StyledListItem>9.2 클린벤치의 필터는 주기적으로 교환하며, 교환 일자를 기록한다.</StyledListItem>
-        <StyledListItem>9.3 사용 전후 UV 램프를 이용하여 멸균 처리를 실시한다.</StyledListItem>
+        <StyledListItem>9.1 필터 교체: HEPA 필터는 12-18개월마다, 프리필터는 3-6개월마다 또는 육안으로 오염이 확인될 때 교체한다.</StyledListItem>
+        <StyledListItem>9.2 UV 램프: 5,000-6,000 작동 시간 후 또는 매년 교체하며, 사용 전후 멸균 처리한다.</StyledListItem>
+        <StyledListItem>9.3 교체 주기는 제조업체 권장사항, 사용 빈도, 환경 조건에 따라 조정할 수 있다.</StyledListItem>
+        <StyledListItem>9.4 클린벤치 관리는 필요시 외부 검사 기관에 의뢰하여 위탁할 수 있다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
@@ -291,12 +292,10 @@ function BF_RMD_QC_03_Content() {
       
       <SectionTitle>12. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>첨부 1) 일일 저울 점검표 (품질)</StyledListItem>
-        <StyledListItem>첨부 2) 일일 저울 점검표 (생산)</StyledListItem>
-        <StyledListItem>첨부 3) 검교정 주기표</StyledListItem>
-        <StyledListItem>첨부 4) pH미터 캘리브레이션 기록표</StyledListItem>
-        <StyledListItem>첨부 5) 인큐베이터 온도 점검표</StyledListItem>
-        <StyledListItem>첨부 6) 클린벤치 필터 교환 기록표</StyledListItem>
+        <StyledListItem>첨부 1) 저울 점검기록서 </StyledListItem>
+        <StyledListItem>첨부 2) 저울 검교정 성적서</StyledListItem>
+        <StyledListItem>첨부 3) pH미터 교정 기록서</StyledListItem>
+        <StyledListItem>첨부 4) 클린벤치 점검 고서</StyledListItem>
       </StyledList>
     </Box>
   );

@@ -29,20 +29,7 @@ const RMDStandards = [
       { id: 'BF-RMD-HM-09', title: '설비 기구 세척 및 소독관리 규정'},
     ],
   },
-  {
-    category: '품질관리기준서',
-    items: [
-      { id: 'BF-RMD-QC-01', title: '검체의 채취 및 보관 규정'},
-      { id: 'BF-RMD-QC-02', title: '일탈 관리 규정'},
-      { id: 'BF-RMD-QC-03', title: '계측기 검교정 관리 규정'},
-      { id: 'BF-RMD-QC-04', title: '제조용수 시험관리 규정'},
-      { id: 'BF-RMD-QC-05', title: '부자재 입고검사 규정'},
-      { id: 'BF-RMD-QC-06', title: '미생물시험 규정'},
-      { id: 'BF-RMD-QC-08', title: '시약 관리 규정'},
-      { id: 'BF-RMD-QC-09', title: '표준품관리규정'},
-      { id: 'BF-RMD-QC-10', title: '안정성시험규정'},
-    ],
-  },
+  
   {
     category: '제조관리기준서',
     items: [
@@ -60,7 +47,21 @@ const RMDStandards = [
       { id: 'BF-RMD-PM-13', title: '제조 공정검사 및 관리 규정'},
       { id: 'BF-RMD-PM-14', title: '라벨 관리 규정'},
     ],
-  }
+  },
+  {
+    category: '품질관리기준서',
+    items: [
+      { id: 'BF-RMD-QC-01', title: '검체의 채취 및 보관 규정' },
+      { id: 'BF-RMD-QC-02', title: '일탈 관리 규정' },
+      { id: 'BF-RMD-QC-03', title: '계측기 검교정 관리 규정' },
+      { id: 'BF-RMD-QC-04', title: '제조용수 시험관리 규정' },
+      { id: 'BF-RMD-QC-05', title: '부자재 입고검사 규정' },
+      { id: 'BF-RMD-QC-06', title: '미생물시험 규정' },
+      { id: 'BF-RMD-QC-08', title: '시약 관리 규정' },
+      { id: 'BF-RMD-QC-09', title: '표준품관리규정' },
+      { id: 'BF-RMD-QC-10', title: '안정성시험규정' },
+    ],
+  },
 ];
 
 export default RMDStandards;

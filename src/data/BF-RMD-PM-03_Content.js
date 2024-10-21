@@ -190,7 +190,6 @@ function BF_RMD_PM_03_Content() {
         <StyledListItem>8.2 품질보증책임자는 수시로 공급업체 변동사항을 파악하여 품질에 영향을 주는 사항이 있을 경우 관련 부서와 협의하여 대책을 수립한다.</StyledListItem>
         <StyledListItem>8.3 원료, 자재 및 외주생산 공급업체가 생산조건, 설비 등을 변경할 경우 변경 스펙 및 견본을 자사에 송부하도록 요구한다.</StyledListItem>
         <StyledListItem>8.4 품질보증책임자는 "변경관리규정"에 따라 송부 받은 스펙과 견본을 충분히 검토 및 검증한 후 변경 안의 시행여부를 통보한다.</StyledListItem>
-        <StyledListItem>8.5 검교정 위탁업체는 국가 공인 검교정 업체로 등록되고, KOLAS 인증된 업체로 선정한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
@@ -212,8 +211,7 @@ function BF_RMD_PM_03_Content() {
       
       <SectionTitle>11. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>첨부1) 연간 공급업체 평가계획 및 실시표</StyledListItem>
-        <StyledListItem>첨부2) 공급업체 평가표</StyledListItem>
+        <StyledListItem>첨부1) 공급업체 평가표</StyledListItem>
       </StyledList>
     </Box>
   );
