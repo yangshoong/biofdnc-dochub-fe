@@ -219,30 +219,6 @@ function BF_RMD_PM_12_Content() {
         <StyledListItem>8.2.3 필요시 시정 조치를 실시하고 그 내용을 ERP 시스템에 기록한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>9. 문서 및 기록 관리</SectionTitle>
-      <SubsectionTitle>9.1 관련 문서 목록</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>9.1.1 입고 기록</StyledListItem>
-        <StyledListItem>9.1.2 출고 기록</StyledListItem>
-        <StyledListItem>9.1.3 재고 조사 보고서</StyledListItem>
-        <StyledListItem>9.1.4 보관 환경 모니터링 기록</StyledListItem>
-        <StyledListItem>9.1.5 재고 불일치 조사 보고서</StyledListItem>
-      </StyledList>
-      <SubsectionTitle>9.2 기록 보관 기간 및 방법</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>9.2.1 모든 기록은 전자문서 형태로 ERP 시스템에 보관한다.</StyledListItem>
-        <StyledListItem>9.2.2 기록의 보관 기간은 최소 3년으로 한다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>10. 예외 사항 처리</SectionTitle>
-      <StyledList>
-        <StyledListItem>10.1 시스템 장애 발생 시 수기로 입출고 및 재고 관리를 실시하고, 시스템 복구 후 즉시 ERP에 입력한다.</StyledListItem>
-        <StyledListItem>10.2 긴급 출고가 필요한 경우, 제조생산책임자의 승인 하에 절차를 간소화할 수 있으며, 사후에 관련 기록을 보완한다.</StyledListItem>
-      </StyledList>
 
     </Box>
   );

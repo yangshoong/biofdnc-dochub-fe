@@ -238,19 +238,7 @@ function BF_RMD_PM_13_Content() {
         </Table>
       </TableContainer>
 
-      <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>6. 기록 및 문서 관리</SectionTitle>
-      <Paragraph>
-        6.1 본 규정에 의해 발행된 공정 검사기록은 4년간 보관한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 첨부</SectionTitle>
-      <Paragraph>
-        첨부1) 공정 검사기록 양식
-      </Paragraph>
     </Box>
   );
 }
