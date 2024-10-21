@@ -176,7 +176,7 @@ function BF_RMD_QC_09_Content() {
       </StyledList>
       <SubsectionTitle>7.3 제품</SubsectionTitle>
       <StyledList>
-        <StyledListItem>7.3.1 표준품 (초도 포장품 및 교체품): 1개</StyledListItem>
+        <StyledListItem>7.3.1 표준품 (초도 제품 또는 교체품): 1개</StyledListItem>
         <StyledListItem>7.3.2 관리품: 1개</StyledListItem>
       </StyledList>
 
@@ -202,20 +202,6 @@ function BF_RMD_QC_09_Content() {
         <StyledListItem>8.4.5 교체주기 내에도 표준품의 품질에 이상이 발견될 경우, 즉시 새로운 표준품으로 교체한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>9. 기록 및 문서 관리</SectionTitle>
-      <StyledList>
-        <StyledListItem>9.1 제품 및 원료는 각 해당 표준품 관리대장에 기록, 관리한다.</StyledListItem>
-        <StyledListItem>9.2 본 규정에 의해 처리된 문서는 명확한 기록, 관리, 유지하여야 하며, 기타사항은 "기록 관리 규정"에 준한다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>10. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>첨부1) 표준품 관리 대장 (제품)</StyledListItem>
-      </StyledList>
     </Box>
   );
 }
