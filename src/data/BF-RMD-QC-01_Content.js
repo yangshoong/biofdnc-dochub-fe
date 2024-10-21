@@ -240,9 +240,9 @@ function BF_RMD_QC_01_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>13. 관리품의 보관 기간</SectionTitle>
+      <SectionTitle>13. 검체의 보관 기간</SectionTitle>
       <StyledList>
-        <StyledListItem>13.1 원료 및 제품의 검체는 실온에서 제품 사용기한 후 1년간 보관한다.</StyledListItem>
+        <StyledListItem>13.1 원료 및 제품의 검체는 해당 제품의 유효기간까지 보관한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
