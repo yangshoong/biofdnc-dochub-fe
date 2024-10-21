@@ -381,8 +381,7 @@ function BF_RMD_QC_06_Content() {
       
       <SectionTitle>11. 기록 및 문서보관</SectionTitle>
       <StyledList>
-        <StyledListItem>11.1 미생물 시험 결과는 각 시험 성적서에 기록하며 이를 4년간 보관한다.</StyledListItem>
-        <StyledListItem>11.2 기타사항은 "기록 관리 규정"에 준한다.</StyledListItem>
+        <StyledListItem>11.1 미생물 시험 결과는 각 시험 성적서에 기록한다.</StyledListItem>
       </StyledList>
     </Box>
   );

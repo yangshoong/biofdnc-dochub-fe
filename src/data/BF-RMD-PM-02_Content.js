@@ -185,14 +185,7 @@ function BF_RMD_PM_02_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 기록 및 문서보관</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 시설 및 설비관리 실행 기록은 "기록 관리 규정"에 따라 4년간 보관한다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>8. 첨부</SectionTitle>
+      <SectionTitle>7. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부 1) 설비 및 기기 이력카드</StyledListItem>
         <StyledListItem>첨부 2) 설비 및 기기 등록대장</StyledListItem>

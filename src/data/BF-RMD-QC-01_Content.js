@@ -252,12 +252,6 @@ function BF_RMD_QC_01_Content() {
         검사시험 후 및 보관기간이 지난 관리품은 "폐기물 관리 규정"에 준하여 폐기한다.
       </Paragraph>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>15. 기록 및 문서 관리</SectionTitle>
-      <Paragraph>
-        본 규정에 의해 처리된 문서는 명확한 기록, 관리, 유지하여야 하며, 기타사항은 "기록 관리 규정"에 준한다.
-      </Paragraph>
     </Box>
   );
 }

@@ -177,7 +177,7 @@ function BF_RMD_QC_04_Content() {
       <SectionTitle>7. 정제수 품질관리 기준</SectionTitle>
       <SubsectionTitle>7.1 정제수는 다음의 기준에 따라 관리한다:</SubsectionTitle>
       <StyledList>
-        <StyledListItem>- 주간 검사: 성상(무색, 무취), PW(4이하), RO(15이상), pH(5.0~7.0)</StyledListItem>
+        <StyledListItem>- 주간 검사: 성상(무색, 무취), 전기전도도(PW, 4.0 μS/cm 이하), 역삼투압 제거율(RO, 15%이상), pH(5.0~7.0)</StyledListItem>
         <StyledListItem>- 월간 검사: 성상, pH, 순도, 미생물(100 cfu/ml 이하)</StyledListItem>
       </StyledList>
 
@@ -195,14 +195,7 @@ function BF_RMD_QC_04_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>9. 기록 및 문서 관리</SectionTitle>
-      <Paragraph>
-        본 규정에 의해 작성된 기록은 "기록관리 규정"에 따라 관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>10. 첨부</SectionTitle>
+      <SectionTitle>9. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 주간 정제수 시험일지</StyledListItem>
         <StyledListItem>첨부2) 월간 정제수 시험일지</StyledListItem>

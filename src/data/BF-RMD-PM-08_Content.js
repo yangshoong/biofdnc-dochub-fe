@@ -161,12 +161,7 @@ function BF_RMD_PM_08_Content() {
         <StyledListItem>7.3 반제품의 식별 및 추적성 유지를 위해 출고 기록 관리</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>8. 기록관리</SectionTitle>
-      <Paragraph>
-        "반제품 관리 규정" 실행 기록은 "기록관리규정"에 따라 관리.
-      </Paragraph>
     </Box>
   );
 }

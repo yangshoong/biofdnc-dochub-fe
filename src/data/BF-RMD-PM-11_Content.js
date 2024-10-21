@@ -185,11 +185,10 @@ function BF_RMD_PM_11_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 기록 및 문서보관</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 부적합 보고서는 4년간 보관한다.</StyledListItem>
-        <StyledListItem>7.2 기타 사항은 "기록관리규정"에 준한다.</StyledListItem>
-      </StyledList>
+      <SectionTitle>7. 첨부</SectionTitle>
+      <Paragraph>
+        첨부 1) 부적합품 관리 보고서
+      </Paragraph>
     </Box>
   );
 }

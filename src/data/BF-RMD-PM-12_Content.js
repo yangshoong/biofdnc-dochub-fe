@@ -244,25 +244,6 @@ function BF_RMD_PM_12_Content() {
         <StyledListItem>10.2 긴급 출고가 필요한 경우, 제조생산책임자의 승인 하에 절차를 간소화할 수 있으며, 사후에 관련 기록을 보완한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>11. 관련 규정</SectionTitle>
-      <StyledList>
-        <StyledListItem>11.1 원료관리 규정</StyledListItem>
-        <StyledListItem>11.2 부자재 관리 규정</StyledListItem>
-        <StyledListItem>11.3 반제품 관리 규정</StyledListItem>
-        <StyledListItem>11.4 제품 관리 규정</StyledListItem>
-        <StyledListItem>11.5 문서 및 자료관리 규정</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>12. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>12.1 입고 라벨 양식</StyledListItem>
-        <StyledListItem>12.2 재고 조사 체크리스트</StyledListItem>
-        <StyledListItem>12.3 보관 환경 모니터링 체크리스트</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

@@ -202,14 +202,7 @@ function BF_RMD_PM_03_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 기록 및 문서보관</SectionTitle>
-      <Paragraph>
-        본 규정에 의해 처리된 품질기록은 "기록관리규정"에 따라 관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>11. 첨부</SectionTitle>
+      <SectionTitle>10. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 공급업체 평가표</StyledListItem>
       </StyledList>

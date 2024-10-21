@@ -182,14 +182,7 @@ function BF_RMD_HM_07_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>5. 기록관리</SectionTitle>
-      <Paragraph>
-        본 규정을 실행한 결과 기록은 "기록관리 규정"에 따라 관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 첨부</SectionTitle>
+      <SectionTitle>5. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 작업장 청소 및 위생점검 기록서</StyledListItem>
       </StyledList>

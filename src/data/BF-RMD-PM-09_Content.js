@@ -239,12 +239,6 @@ function BF_RMD_PM_09_Content() {
         <StyledListItem>6.1.5 출하 기록을 유지하고 관리한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 기록관리</SectionTitle>
-      <Paragraph>
-        제품 관리 규정 실행 기록은 "기록관리규정"에 따라 관리한다.
-      </Paragraph>
     </Box>
   );
 }

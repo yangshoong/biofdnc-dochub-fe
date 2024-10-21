@@ -177,19 +177,6 @@ function BF_RMD_PM_05_Content() {
         <StyledListItem>5.4.2 화재 및 도난 방지를 위한 적절한 조치를 취한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>6. 기록관리</SectionTitle>
-      <Paragraph>
-        본 규정을 실행한 결과 기록은 "기록관리규정"에 따라 관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 관련문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 기록관리규정</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

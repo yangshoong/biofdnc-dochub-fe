@@ -248,20 +248,11 @@ function BF_RMD_QC_03_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>8. 온도계 및 인큐베이터 관리</SectionTitle>
-      <SubsectionTitle>8.1 온도계 관리</SubsectionTitle>
+      <SectionTitle>8. 인큐베이터 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>8.1.1 표준 온도계는 연 1회 이상 국가공인기관 또는 공인된 외부 검교정 기관에 의뢰하여 검교정을 실시한다.</StyledListItem>
-        <StyledListItem>8.1.2 검교정된 표준 온도계를 기준으로 다른 온도계들의 정확도를 주기적으로 비교 점검한다.</StyledListItem>
-        <StyledListItem>8.1.3 온도계의 사용 범위와 정확도를 고려하여 적절한 검교정 주기를 설정한다.</StyledListItem>
-        <StyledListItem>8.1.4 온도계의 검교정 결과는 기록하고 보관한다.</StyledListItem>
-      </StyledList>
-      <SubsectionTitle>8.2 인큐베이터 관리</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>8.2.1 인큐베이터에 사용되는 온도계는 8.1항의 온도계 관리 규정을 따른다.</StyledListItem>
-        <StyledListItem>8.2.2 인큐베이터의 온도를 매일 점검하고 기록한다.</StyledListItem>
-        <StyledListItem>8.2.3 인큐베이터의 온도 편차가 허용 범위를 벗어날 경우, 즉시 조치를 취하고 그 내용을 기록한다.</StyledListItem>
-        <StyledListItem>8.2.4 인큐베이터의 성능을 주기적으로 점검하고, 필요시 전문 업체를 통해 정비를 실시한다.</StyledListItem>
+        <StyledListItem>8.1 인큐베이터는 IoT 온도계를 사용하여 실시간으로 온도를 모니터링하고 관리한다.</StyledListItem>
+        <StyledListItem>8.2 IoT 온도계는 클라우드 시스템과 연동하여 온도 데이터를 자동으로 기록하고 저장한다.</StyledListItem>
+        <StyledListItem>8.3 설정된 온도 범위를 벗어날 경우, 담당자에게 즉시 알림이 전송되도록 설정한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
@@ -276,26 +267,12 @@ function BF_RMD_QC_03_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 기록관리</SectionTitle>
-      <Paragraph>
-        본 규정을 실행한 결과 기록은 "기록관리 규정"에 따라 관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>11. 관련 문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>11.1 기록관리 규정</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>12. 첨부</SectionTitle>
+      <SectionTitle>10. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부 1) 저울 점검기록서 </StyledListItem>
         <StyledListItem>첨부 2) 저울 검교정 성적서</StyledListItem>
         <StyledListItem>첨부 3) pH미터 교정 기록서</StyledListItem>
-        <StyledListItem>첨부 4) 클린벤치 점검 고서</StyledListItem>
+        <StyledListItem>첨부 4) 클린벤치 점검 기록서</StyledListItem>
       </StyledList>
     </Box>
   );

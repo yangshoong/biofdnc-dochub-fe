@@ -223,14 +223,7 @@ function BF_RMD_PM_10_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>9. 기록 및 문서보관</SectionTitle>
-      <Paragraph>
-        9.1 본 절차에 의해 발행된 "변경관리 보고서"는 4년간 보존한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>10. 첨부</SectionTitle>
+      <SectionTitle>9. 첨부</SectionTitle>
       <Paragraph>
         첨부 1) 변경관리 보고서
       </Paragraph>

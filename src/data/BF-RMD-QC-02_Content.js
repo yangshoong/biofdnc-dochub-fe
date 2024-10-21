@@ -193,21 +193,8 @@ function BF_RMD_QC_02_Content() {
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
-      <SectionTitle>8. 기록 및 문서 관리</SectionTitle>
-      <StyledList>
-        <StyledListItem>8.1 본 규정에 의해 발행된 "일탈조사 보고서"는 4년간 보관한다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>9. 관련 문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>9.1 부적합품 관리 규정</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>10. 첨부</SectionTitle>
+      <SectionTitle>8. 첨부</SectionTitle>
       <Paragraph>
         첨부1) 일탈조사 보고서
       </Paragraph>

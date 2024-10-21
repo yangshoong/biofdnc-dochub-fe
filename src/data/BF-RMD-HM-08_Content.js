@@ -281,14 +281,7 @@ function BF_RMD_HM_08_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 기록 및 문서 보관</SectionTitle>
-      <Paragraph>
-        본 규정에 의해 처리된 문서는 명확한 기록, 관리, 유지하여야 하며, 기타 사항은 "기록 관리 규정"에 준한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>11. 첨부</SectionTitle>
+      <SectionTitle>10. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 청소 및 소독에 사용되는 소독제/세제</StyledListItem>
       </StyledList>

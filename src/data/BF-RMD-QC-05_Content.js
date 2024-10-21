@@ -159,9 +159,9 @@ function BF_RMD_QC_05_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>6. 기록 및 문서보관</SectionTitle>
+      <SectionTitle>6. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>6.1 작성된 "자재 입고검사 체크리스트"는 4년간 보존한다.</StyledListItem>
+        <StyledListItem>첨부 1) 자재 입고검사 체크리스트</StyledListItem>
       </StyledList>
 
     </Box>

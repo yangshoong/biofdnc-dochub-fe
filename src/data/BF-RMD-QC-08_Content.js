@@ -164,27 +164,6 @@ function BF_RMD_QC_08_Content() {
         <StyledListItem>7.4 이물혼입, 교차오염 등으로 사용할 수 없거나 유효기간이 경과한 것은 폐수처리 수거용 폐수배관에 버린다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>8. 기록 및 문서보관</SectionTitle>
-      <Paragraph>
-        8.1 시액 및 시약 관리 기록은 "기록관리 규정"에 준한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>9. 관련문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>9.1 기록관리 규정</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>10. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>첨부 1) 시약 라벨</StyledListItem>
-        <StyledListItem>첨부 2) 시약관리대장</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

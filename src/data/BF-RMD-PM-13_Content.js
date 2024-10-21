@@ -247,15 +247,7 @@ function BF_RMD_PM_13_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 관련 문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 제품표준서</StyledListItem>
-        <StyledListItem>7.2 작업지시 및 기록서</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>8. 첨부</SectionTitle>
+      <SectionTitle>7. 첨부</SectionTitle>
       <Paragraph>
         첨부1) 공정 검사기록 양식
       </Paragraph>

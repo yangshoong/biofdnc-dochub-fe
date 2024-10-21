@@ -214,13 +214,9 @@ function BF_RMD_PM_06_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>5. 기록 및 문서 보관</SectionTitle>
+      <SectionTitle>5. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>5.1 칭량 및 제조 공정에 관한 기록은 4년간 보존한다.</StyledListItem>
-        <StyledListItem>5.2 작업소의 위생관리 사항은 "작업장 위생관리 기록서"에 기록하며 이를 4년간 보존한다.</StyledListItem>
-        <StyledListItem>5.3 기기의 관리 사항은 "설비 세척 및 소독관리 점검표"에 기록하며 이를 4년간 보존한다.</StyledListItem>
-        <StyledListItem>5.4 제품의 시험결과는 "제품 시험성적서"에 기록하여 4년간 보존한다.</StyledListItem>
-        <StyledListItem>5.5 기타 사항은 "기록 관리 규정"에 준한다.</StyledListItem>
+        <StyledListItem>첨부1) 제조 지시 및 기록서</StyledListItem>
       </StyledList>
     </Box>
   );

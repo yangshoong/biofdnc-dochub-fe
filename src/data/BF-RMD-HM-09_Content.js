@@ -227,22 +227,8 @@ function BF_RMD_HM_09_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>11. 기록 및 문서관리</SectionTitle>
-      <Paragraph>
-        11.1 기록 사항은 "기록 관리 규정"에 준한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>12. 관련 문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>12.1 기록 관리 규정</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>13. 첨부</SectionTitle>
-      <SubsectionTitle>13.1 설비 세척 및 소독관리 표준</SubsectionTitle>
+      <SectionTitle>11. 첨부</SectionTitle>
+      <SubsectionTitle>11.1 설비 세척 및 소독관리 표준</SubsectionTitle>
 
 <TableContainer component={Paper}>
   <Table>
@@ -383,6 +369,7 @@ function BF_RMD_HM_09_Content() {
     </TableBody>
   </Table>
 </TableContainer>
+      <SubsectionTitle>11.2 설비세척 및 소독관리 점검표</SubsectionTitle>
     </Box>
   );
 }
