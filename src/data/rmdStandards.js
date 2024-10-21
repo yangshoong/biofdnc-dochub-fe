@@ -12,7 +12,6 @@ const RMDStandards = [
       { id: 'BF-RMD-GM-06', title: '내부감사 규정'},
       { id: 'BF-RMD-GM-07', title: '문서 및 자료관리 규정'},
       { id: 'BF-RMD-GM-08', title: '불만 처리 규정'},
-      { id: 'BF-RMD-GM-09', title: '위수탁생산 및 서비스관리 규정'},
       { id: 'BF-RMD-GM-10', title: '폐기물 처리 및 관리 규정'},
       { id: 'BF-RMD-GM-11', title: '회수반품처리규정'},
     ],
