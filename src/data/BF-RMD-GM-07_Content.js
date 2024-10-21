@@ -199,7 +199,7 @@ function BF_RMD_GM_07_Content() {
       <Paragraph>각 업무를 담당하는 자가 본 "문서 및 자료관리 규정"에 따라 작성한다.</Paragraph>
 
       <SubsectionTitle>6.2 문서의 승인</SubsectionTitle>
-      <Paragraph>문서는 상기 4항에 따라 작성자, 검토자, 승인자가 승인한다.</Paragraph>
+      <Paragraph>문서는 상기 4항에 따라 작성자가 작성하여 보고하고, 승인자가 검토 및 승인한다.</Paragraph>
 
       <SubsectionTitle>6.3 문서의 개정</SubsectionTitle>
       <Paragraph>문서를 개정할 때는 개정사유 및 개정 연월일을 기재하고, 권한을 가진 사람의 승인을 받는다.</Paragraph>
