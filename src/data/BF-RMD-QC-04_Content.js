@@ -165,12 +165,11 @@ function BF_RMD_QC_04_Content() {
       <SectionTitle>6. 정제수 시설 관리</SectionTitle>
       <StyledList>
         <StyledListItem>6.1 정제수 설비를 매주 1회 이상 점검하여, 정제수 공급에 지장을 초래하지 않도록 관리하고 그 결과를 "정제수 제조장치 점검기록서"에 기록한다.</StyledListItem>
-        <StyledListItem>6.2 정제수 제조장치는 수질을 점검할 수 있도록 전기전도도를 측정한다.</StyledListItem>
-        <StyledListItem>6.3 탱크, 배관의 재질은 스테인레스 스틸 또는 그에 준하는 재질을 사용하여 수질에 영향이 없도록 한다.</StyledListItem>
-        <StyledListItem>6.4 품질관리 담당자는 하기 7.1항에 따라 정제수 검체를 채취하여 검사시험 한 후 일일 정제수 시험 일지 및 월간 정제수 시험 일지에 기록한다.</StyledListItem>
-        <StyledListItem>6.5 만일 정제수 검사시험 결과 기준을 벗어날 경우 품질보증책임자는 그 결과를 제조생산책임자에게 통보한다.</StyledListItem>
-        <StyledListItem>6.6 제조생산책임자는 즉시 정제수 생산을 멈추고 통보 받은 부적합 원인을 조사하여 적절한 조치를 취한 후, 그 결과를 품질보증책임자에게 보고한다.</StyledListItem>
-        <StyledListItem>6.7 시험이 부적합인 경우 품질관리 담당자는 정제수 검체를 채취하여 하기 7.1항을 재검사한다. 재검사 결과 당사 정제수 품질 기준에 부합할 경우 사용을 허용한다. 만일 당사 정제수 품질 기준에 부합하지 않을 경우 위생처리를 다시 하도록 제조생산부에 요청한다.</StyledListItem>
+        <StyledListItem>6.2 탱크, 배관의 재질은 스테인레스 스틸 또는 그에 준하는 재질을 사용하여 수질에 영향이 없도록 한다.</StyledListItem>
+        <StyledListItem>6.3 품질관리 담당자는 하기 7.1항에 따라 정제수 검체를 채취하여 검사시험 한 후 주간 정제수 시험 일지 및 월간 정제수 시험 일지에 기록한다.</StyledListItem>
+        <StyledListItem>6.4 만일 정제수 검사시험 결과 기준을 벗어날 경우 품질보증책임자는 그 결과를 제조생산책임자에게 통보한다.</StyledListItem>
+        <StyledListItem>6.5 제조생산책임자는 즉시 정제수 생산을 멈추고 통보 받은 부적합 원인을 조사하여 적절한 조치를 취한 후, 그 결과를 품질보증책임자에게 보고한다.</StyledListItem>
+        <StyledListItem>6.6 시험이 부적합인 경우 품질관리 담당자는 정제수 검체를 채취하여 하기 7.1항을 재검사한다. 재검사 결과 당사 정제수 품질 기준에 부합할 경우 사용을 허용한다. 만일 당사 정제수 품질 기준에 부합하지 않을 경우 위생처리를 다시 하도록 제조생산부에 요청한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
@@ -178,8 +177,8 @@ function BF_RMD_QC_04_Content() {
       <SectionTitle>7. 정제수 품질관리 기준</SectionTitle>
       <SubsectionTitle>7.1 정제수는 다음의 기준에 따라 관리한다:</SubsectionTitle>
       <StyledList>
-        <StyledListItem>- 일일 검사: 성상(무색, 무취), 전도도 값(10㎲/cm 이하, 실험실에서 측정)</StyledListItem>
-        <StyledListItem>- 월간 검사: 순도(KQC, 전 포인트), 미생물(100 cfu/ml 이하)</StyledListItem>
+        <StyledListItem>- 주간 검사: 성상(무색, 무취), PW(4이하), RO(15이상), pH(5.0~7.0)</StyledListItem>
+        <StyledListItem>- 월간 검사: 성상, pH, 순도, 미생물(100 cfu/ml 이하)</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
@@ -205,7 +204,7 @@ function BF_RMD_QC_04_Content() {
       
       <SectionTitle>10. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>첨부1) 일일 정제수 시험일지</StyledListItem>
+        <StyledListItem>첨부1) 주간 정제수 시험일지</StyledListItem>
         <StyledListItem>첨부2) 월간 정제수 시험일지</StyledListItem>
         <StyledListItem>첨부3) 정제수 제조장치 점검 기록서</StyledListItem>
         <StyledListItem>첨부4) 월간 정제수 시험성적서</StyledListItem>
