@@ -216,10 +216,8 @@ function BF_RMD_GM_11_Content() {
         회수품 중 다음에 해당하는 제품을 말한다.
       </Paragraph>
       <StyledList>
-        <StyledListItem>- 제조일로 부터 1년이 경과하였거나, 사용기한이 1년 이하로 남아 있는 경우</StyledListItem>
         <StyledListItem>- 제조번호를 알 수 없는 제품</StyledListItem>
         <StyledListItem>- 파손, 변질, 누액 등으로 제품의 품질에 이상이 있는 제품</StyledListItem>
-        <StyledListItem>- 품질보증부서의 검사결과가 부적합으로 판정된 제품</StyledListItem>
         <StyledListItem>- 1차 포장재가 파손된 제품</StyledListItem>
         <StyledListItem>- 화재, 수해를 입은 제품</StyledListItem>
       </StyledList>
@@ -228,25 +226,15 @@ function BF_RMD_GM_11_Content() {
       <SectionTitle>9. 반품관리</SectionTitle>
       <SubsectionTitle>9.1 반품접수</SubsectionTitle>
       <Paragraph>
-        해당하는 제품이 반품으로 입고되면 '회수반품접수 및 관리대장'에 기록하여 접수한다.
+        해당하는 제품이 반품으로 입고되면 ERP 시스템의 반품 입력 기능을 사용하여 기록하고 처리한다.
       </Paragraph>
-      <StyledList>
-        <StyledListItem>9.1.1 사용기한이 경과한 제품</StyledListItem>
-        <StyledListItem>9.1.2 제조번호를 알 수 없는 제품</StyledListItem>
-        <StyledListItem>9.1.3 성상이 기준에 부적합한 제품</StyledListItem>
-        <StyledListItem>9.1.4 파손, 변질 등으로 제품의 품질에 이상이 있는 제품</StyledListItem>
-        <StyledListItem>9.1.5 품질보증부서의 시험결과 부적합으로 판정된 제품</StyledListItem>
-        <StyledListItem>9.1.6 표시재료의 혼입이 있는 제품</StyledListItem>
-        <StyledListItem>9.1.7 라벨 및 케이스 등 표시재료에 착오가 있는 제품</StyledListItem>
-        <StyledListItem>9.1.8 고객사가 품질 결함으로 판단하는 제품</StyledListItem>
-      </StyledList>
-
+      
       <SubsectionTitle>9.2 반품처리절차</SubsectionTitle>
       <StyledList>
-        <StyledListItem>9.2.1 반품된 제품은 품질보증책임자의 검토를 거쳐 전량폐기, 검수폐기, 재포장을 결정한 후 시행한다.</StyledListItem>
+        <StyledListItem>9.2.1 반품된 제품은 품질보증책임자의 검토를 거쳐 폐기, 재포장을 결정한 후 시행한다.</StyledListItem>
         <StyledListItem>9.2.2 반품수령자는 인수된 반품의 품명, 수량, 포장 상태를 확인하고 '회수반품접수 및 관리대장'에 접수한 후 담당자에게 인계하여 반품보관함에 보관한다.</StyledListItem>
-        <StyledListItem>9.2.3 품질보증책임자는 반품내역 중 검체 채취의 필요가 있는지 검토 후 폐기를 승인한다.</StyledListItem>
-        <StyledListItem>9.2.4 담당자는 반품내역과 폐기내역을 대조하여 확인하고 품질보증책임자에게 보고하여 검토를 받은 후 최종승인을 득하여 '폐기물 처리 규정'에 따라 처리한다.</StyledListItem>
+        <StyledListItem>9.2.3 품질보증책임자는 반품내역을 검토하여 재포장 가능 여부를 판단하고, 재포장이 불가능한 경우 폐기를 결정한다.</StyledListItem>
+        <StyledListItem>9.2.4 담당자는 반품내역과 대조하여 확인하고, 폐기 대상 제품은 '폐기물 처리 규정'에 따라 처리한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
