@@ -110,88 +110,51 @@ function BF_RMD_HM_03_Content() {
       </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>3. 수세 및 소독 방법</SectionTitle>
-      <SubsectionTitle>3.1 화장실</SubsectionTitle>
+
+      <SectionTitle>3. 책임과 권한</SectionTitle>
+      <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.1.1 화장실 사용 후 수돗물로 손을 충분히 적신다.</StyledListItem>
-        <StyledListItem>3.1.2 손에 비누를 칠한다.</StyledListItem>
-        <StyledListItem>3.1.3 손바닥과 손등뿐만 아니라 손톱과 손가락 사이를 3회 이상 문지른다.</StyledListItem>
-        <StyledListItem>3.1.4 비누를 충분하게 헹구어내고 1회용 종이 타월 또는 공기 건조기로 손을 건조시킨다.</StyledListItem>
-        <StyledListItem>3.1.5 소독제 (70% 에탄올)를 사용하여 손을 소독한다.</StyledListItem>
+        <StyledListItem>3.1.1 수세 및 소독관리 규정의 승인</StyledListItem>
       </StyledList>
 
-      <SubsectionTitle>3.2 제조 및 포장 공정, 원료 보관소, 미생물 실험실</SubsectionTitle>
+      <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.2.1 제조, 포장 공정 및 원료 보관소, 미생물 실험실 입실 전에 수돗물로 손을 충분히 적신다.</StyledListItem>
-        <StyledListItem>3.2.2 손에 물비누를 칠한다.</StyledListItem>
-        <StyledListItem>3.2.3 손바닥과 손등뿐만 아니라 손톱과 손가락 사이를 3회 이상 문지른다.</StyledListItem>
-        <StyledListItem>3.2.4 물비누를 충분하게 헹구어내고 1회용 종이 타월 또는 공기 건조기로 손을 건조시킨다.</StyledListItem>
-        <StyledListItem>3.2.5 소독제(70% 에탄올)를 사용하여 손을 소독한다.</StyledListItem>
+        <StyledListItem>3.2.1 수세 및 소독관리 규정의 수립 및 이행 감독</StyledListItem>
+        <StyledListItem>3.2.2 수세 및 소독 상태 점검 및 개선 조치</StyledListItem>
       </StyledList>
 
-      <SubsectionTitle>3.3 세척제 (물비누) 및 소독제 관리</SubsectionTitle>
-      <Paragraph>
-        제조 및 포장 위생 관리담당자는 화장실 및 수세실에 비치된 물비누 및 소독제, 종이타월을 매일 점검하여 보충 또는 교체하고 청결하게 관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>4. 책임과 권한</SectionTitle>
-      <SubsectionTitle>4.1 대표이사</SubsectionTitle>
+      <SubsectionTitle>3.3 제조생산책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.1.1 수세 및 소독관리 규정의 승인</StyledListItem>
+        <StyledListItem>3.3.1 제조 구역 내 수세 및 소독 관리 실행</StyledListItem>
+        <StyledListItem>3.3.2 수세 및 소독 관련 시설물 유지 관리</StyledListItem>
       </StyledList>
 
-      <SubsectionTitle>4.2 품질보증책임자</SubsectionTitle>
+      <SubsectionTitle>3.4 업무담당자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.2.1 수세 및 소독관리 규정의 수립 및 이행 감독</StyledListItem>
-        <StyledListItem>4.2.2 수세 및 소독 상태 점검 및 개선 조치</StyledListItem>
-      </StyledList>
-
-      <SubsectionTitle>4.3 제조생산책임자</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>4.3.1 제조 구역 내 수세 및 소독 관리 실행</StyledListItem>
-        <StyledListItem>4.3.2 수세 및 소독 관련 시설물 유지 관리</StyledListItem>
-      </StyledList>
-
-      <SubsectionTitle>4.4 업무담당자</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>4.4.1 수세 및 소독관리 규정 준수</StyledListItem>
-        <StyledListItem>4.4.2 개인 위생 관리</StyledListItem>
+        <StyledListItem>3.4.1 수세 및 소독관리 규정 준수</StyledListItem>
+        <StyledListItem>3.4.2 개인 위생 관리</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
+
       
-      <SectionTitle>5. 교육 및 훈련</SectionTitle>
+      <SectionTitle>4. 수세 및 소독 방법</SectionTitle>
+      <SubsectionTitle>4.1 화장실</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.1 품질보증책임자는 모든 업무담당자에게 올바른 수세 및 소독 방법에 대해 연 1회 이상 교육을 실시한다.</StyledListItem>
-        <StyledListItem>5.2 신규 입사자에게는 입사 시 수세 및 소독에 대한 교육을 실시한다.</StyledListItem>
-        <StyledListItem>5.3 교육 내용 및 결과는 "교육훈련 기록서"에 기록하여 보관한다.</StyledListItem>
+        <StyledListItem>4.1.1 화장실 사용 후 수돗물로 손을 충분히 적신다.</StyledListItem>
+        <StyledListItem>4.1.2 손에 비누를 칠한다.</StyledListItem>
+        <StyledListItem>4.1.3 손바닥과 손등뿐만 아니라 손톱과 손가락 사이를 3회 이상 문지른다.</StyledListItem>
+        <StyledListItem>4.1.4 비누를 충분하게 헹구어내고 1회용 종이 타월 또는 공기 건조기로 손을 건조시킨다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>6. 점검 및 모니터링</SectionTitle>
+      <SubsectionTitle>4.2 제조 및 포장 공정, 원료 보관소, 미생물 실험</SubsectionTitle>
       <StyledList>
-        <StyledListItem>6.1 품질보증책임자 또는 그가 지정한 자는 주 1회 이상 수세 및 소독 상태를 점검한다.</StyledListItem>
-        <StyledListItem>6.2 점검 결과는 "수세 및 소독 점검 기록서"에 기록하고, 미비사항 발견 시 즉시 시정 조치를 취한다.</StyledListItem>
+        <StyledListItem>4.2.1 제조 및 포장 공정, 원료 보관소, 미생물 실험실 클린벤치 사용전에 라텍스 글로브를 착용한다.</StyledListItem>
+        <StyledListItem>4.2.2 라텍스 글로브를 착용한 손에 70% 에탄올 소독제를 적당량 분사한다.</StyledListItem>
+        <StyledListItem>4.2.3 손바닥, 손등, 손가락 사이, 손목 부분까지 꼼꼼히 문질러 소독제가 골고루 퍼지도록 한다.</StyledListItem>
+        <StyledListItem>4.2.4 70% 에탄올 소독제가 완전히 마를 때까지 기다린다.</StyledListItem>
+        <StyledListItem>4.2.5 소독이 완료된 후 작업장에 입실한다.</StyledListItem>
       </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 기록관리</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 수세 및 소독 관리 점검 기록서를 작성하고 유지한다.</StyledListItem>
-        <StyledListItem>7.2 기타 사항은 기록관리 규정에 준한다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>8. 첨부</SectionTitle>
-      <Paragraph>
-        첨부 1) 수세 및 소독 관리 점검 기록서
-      </Paragraph>
     </Box>
   );
 }
