@@ -468,9 +468,8 @@ function BF_RMD_GM_01_Content() {
         </StyledList>
         <StyledListItem>4.5.4. 포장 작업</StyledListItem>
         <StyledList>
-          <StyledListItem>4.5.4.1. 포장 작업 전 라인 클리어런스를 확인한다.</StyledListItem>
-          <StyledListItem>4.5.4.2. 포장 자재의 적절성을 확인한다.</StyledListItem>
-          <StyledListItem>4.5.4.3. 포장 작업 기록을 유지한다.</StyledListItem>
+          <StyledListItem>4.5.4.1. 포장 작업 전 포장 자재의 적절성을 확인한다.</StyledListItem>
+          <StyledListItem>4.5.4.2. 포장 자재의 청결 상태를 확인한다.</StyledListItem>
         </StyledList>
         <StyledListItem>4.5.5. 보관 및 출고</StyledListItem>
         <StyledList>
@@ -487,7 +486,7 @@ function BF_RMD_GM_01_Content() {
       <SubsectionTitle>5.1. 시험관리</SubsectionTitle>
       <StyledList>
         <StyledListItem>5.1.1. 원료, 반제품, 완제품에 대한 시험을 실시한다.</StyledListItem>
-        <StyledListItem>5.1.2. 시험방법의 밸리데이션을 실시한다.</StyledListItem>
+        <StyledListItem>5.1.2. 시험방법의 정확성을 위해 정기적으로 캘리브레이션을 실시한다.</StyledListItem>
         <StyledListItem>5.1.3. 시험 결과를 기록하고 보관한다.</StyledListItem>
         <StyledListItem>5.1.4. "미생물시험 규정"에 따라 필요한 미생물 시험을 실시한다.</StyledListItem>
         <StyledListItem>5.1.5. "시약 관리 규정"에 따라 시험에 사용되는 시약을 관리한다.</StyledListItem>
@@ -510,12 +509,11 @@ function BF_RMD_GM_01_Content() {
         <StyledListItem>5.3.4. 폐기 처리 기록을 유지한다.</StyledListItem>
       </StyledList>
 
-      <SubsectionTitle>5.4. 위탁 계약</SubsectionTitle>
+      <SubsectionTitle>5.4. 공급관리</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.4.1. "위수탁생산 및 서비스관리 규정"에 따라 위탁 업체를 선정하고 평가한다.</StyledListItem>
-        <StyledListItem>5.4.2. 위탁 계약을 관리한다.</StyledListItem>
-        <StyledListItem>5.4.3. 위탁 업체에 대한 정기 평가를 실시한다.</StyledListItem>
-        <StyledListItem>5.4.4. "공급업체 관리 규정"에 따라 원료 및 자재 공급업체를 관리한다.</StyledListItem>
+        <StyledListItem>5.4.1. "구매 및 공급업체 관리 규정"에 따라 원료 및 자재를 조달 한다.</StyledListItem>
+        <StyledListItem>5.4.2. 공급업체와의 계약을 관리한다.</StyledListItem>
+        <StyledListItem>5.4.3. 공급업체에 대한 정기 평가를 실시한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>5.5. 일탈관리</SubsectionTitle>
