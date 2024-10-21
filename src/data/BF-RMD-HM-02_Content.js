@@ -212,6 +212,9 @@ function BF_RMD_HM_02_Content() {
       
       <SectionTitle>6. 위생복 관리 지침</SectionTitle>
       <SubsectionTitle>6.1 구입 및 유지관리</SubsectionTitle>
+      <Paragraph>
+        위생복을 1인당 2벌 구입하여, 적절한 시기에 세탁하여 교체할 수 있도록 한다.
+      </Paragraph>
       <SubsectionTitle>6.2 세탁관리</SubsectionTitle>
       <StyledList>
         <StyledListItem>6.2.1 위생복은 최소 매주 1회 세탁한다.</StyledListItem>

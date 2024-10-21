@@ -212,54 +212,10 @@ function BF_RMD_HM_06_Content() {
         <StyledList>
           <StyledListItem>5.2.1 모든 업무담당자는 매일 작업 시작 전 자신의 위생상태, 위생복 착용 상태 등을 점검하고 그 결과를 위생관리기록서에 직접 기록한다.</StyledListItem>
           <StyledListItem>5.2.2 위생관리 담당자는 매일 작업장 청결상태를 점검하고, 위생관리기록서에 기록된 업무담당자들의 위생상태를 확인한다.</StyledListItem>
-          <StyledListItem>5.2.3 작성된 위생관리기록서는 품질보증책임자가 주기적으로 검토하고 서명한다.</StyledListItem>
-          <StyledListItem>5.2.4 위생관리기록서는 "기록관리 규정"에 따라 보관 및 관리한다.</StyledListItem>
+          <StyledListItem>5.2.3 위생관리기록서는 "기록관리 규정"에 따라 보관 및 관리한다.</StyledListItem>
         </StyledList>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>6. 관련 문서</SectionTitle>
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>문서 번호</TableCell>
-              <TableCell>문서명</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell>6.1</TableCell>
-              <TableCell>작업장 위생관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.2</TableCell>
-              <TableCell>업무담당자 건강관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.3</TableCell>
-              <TableCell>업무담당자 수세 및 소독관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.4</TableCell>
-              <TableCell>위생복 착용 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.5</TableCell>
-              <TableCell>기록관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.6</TableCell>
-              <TableCell>위생관리기록서 양식</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.7</TableCell>
-              <TableCell>교육훈련 규정</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
     </Box>
   );
 }

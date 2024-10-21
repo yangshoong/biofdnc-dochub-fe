@@ -189,42 +189,9 @@ function BF_RMD_HM_07_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>6. 관련 문서</SectionTitle>
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>문서 번호</TableCell>
-              <TableCell>문서명</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell>6.1</TableCell>
-              <TableCell>작업원 위생관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.2</TableCell>
-              <TableCell>방충 및 방서 관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.3</TableCell>
-              <TableCell>작업장 청소 및 소독관리 규정</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>6.4</TableCell>
-              <TableCell>설비기구 청소 및 소독관리 규정</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
       <SectionTitle>7. 첨부</SectionTitle>
       <StyledList>
-        <StyledListItem>첨부1) 외부방문객 출입관리대장</StyledListItem>
-        <StyledListItem>첨부2) 작업장 청소 및 위생점검 기록서</StyledListItem>
+        <StyledListItem>첨부1) 작업장 청소 및 위생점검 기록서</StyledListItem>
       </StyledList>
     </Box>
   );
