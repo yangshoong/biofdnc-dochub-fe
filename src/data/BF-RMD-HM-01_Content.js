@@ -150,17 +150,17 @@ function BF_RMD_HM_01_Content() {
       
       <SectionTitle>5. 방서관리</SectionTitle>
       <StyledList>
-        <StyledListItem>5.1 외부로 통하는 출입문은 틈새가 생기지 않도록 하여 쥐의 침입을 방지한다.</StyledListItem>
-        <StyledListItem>5.2 각종 하수구로 통하는 배수관에는 트랩과 플러그를 설치한다.</StyledListItem>
+        <StyledListItem>5.1 외부로 통하는 출입문에는 방서장치를 설치한다.</StyledListItem>
+        <StyledListItem>5.2 출입문은 틈새가 생기지 않도록 하여 쥐의 침입을 방지한다.</StyledListItem>
         <StyledListItem>5.3 파이프나 덕트가 벽을 통과한 곳은 밀폐시킨다.</StyledListItem>
-        <StyledListItem>5.4 쥐의 침입이 예상되는 장소 또는 통로에 쥐덫 또는 쥐약을 설치하여 관리한다.</StyledListItem>
+        
       </StyledList>
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>6. 방충, 방서 시설의 점검 및 관리</SectionTitle>
       <SubsectionTitle>6.1 정기 점검</SubsectionTitle>
       <Paragraph>
-        업무담당자는 방충 및 방서 시설의 상태를 주 1회 이상 점검한다. 점검 대상에는 쥐덫, 쥐약, 방충망, 포충등 등이 포함된다. 점검 결과 문제점 발견 시 제조생산책임자에게 보고하고 적절한 조치를 취한다.
+        업무담당자는 방충 및 방서 시설의 상태를 주 1회 이상 점검한다. 점검 대상에는 방서장치, 방충망, 포충등 등이 포함된다. 점검 결과 문제점 발견 시 제조생산책임자에게 보고하고 적절한 조치를 취한다.
       </Paragraph>
 
       <SubsectionTitle>6.2 방충 관리 위탁 서비스</SubsectionTitle>
@@ -174,7 +174,6 @@ function BF_RMD_HM_01_Content() {
       <SectionTitle>7. 기록 및 문서보관</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 방충 및 방서 점검 결과보고서를 유지한다.</StyledListItem>
-        <StyledListItem>7.2 기타 사항은 기록 관리 규정에 준한다.</StyledListItem>
       </StyledList>
     </Box>
   );
