@@ -85,7 +85,7 @@ function BF_RMD_GM_10_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -112,7 +112,7 @@ function BF_RMD_GM_10_Content() {
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>3. 책임과 권한</SectionTitle>
-      <SubsectionTitle>3.1 대표이사</SubsectionTitle>
+      <SubsectionTitle>3.1 품질경영최고책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 폐기물 처리 및 관리 규정의 최종 승인</StyledListItem>
       </StyledList>

@@ -86,7 +86,7 @@ function BF_RMD_GM_04_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -114,7 +114,7 @@ function BF_RMD_GM_04_Content() {
       
       <SectionTitle>3. 책임과 권한</SectionTitle>
       
-      <SubsectionTitle>3.1 대표이사</SubsectionTitle>
+      <SubsectionTitle>3.1 품질경영최고책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 교육훈련에 대한 총괄 책임을 진다.</StyledListItem>
         <StyledListItem>3.1.2 연간 교육훈련 계획을 최종 승인한다.</StyledListItem>
@@ -122,7 +122,7 @@ function BF_RMD_GM_04_Content() {
 
       <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.2.1 연간 교육훈련 계획을 수립하고 대표이사의 승인을 받는다.</StyledListItem>
+        <StyledListItem>3.2.1 연간 교육훈련 계획을 수립하고 품질경영최고책임자의 승인을 받는다.</StyledListItem>
         <StyledListItem>3.2.2 사외 교육훈련 결과 보고서를 승인한다.</StyledListItem>
         <StyledListItem>3.2.3 전 업무담당자에 대한 교육 필요성을 파악한다.</StyledListItem>
         <StyledListItem>3.2.4 품질보증담당자 중 교육훈련 담당자를 지정하여 교육훈련을 총괄관리한다.</StyledListItem>

@@ -86,7 +86,7 @@ function BF_RMD_GM_06_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -113,7 +113,7 @@ function BF_RMD_GM_06_Content() {
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>3. 책임과 권한</SectionTitle>
-      <SubsectionTitle>3.1 대표이사</SubsectionTitle>
+      <SubsectionTitle>3.1 품질경영최고책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 내부감사 결과에 대한 최종 검토 및 승인</StyledListItem>
       </StyledList>
@@ -199,7 +199,7 @@ function BF_RMD_GM_06_Content() {
       <SectionTitle>8. 감사 결과 보고 기록 및 처리</SectionTitle>
       <StyledList>
         <StyledListItem>8.1 정기 및 특별 내부품질감사 시 발견한 부적합사항은 평가단계를 거쳐 "내부감사 보고서"에 그 내용을 작성하여 피감사 부서장의 확인을 받고 처리한다.</StyledListItem>
-        <StyledListItem>8.2 발견된 부적합사항은 관련 부서의 협의 후 원인, 시정조치 결과에 따른 후속 감사활동을 행하고 재발방지 대책 등을 수립하여 대표이사에게 보고한다.</StyledListItem>
+        <StyledListItem>8.2 발견된 부적합사항은 관련 부서의 협의 후 원인, 시정조치 결과에 따른 후속 감사활동을 행하고 재발방지 대책 등을 수립하여 품질경영최고책임자에게 보고한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />

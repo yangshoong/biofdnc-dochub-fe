@@ -85,7 +85,7 @@ function BF_RMD_GM_02_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -147,7 +147,7 @@ function BF_RMD_GM_02_Content() {
 
       <SectionTitle>4. 각 부문 책임자 및 업무 분장</SectionTitle>
 
-      <SubsectionTitle>4.1 대표이사</SubsectionTitle>
+      <SubsectionTitle>4.1 품질경영최고책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.1.1 품질경영 총괄책임</StyledListItem>
         <StyledListItem>4.1.2 품질방침 수립</StyledListItem>

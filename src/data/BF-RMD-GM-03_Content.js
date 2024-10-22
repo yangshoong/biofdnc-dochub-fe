@@ -86,7 +86,7 @@ function BF_RMD_GM_03_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -113,7 +113,7 @@ function BF_RMD_GM_03_Content() {
       <Divider sx={{ marginY: '50px' }} />
 
       <SectionTitle>3. 책임과 권한</SectionTitle>
-      <SubsectionTitle>3.1 대표이사</SubsectionTitle>
+      <SubsectionTitle>3.1 품질경영최고책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 기록관리에 대한 총괄 책임</StyledListItem>
       </StyledList>

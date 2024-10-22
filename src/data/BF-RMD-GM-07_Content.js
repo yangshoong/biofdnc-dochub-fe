@@ -85,7 +85,7 @@ function BF_RMD_GM_07_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -162,7 +162,7 @@ function BF_RMD_GM_07_Content() {
               <TableCell>매뉴얼</TableCell>
               <TableCell>품질보증담당자</TableCell>
               <TableCell>품질보증책임자</TableCell>
-              <TableCell>대표이사</TableCell>
+              <TableCell>품질경영최고책임자</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>제품표준서</TableCell>
@@ -186,7 +186,7 @@ function BF_RMD_GM_07_Content() {
               <TableCell>품질관리기준서</TableCell>
               <TableCell>품질관리담당자</TableCell>
               <TableCell>품질보증책임자</TableCell>
-              <TableCell>대표이사</TableCell>
+              <TableCell>품질경영최고책임자</TableCell>
             </TableRow>
           </TableBody>
         </Table>

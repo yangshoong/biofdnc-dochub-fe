@@ -86,7 +86,7 @@ function BF_RMD_GM_01_Content() {
             <TableRow>
               <TableCell>서명</TableCell>
               <TableCell>신동선</TableCell>
-              <TableCell>문창배</TableCell>
+              <TableCell>장성주</TableCell>
               <TableCell>이정훈</TableCell>
             </TableRow>
             <TableRow>
@@ -309,7 +309,7 @@ function BF_RMD_GM_01_Content() {
 
       <SubsectionTitle>2.1. 조직의 구성</SubsectionTitle>
       <StyledList>
-        <StyledListItem>2.1.1. 대표이사</StyledListItem>
+        <StyledListItem>2.1.1. 품질경영최고책임자</StyledListItem>
         <StyledListItem>2.1.2. 품질보증부: 품질보증책임자, 품질보증담당자, 품질관리담당자</StyledListItem>
         <StyledListItem>2.1.3. 제조생산부: 제조생산책임자, 생산관리담당자, 제조담당자</StyledListItem>
       </StyledList>
@@ -317,7 +317,7 @@ function BF_RMD_GM_01_Content() {
       <SubsectionTitle>2.2. 직원의 책임</SubsectionTitle>
       <Paragraph>모든 직원의 상세한 책임은 "업무분장 규정"에 따른다.</Paragraph>
       <StyledList>
-        <StyledListItem>2.2.1. 대표이사</StyledListItem>
+        <StyledListItem>2.2.1. 품질경영최고책임자</StyledListItem>
         <StyledList>
           <StyledListItem>2.2.1.1. 품질경영 총괄책임</StyledListItem>
           <StyledListItem>2.2.1.2. 품질방침 수립</StyledListItem>
