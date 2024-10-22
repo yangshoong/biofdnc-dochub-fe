@@ -29,13 +29,13 @@ const Paragraph = styled(Typography)({
   marginBottom: '10px',
 });
 
-function BF_RMD_QC_05_Content() {
+function BF_RMD_QC_11_Content() {
   return (
     <Box sx={{ padding: '20px', backgroundColor: '#fff', borderRadius: '8px' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <Box>{/* 부자재 입고검사 규정*/}
-          <Typography>문서번호: BF-RMD-QC-05</Typography>
-          
+        <Box>
+          <Typography>문서번호: BF-RMD-QC-11</Typography>
+          <Typography>문서명: 중금속 함량 시험 규정</Typography>
         </Box>
         <Box>
           <Typography>개정번호: 00</Typography>
@@ -99,74 +99,105 @@ function BF_RMD_QC_05_Content() {
       </TableContainer>
       <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
-        본 규정은 (주)바이오에프디엔씨(이하 '당사'라 함)에서 사용되는 자재의 입고검사 업무에 관한 사항을 간소화하여 규정함으로써 효율적인 품질관리를 수행하는 데 그 목적이 있다.
+        본 규정은 (주)바이오에프디엔씨(이하 "당사"라 한다.)의 제품에 대한 중금속 함량을 확인하고 관리하여 제품의 안전성을 보장하는데 그 목적이 있다.
       </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
-        본 규정은 당사에서 생산되는 제품에 사용되는 모든 자재에 대해 적용한다.
+        본 규정은 당사에서 생산하는 모든 제품에 적용되며, 다음의 경우에 중금속 시험을 실시한다.
       </Paragraph>
+      <StyledList>
+        <StyledListItem>2.1 신제품 개발 시</StyledListItem>
+        <StyledListItem>2.2 원자재 변경 시</StyledListItem>
+      </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 대표이사</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.1.1 자재 입고검사 관련 규정을 승인한다.</StyledListItem>
+        <StyledListItem>3.1.1 본 규정에 대한 최종 승인 권한을 가진다.</StyledListItem>
       </StyledList>
       <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.2.1 자재 입고검사 업무를 총괄한다.</StyledListItem>
-        <StyledListItem>3.2.2 이상 발생 시 최종 판정한다.</StyledListItem>
+        <StyledListItem>3.2.1 중금속 시험 규정의 승인 및 운영을 총괄한다.</StyledListItem>
+        <StyledListItem>3.2.2 중금속 시험 결과에 대한 최종 평가 및 승인을 한다.</StyledListItem>
       </StyledList>
-      <SubsectionTitle>3.3 생산관리담당자</SubsectionTitle>
+      <SubsectionTitle>3.3 품질보증담당자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.3.1 이상 발생 시 품질보증책임자와 협의하여 처리한다.</StyledListItem>
+        <StyledListItem>3.3.1 중금속 시험 계획을 수립하고 실행한다.</StyledListItem>
+        <StyledListItem>3.3.2 중금속 시험 결과를 검토 및 평가한다.</StyledListItem>
+        <StyledListItem>3.3.3 중금속 시험 관리를 총괄한다.</StyledListItem>
       </StyledList>
-      <SubsectionTitle>3.4 입고담당자</SubsectionTitle>
+      <SubsectionTitle>3.4 품질관리담당자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.4.1 자재의 입고검사 업무를 수행하고 그 결과를 기록한다.</StyledListItem>
-        <StyledListItem>3.4.2 이상 발생 시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>4. 입고 검사 절차</SectionTitle>
-      <StyledList>
-        <StyledListItem>4.1 입고담당자는 입고된 자재에 대해 "자재 입고검사 체크리스트"를 사용하여 검사를 실시한다.</StyledListItem>
-        <StyledListItem>4.2 검사 항목은 다음을 포함한다:
-          <StyledList>
-            <StyledListItem>- 자재명 확인</StyledListItem>
-            <StyledListItem>- 수량 확인</StyledListItem>
-            <StyledListItem>- 외관 상태 확인</StyledListItem>
-            <StyledListItem>- 포장 상태 확인</StyledListItem>
-            <StyledListItem>- 내부 이물질 혼입 여부 확인</StyledListItem>
-            <StyledListItem>- 파손된 제품 포함 여부 확인</StyledListItem>
-          </StyledList>
-        </StyledListItem>
-        <StyledListItem>4.3 입고담당자는 검사 결과를 체크리스트에 기록한다.</StyledListItem>
-        <StyledListItem>4.4 이상이 발견된 경우, 입고담당자는 즉시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
-        <StyledListItem>4.5 품질보증책임자는 보고된 이상에 대해 최종 판정한다.</StyledListItem>
+        <StyledListItem>3.4.1 중금속 시험을 위한 시료를 준비하고 공인시험기관에 의뢰한다.</StyledListItem>
+        <StyledListItem>3.4.2 중금속 시험 결과를 기록하고 보관한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>5. 부적합품의 처리</SectionTitle>
-      <StyledList>
-        <StyledListItem>5.1 부적합으로 판정된 자재는 반품 처리한다.</StyledListItem>
-      </StyledList>
+      <SectionTitle>4. 용어의 정의</SectionTitle>
+      <SubsectionTitle>4.1 중금속</SubsectionTitle>
+      <Paragraph>
+        비중이 4.0 이상인 금속 원소로, 주로 납, 카드뮴, 수은, 비소 등을 지칭한다.
+      </Paragraph>
+      <SubsectionTitle>4.2 공인시험기관</SubsectionTitle>
+      <Paragraph>
+        국가로부터 공인받은 시험 및 검사 능력을 갖춘 기관을 말한다.
+      </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>6. 첨부</SectionTitle>
+      <SectionTitle>5. 중금속 시험 방법 및 업무분장</SectionTitle>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>업무</TableCell>
+              <TableCell>담당자</TableCell>
+              <TableCell>내용</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell>시험 의뢰</TableCell>
+              <TableCell>품질관리담당자</TableCell>
+              <TableCell>공인시험기관에 시험 의뢰 및 샘플 발송</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>결과 확인</TableCell>
+              <TableCell>품질보증담당자</TableCell>
+              <TableCell>시험 결과 검토 및 평가</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>조치 결정</TableCell>
+              <TableCell>품질보증책임자</TableCell>
+              <TableCell>시험 결과에 따른 후속 조치 결정</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>6. 시험 항목</SectionTitle>
+      <Paragraph>
+        납, 카드뮴, 수은, 비소 등 관련 법규에서 정한 중금속
+      </Paragraph>
+
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>7. 시험결과의 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>첨부 1) 자재 입고검사 체크리스트</StyledListItem>
+        <StyledListItem>7.1 시험기관에서 보내준 시험성적서를 보관한다.</StyledListItem>
+        <StyledListItem>7.2 시험결과가 기준치를 초과할 경우, 즉시 품질보증책임자에게 보고하고 적절한 조치를 취한다.</StyledListItem>
       </StyledList>
 
     </Box>
   );
 }
 
-export default BF_RMD_QC_05_Content;
+export default BF_RMD_QC_11_Content;

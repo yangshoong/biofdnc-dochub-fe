@@ -210,7 +210,7 @@ function BF_RMD_PM_13_Content() {
               <TableCell>
                 1) 교반상태<br/>
                 2) 색상, 향취, 투명도 등 기본성상<br/>
-                3) 기포 발생/이물질 혼입 여부
+                3) 이물질 혼입 여부
               </TableCell>
               <TableCell>작업 중 1회</TableCell>
             </TableRow>

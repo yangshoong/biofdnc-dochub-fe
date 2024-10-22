@@ -60,6 +60,7 @@ const RMDStandards = [
       { id: 'BF-RMD-QC-08', title: '시약 관리 규정' },
       { id: 'BF-RMD-QC-09', title: '표준품관리규정' },
       { id: 'BF-RMD-QC-10', title: '안정성시험규정' },
+      { id: 'BF-RMD-QC-11', title: '중금속 함량 시험 규정' },
     ],
   },
 ];

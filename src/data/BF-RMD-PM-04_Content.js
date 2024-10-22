@@ -219,7 +219,11 @@ function BF_RMD_PM_04_Content() {
       <SubsectionTitle>4.6 원료 출고</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.6.1 제조담당자는 "칭량 지시 및 기록서"에 따라 해당 원료를 칭량하고, 원료를 출고한다.</StyledListItem>
-        <StyledListItem>4.6.2 출고 시 입고일 순으로 출고 (선입선출)한다. 단, 이미 개봉되어 잔량이 남은 원료, 검체가 채취된 원료를 우선적으로 출고 한다.</StyledListItem>
+        <StyledListItem>4.6.2 원료 출고 시 선입선출 원칙을 적용하여 입고일 순으로 출고한다. 다만, 다음의 경우 우선적으로 출고한다:</StyledListItem>
+        <StyledList>
+          <StyledListItem>4.6.2.1 이미 개봉되어 잔량이 남은 원료</StyledListItem>
+          <StyledListItem>4.6.2.2 입고 전 시험을 실시한 원료 패키지 ("V" 표시로 구분)</StyledListItem>
+        </StyledList>
       </StyledList>
 
       <SubsectionTitle>4.7 원료의 재고 조사 및 사용기한 관리</SubsectionTitle>
