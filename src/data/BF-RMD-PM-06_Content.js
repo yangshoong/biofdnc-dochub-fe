@@ -146,7 +146,6 @@ function BF_RMD_PM_06_Content() {
       <SubsectionTitle>4.1 칭량실의 관리</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.1.1 칭량실은 청결히 관리하여 원료 오염을 방지한다.</StyledListItem>
-        <StyledListItem>4.1.2 칭량실은 외부 오염 물질 유입이 없도록 관리한다.</StyledListItem>
       </StyledList>
       <SubsectionTitle>4.2 칭량 기기의 관리</SubsectionTitle>
       <StyledList>
