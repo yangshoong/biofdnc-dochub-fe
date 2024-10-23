@@ -135,8 +135,7 @@ function BF_RMD_QC_05_Content() {
       
       <SectionTitle>4. 입고 검사 절차</SectionTitle>
       <StyledList>
-        <StyledListItem>4.1 입고담당자는 입고된 자재에 대해 "자재 입고검사 체크리스트"를 사용하여 검사를 실시한다.</StyledListItem>
-        <StyledListItem>4.2 검사 항목은 다음을 포함한다:
+        <StyledListItem>4.1 입고담당자는 입고된 자재에 대해 다음의 검사항목에 따라 검사를 실시한다:
           <StyledList>
             <StyledListItem>- 자재명 확인</StyledListItem>
             <StyledListItem>- 수량 확인</StyledListItem>
@@ -146,9 +145,9 @@ function BF_RMD_QC_05_Content() {
             <StyledListItem>- 파손된 제품 포함 여부 확인</StyledListItem>
           </StyledList>
         </StyledListItem>
-        <StyledListItem>4.3 입고담당자는 검사 결과를 체크리스트에 기록한다.</StyledListItem>
-        <StyledListItem>4.4 이상이 발견된 경우, 입고담당자는 즉시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
-        <StyledListItem>4.5 품질보증책임자는 보고된 이상에 대해 최종 판정한다.</StyledListItem>
+        <StyledListItem>4.2 입고담당자는 검사 결과를 전산 시스템에 기록한다.</StyledListItem>
+        <StyledListItem>4.3 이상이 발견된 경우, 입고담당자는 즉시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
+        <StyledListItem>4.4 품질보증책임자는 보고된 이상에 대해 최종 판정한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
