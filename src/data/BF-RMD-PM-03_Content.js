@@ -175,34 +175,45 @@ function BF_RMD_PM_03_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 공급업체 등록</SectionTitle>
+      <SectionTitle>7. 공급리스크 관리</SectionTitle>
+      <Paragraph>
+        안정적인 원료 공급과 생산 연속성 유지를 위해 다음과 같은 공급리스크 관리 체계를 운영한다:
+      </Paragraph>
       <StyledList>
-        <StyledListItem>7.1 생산관리담당자는 공급업체를 ERP 시스템에 등록하여 관리한다.</StyledListItem>
-        <StyledListItem>7.2 ERP 시스템에 등록되는 정보는 공급업체명, 주소, 연락처, 주요 공급 품목 등을 포함한다.</StyledListItem>
-        <StyledListItem>7.3 품질보증책임자는 ERP 시스템에 등록된 공급업체 정보의 정확성을 주기적으로 확인한다.</StyledListItem>
+        <StyledListItem>7.1 주요 원료에 대해 최소 2개 이상의 공급업체를 확보하여 관리한다.</StyledListItem>
+        <StyledListItem>7.2 새로운 잠재 공급업체를 발굴하고 평가한다.</StyledListItem>
+        <StyledListItem>7.3 공급 계약을 통해 안정적인 원료 확보를 도모한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>8. 공급업체 관리</SectionTitle>
+      <SectionTitle>8. 공급업체 등록</SectionTitle>
       <StyledList>
-        <StyledListItem>8.1 입고된 원료 및 자재는 관련 입고검사 규정에 따라 검사시험 한다.</StyledListItem>
-        <StyledListItem>8.2 품질보증책임자는 수시로 공급업체 변동사항을 파악하여 품질에 영향을 주는 사항이 있을 경우 관련 부서와 협의하여 대책을 수립한다.</StyledListItem>
-        <StyledListItem>8.3 원료, 자재 및 외주생산 공급업체가 생산조건, 설비 등을 변경할 경우 변경 스펙 및 견본을 자사에 송부하도록 요구한다.</StyledListItem>
-        <StyledListItem>8.4 품질보증책임자는 "변경관리규정"에 따라 송부 받은 스펙과 견본을 충분히 검토 및 검증한 후 변경 안의 시행여부를 통보한다.</StyledListItem>
+        <StyledListItem>8.1 생산관리담당자는 공급업체를 ERP 시스템에 등록하여 관리한다.</StyledListItem>
+        <StyledListItem>8.2 ERP 시스템에 등록되는 정보는 공급업체명, 주소, 연락처, 주요 공급 품목 등을 포함한다.</StyledListItem>
+        <StyledListItem>8.3 품질보증책임자는 ERP 시스템에 등록된 공급업체 정보의 정확성을 주기적으로 확인한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>9. 공급업체의 변경</SectionTitle>
+      <SectionTitle>9. 공급업체 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>9.1 공급업체의 평가 결과가 저조할 경우 해당 공급업체에 개선을 요구하고 개선효과 정도에 따라 공급업체의 변경여부를 결정한다.</StyledListItem>
-        <StyledListItem>9.2 품질보증책임자는 타당한 변경사유가 있을 시 공급업체를 변경한다.</StyledListItem>
+        <StyledListItem>9.1 입고된 원료 및 자재는 관련 입고검사 규정에 따라 검사시험 한다.</StyledListItem>
+        <StyledListItem>9.2 품질보증책임자는 수시로 공급업체 변동사항을 파악하여 품질에 영향을 주는 사항이 있을 경우 관련 부서와 협의하여 대책을 수립한다.</StyledListItem>
+        <StyledListItem>9.3 원료, 자재 및 외주생산 공급업체가 생산조건, 설비 등을 변경할 경우 변경 스펙 및 견본을 자사에 송부하도록 요구한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 첨부</SectionTitle>
+      <SectionTitle>10. 공급업체의 변경</SectionTitle>
+      <StyledList>
+        <StyledListItem>10.1 공급업체의 평가 결과가 저조할 경우 해당 공급업체에 개선을 요구하고 개선효과 정도에 따라 공급업체의 변경여부를 결정한다.</StyledListItem>
+        <StyledListItem>10.2 품질보증책임자는 타당한 변경사유가 있을 시 공급업체를 변경한다.</StyledListItem>
+      </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>11. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 공급업체 평가표</StyledListItem>
       </StyledList>
