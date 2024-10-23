@@ -282,11 +282,14 @@ function RMDStandardPage() {
   };
 
   const handlePrint = () => {
+    const originalTitle = document.title;
+    document.title = `${selectedRegulation.id} ${selectedRegulation.title}`;
+
     const printWindow = window.open('', '_blank');
     printWindow.document.write(`
       <html>
         <head>
-          <title>${selectedRegulation.title}</title>
+          <title>${document.title}</title>
           <style>
             @page {
               size: auto;
@@ -344,6 +347,10 @@ function RMDStandardPage() {
       printWindow.print();
       printWindow.close();
     };
+
+    setTimeout(() => {
+      document.title = originalTitle;
+    }, 100);
   };
 
   const handleKeyDown = (e) => {
