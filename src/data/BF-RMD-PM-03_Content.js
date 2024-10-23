@@ -164,56 +164,68 @@ function BF_RMD_PM_03_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>6. 공급업체 평가</SectionTitle>
+      <SectionTitle>6. 공급업체 선정</SectionTitle>
+      <Paragraph>
+        당사는 다음과 같은 기준을 고려하여 공급업체를 선정한다:
+      </Paragraph>
       <StyledList>
-        <StyledListItem>6.1 제조생산책임자는 연간 거래액이 1000만원을 초과하는 공급업체에 대해 연 1회 이상 평가를 실시한다.</StyledListItem>
-        <StyledListItem>6.2 평가는 품질, 납기, 가격, 서비스 등의 항목을 포함하며, 필요시 현장 실사를 진행할 수 있다.</StyledListItem>
-        <StyledListItem>6.3 평가 결과에 따라 공급업체를 등급화하고, 등급에 따른 관리 방침을 수립한다.</StyledListItem>
-        <StyledListItem>6.4 평가 결과가 미흡한 공급업체에 대해서는 개선을 요구하거나 거래를 중지할 수 있다.</StyledListItem>
-        <StyledListItem>6.5 품질보증책임자는 제조생산책임자가 실시한 공급업체 평가 결과를 확인한다.</StyledListItem>
+        <StyledListItem>6.1 제품 품질 및 안정성</StyledListItem>
+        <StyledListItem>6.2 가격 경쟁력</StyledListItem>
+        <StyledListItem>6.3 납기 준수 능력</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 공급리스크 관리</SectionTitle>
+      <SectionTitle>7. 공급업체 평가</SectionTitle>
+      <StyledList>
+        <StyledListItem>7.1 제조생산책임자는 연간 거래액이 1000만원을 초과하는 공급업체에 대해 연 1회 이상 평가를 실시한다.</StyledListItem>
+        <StyledListItem>7.2 평가는 품질, 납기, 가격, 서비스 등의 항목을 포함하며, 필요시 현장 실사를 진행할 수 있다.</StyledListItem>
+        <StyledListItem>7.3 평가 결과에 따라 공급업체를 등급화하고, 등급에 따른 관리 방침을 수립한다.</StyledListItem>
+        <StyledListItem>7.4 평가 결과가 미흡한 공급업체에 대해서는 개선을 요구하거나 거래를 중지할 수 있다.</StyledListItem>
+        <StyledListItem>7.5 품질보증책임자는 제조생산책임자가 실시한 공급업체 평가 결과를 확인한다.</StyledListItem>
+      </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>8. 공급리스크 관리</SectionTitle>
       <Paragraph>
         안정적인 원료 공급과 생산 연속성 유지를 위해 다음과 같은 공급리스크 관리 체계를 운영한다:
       </Paragraph>
       <StyledList>
-        <StyledListItem>7.1 주요 원료에 대해 최소 2개 이상의 공급업체를 확보하여 관리한다.</StyledListItem>
-        <StyledListItem>7.2 새로운 잠재 공급업체를 발굴하고 평가한다.</StyledListItem>
-        <StyledListItem>7.3 공급 계약을 통해 안정적인 원료 확보를 도모한다.</StyledListItem>
+        <StyledListItem>8.1 주요 원료에 대해 최소 2개 이상의 공급업체를 확보하여 관리한다.</StyledListItem>
+        <StyledListItem>8.2 새로운 잠재 공급업체를 발굴하고 평가한다.</StyledListItem>
+        <StyledListItem>8.3 공급 계약을 통해 안정적인 원료 확보를 도모한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>8. 공급업체 등록</SectionTitle>
+      <SectionTitle>9. 공급업체 등록</SectionTitle>
       <StyledList>
-        <StyledListItem>8.1 생산관리담당자는 공급업체를 ERP 시스템에 등록하여 관리한다.</StyledListItem>
-        <StyledListItem>8.2 ERP 시스템에 등록되는 정보는 공급업체명, 주소, 연락처, 주요 공급 품목 등을 포함한다.</StyledListItem>
-        <StyledListItem>8.3 품질보증책임자는 ERP 시스템에 등록된 공급업체 정보의 정확성을 주기적으로 확인한다.</StyledListItem>
+        <StyledListItem>9.1 생산관리담당자는 공급업체를 ERP 시스템에 등록하여 관리한다.</StyledListItem>
+        <StyledListItem>9.2 ERP 시스템에 등록되는 정보는 공급업체명, 주소, 연락처, 주요 공급 품목 등을 포함한다.</StyledListItem>
+        <StyledListItem>9.3 품질보증책임자는 ERP 시스템에 등록된 공급업체 정보의 정확성을 주기적으로 확인한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>9. 공급업체 관리</SectionTitle>
+      <SectionTitle>10. 공급업체 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>9.1 입고된 원료 및 자재는 관련 입고검사 규정에 따라 검사시험 한다.</StyledListItem>
-        <StyledListItem>9.2 품질보증책임자는 수시로 공급업체 변동사항을 파악하여 품질에 영향을 주는 사항이 있을 경우 관련 부서와 협의하여 대책을 수립한다.</StyledListItem>
-        <StyledListItem>9.3 원료, 자재 및 외주생산 공급업체가 생산조건, 설비 등을 변경할 경우 변경 스펙 및 견본을 자사에 송부하도록 요구한다.</StyledListItem>
+        <StyledListItem>10.1 입고된 원료 및 자재는 관련 입고검사 규정에 따라 검사시험 한다.</StyledListItem>
+        <StyledListItem>10.2 품질보증책임자는 수시로 공급업체 변동사항을 파악하여 품질에 영향을 주는 사항이 있을 경우 관련 부서와 협의하여 대책을 수립한다.</StyledListItem>
+        <StyledListItem>10.3 원료, 자재 및 외주생산 공급업체가 생산조건, 설비 등을 변경할 경우 변경 스펙 및 견본을 자사에 송부하도록 요구한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 공급업체의 변경</SectionTitle>
+      <SectionTitle>11. 공급업체의 변경</SectionTitle>
       <StyledList>
-        <StyledListItem>10.1 공급업체의 평가 결과가 저조할 경우 해당 공급업체에 개선을 요구하고 개선효과 정도에 따라 공급업체의 변경여부를 결정한다.</StyledListItem>
-        <StyledListItem>10.2 품질보증책임자는 타당한 변경사유가 있을 시 공급업체를 변경한다.</StyledListItem>
+        <StyledListItem>11.1 공급업체의 평가 결과가 저조할 경우 해당 공급업체에 개선을 요구하고 개선효과 정도에 따라 공급업체의 변경여부를 결정한다.</StyledListItem>
+        <StyledListItem>11.2 품질보증책임자는 타당한 변경사유가 있을 시 공급업체를 변경한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>11. 첨부</SectionTitle>
+      <SectionTitle>12. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 공급업체 평가표</StyledListItem>
       </StyledList>
