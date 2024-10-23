@@ -169,7 +169,7 @@ function BF_RMD_PM_03_Content() {
         당사는 다음과 같은 기준을 고려하여 공급업체를 선정한다:
       </Paragraph>
       <StyledList>
-        <StyledListItem>6.1 제품 품질 및 안정성</StyledListItem>
+        <StyledListItem>6.1 제품 품질</StyledListItem>
         <StyledListItem>6.2 가격 경쟁력</StyledListItem>
         <StyledListItem>6.3 납기 준수 능력</StyledListItem>
       </StyledList>
