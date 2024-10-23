@@ -226,6 +226,7 @@ function BF_RMD_PM_06_Content() {
       <SectionTitle>5. 첨부</SectionTitle>
       <StyledList>
         <StyledListItem>첨부1) 제조 지시 및 기록서</StyledListItem>
+        <StyledListItem>첨부2) 칭량 지시 및 기록서</StyledListItem>
       </StyledList>
     </Box>
   );
