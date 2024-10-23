@@ -210,16 +210,7 @@ function BF_RMD_PM_06_Content() {
       <StyledList>
         <StyledListItem>4.13.1 제조공정 또는 설비의 변경이 필요한 경우 "변경관리 규정"에 따라 처리한다.</StyledListItem>
       </StyledList>
-      <SubsectionTitle>4.14 생산수율 관리</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>4.14.1 각 제품의 특성을 고려하여 적정 수율을 관리한다.</StyledListItem>
-        <StyledListItem>4.14.2 작업자는 제조 과정에서 수율이 낮게 나올 경우 다음과 같이 조치한다:</StyledListItem>
-        <StyledList sx={{ paddingLeft: '20px' }}>
-          <StyledListItem>a) 제조생산책임자에게 보고한다.</StyledListItem>
-          <StyledListItem>b) 원인을 분석하고 필요한 개선 조치를 취한다.</StyledListItem>
-        </StyledList>
-      </StyledList>
-
+      
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>5. 첨부</SectionTitle>
