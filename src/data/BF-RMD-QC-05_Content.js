@@ -158,12 +158,6 @@ function BF_RMD_QC_05_Content() {
         <StyledListItem>5.1 부적합으로 판정된 자재는 반품 처리한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>6. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>첨부 1) 자재 입고검사 체크리스트</StyledListItem>
-      </StyledList>
 
     </Box>
   );
