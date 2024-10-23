@@ -219,7 +219,7 @@ function BF_RMD_PM_13_Content() {
               <TableCell>
                 1) 원재료/용매 비율<br/>
                 2) 온도/압력/시간<br/>
-                3) 수율 등 누출 여부 확인
+                3) 누출 여부 확인
               </TableCell>
               <TableCell>작업 중 1회</TableCell>
             </TableRow>
