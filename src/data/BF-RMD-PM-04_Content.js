@@ -139,17 +139,10 @@ function BF_RMD_PM_04_Content() {
       <SectionTitle>4. 업무 절차</SectionTitle>
       <SubsectionTitle>4.1 원료 인수 및 입고 검수</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.1.1 원료입고 담당자는 원료 인수 시 다음 사항을 확인하고 이상이 없을 경우, 거래명세서에 외관확인 도장 또는 기재 후 서명하고, 입고 내역을 ERP에 입력한다.</StyledListItem>
-        <StyledList sx={{ paddingLeft: '40px' }}>
-          <StyledListItem>4.1.1.1 입고품이 거래 명세서, 발주서 등의 구매 문서와 일치하는지 여부</StyledListItem>
-          <StyledListItem>4.1.1.2 원료의 포장 용기 및 박스의 파손 여부</StyledListItem>
-          <StyledListItem>4.1.1.3 원료의 오염 흔적</StyledListItem>
-        </StyledList>
-        <StyledListItem>만일 원료에 이상이 있을 경우 협력업체에 통보하여 반품 또는 교환 등의 조치를 취한다</StyledListItem>
-        <StyledListItem>4.1.2 원료 용기 및 외 포장 청소</StyledListItem>
-        <StyledListItem>상기 4.1.1항 확인 결과 적합한 원료는 용기 및 외 포장의 오염물질을 제거한 후 입고한다.</StyledListItem>
-        <StyledListItem>4.1.3 입고검수 결과 적합 원료는 시험중대기소에 보관하고 품질보증부서에 입고검사를 의뢰한다. 입고검사 의뢰 시 협력업체로부터 해당 입고품에 대한 성적서를 입수하여 품질보증 부서에 전달한다.</StyledListItem>
-        <StyledListItem>4.1.4 원료 입고검사 담당자는 입고품에 표시라벨을 부착하여 식별한다.</StyledListItem>
+        <StyledListItem>4.1.1 원료 입고 담당자는 원료 인수 시 외관상태, 라벨상태, 품목 및 수량, 밀봉상태, 성상, 사용기한, 시험성적서 동봉 여부, 이물질 유무 등을 확인한다. 이상이 없을 경우 입고 내역을 전산에 입력한다.</StyledListItem>
+        <StyledListItem>4.1.2 원료 입고 담당자는 필요시 품질보증부서에 입고검사를 의뢰한다.</StyledListItem>
+        <StyledListItem>4.1.3 원료에 이상이 있을 경우 협력업체에 통보하여 반품 또는 교환 등의 적절한 조치를 취한다.</StyledListItem>
+        <StyledListItem>4.1.4 원료 입고검사 담당자는 입고품에 식별을 위한 표시라벨을 부착한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>4.2 원료 검체 채취 및 품질 시험</SubsectionTitle>
@@ -166,7 +159,8 @@ function BF_RMD_PM_04_Content() {
       <SubsectionTitle>4.4 부적합품의 처리</SubsectionTitle>
       <StyledList>
         <StyledListItem>4.4.1 시험결과 부적합이면 해당 원료라벨에 "부적합" 표시를 하여 구분된 부적합품 보관 장소로 옮긴다.</StyledListItem>
-        <StyledListItem>4.4.2 품질보증책임자는 부적합 내용을 검토하고 그 원인을 조사하여 "부적합 관리 규정"에 따라 처리한다.</StyledListItem>
+        <StyledListItem>4.4.2 품질보증책임자는 부적합 내용을 검토하고 그 원인을 조사하여 전산에 기록한다.</StyledListItem>
+        <StyledListItem>4.4.3 부적합 원료는 협력업체에 반품 처리한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>4.5 원료 보관</SubsectionTitle>
@@ -231,7 +225,7 @@ function BF_RMD_PM_04_Content() {
         <StyledListItem>4.7.1 협력업체의 기준 또는 타당한 근거를 바탕으로 원료 종류별 사용기한을 설정하여 관리한다.</StyledListItem>
         <StyledListItem>4.7.2 제조담당자는 매 분기별 원료 입출고 내역과 원료 보관소내의 현품을 비교하여, 재고조사를 한다.</StyledListItem>
         <StyledListItem>4.7.3 만일 입출고 대장상의 재고와 실재고 상의 재고 차이가 5% 이상 날 경우 그 원인을 분석하고 조치하여, 그 결과를 제조생산책임자에게 보고한다.</StyledListItem>
-        <StyledListItem>4.7.4 재고조사 결과 사용기한에 근접하고 품질이 의심스러운 원료는 품질보증 부서에 의뢰하여 재검사를 실시한다.</StyledListItem>
+        <StyledListItem>4.7.4 재고조사 결과 품질이 의심스러운 원료는 품질보증 부서에 의뢰하여 재검사를 실시한다.</StyledListItem>
         <StyledListItem>4.7.5 재검사 결과 "적합"으로 판정되면 제조에 사용한다.</StyledListItem>
         <StyledListItem>4.7.6 재검사 결과 "부적합"으로 판정된 원료는 폐기처리 한다.</StyledListItem>
         <StyledListItem>4.7.7 사용기한이 경과한 원료는 폐기처리 한다.</StyledListItem>
