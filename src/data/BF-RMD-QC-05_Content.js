@@ -130,13 +130,14 @@ function BF_RMD_QC_05_Content() {
         <StyledListItem>3.4.1 자재의 입고검사 업무를 수행하고 그 결과를 기록한다.</StyledListItem>
         <StyledListItem>3.4.2 이상 발생 시 생산관리담당자와 품질보증책임자에게 보고한다.</StyledListItem>
       </StyledList>
-
       <Divider sx={{ marginY: '50px' }} />
-      
       <SectionTitle>4. 입고 검사 절차</SectionTitle>
       <StyledList>
-        <StyledListItem>4.1 입고담당자는 입고된 자재에 대해 다음의 검사항목에 따라 검사를 실시한다:
-          <StyledList>
+        <StyledListItem sx={{ display: 'flex' }}>
+          <Box sx={{ width: '50%', flexShrink: 0 }}>
+            4.1 입고담당자는 입고된 자재에 대해 다음의 검사항목에 따라 검사를 실시한다:
+          </Box>
+          <StyledList sx={{ flexGrow: 1 }}>
             <StyledListItem>- 자재명 확인</StyledListItem>
             <StyledListItem>- 수량 확인</StyledListItem>
             <StyledListItem>- 외관 상태 확인</StyledListItem>
@@ -151,7 +152,6 @@ function BF_RMD_QC_05_Content() {
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
-      
       <SectionTitle>5. 부적합품의 처리</SectionTitle>
       <StyledList>
         <StyledListItem>5.1 부적합으로 판정된 자재는 반품 처리한다.</StyledListItem>
