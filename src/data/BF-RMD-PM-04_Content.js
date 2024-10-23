@@ -234,16 +234,18 @@ function BF_RMD_PM_04_Content() {
         <StyledListItem>4.7.4 재고조사 결과 사용기한에 근접하고 품질이 의심스러운 원료는 품질보증 부서에 의뢰하여 재검사를 실시한다.</StyledListItem>
         <StyledListItem>4.7.5 재검사 결과 "적합"으로 판정되면 제조에 사용한다.</StyledListItem>
         <StyledListItem>4.7.6 재검사 결과 "부적합"으로 판정된 원료는 폐기처리 한다.</StyledListItem>
-        <StyledListItem>4.7.7 사용기한이 없는 원료는 원료 제조사에 문의하여 사용기한을 설정하고 사용기한이 경과한 원료는 폐기한다.</StyledListItem>
-        <StyledListItem>4.7.8 원료의 재평가 항목은 원료사에서 제공하는 성적서의 항목을 원칙으로 한다.</StyledListItem>
-        <StyledListItem>4.7.9 원료 보관 중 용기가 훼손되었거나 장기보관으로 인해 이상이 생겼다고 판단될 경우에는 별도 구분 보관 후 품질보증 부서에 시험의뢰 하고 그 결과에 따라 조치한다.</StyledListItem>
+        <StyledListItem>4.7.7 사용기한이 경과한 원료는 폐기처리 한다.</StyledListItem>
+        <StyledListItem>4.7.8 원료 보관 중 용기가 훼손되었거나 장기보관으로 인해 이상이 생겼다고 판단될 경우에는 폐기처리 한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>4.8 원료관리</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.8.1 입고되는 원료 중 중요 원료의 경우에는 분기당 1번 원료 중량을 체크한다.</StyledListItem>
-        <StyledListItem>4.8.2 중량 체크한 데이터를 축척하여 문서로 남겨 모니터링 한다.</StyledListItem>
-        <StyledListItem>4.8.3 모니터링 결과 중량편차가 심한 것은 업체변경을 고려한다.</StyledListItem>
+        <StyledListItem>4.8.1 주요 원료의 안전재고와 리드타임을 설정한다.</StyledListItem>
+        <StyledList>
+          <StyledListItem>4.8.1.1 안전재고는 원료 사용량과 리드타임을 고려하여 결정한다.</StyledListItem>
+          <StyledListItem>4.8.1.2 리드타임은 원료 발주부터 입고까지 소요되는 기간을 기준으로 설정한다.</StyledListItem>
+          <StyledListItem>4.8.1.3 안전재고와 리드타임은 상황에 따라 적절히 조정한다.</StyledListItem>
+        </StyledList>
       </StyledList>
     </Box>
   );
