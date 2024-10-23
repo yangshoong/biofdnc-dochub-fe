@@ -213,12 +213,11 @@ function BF_RMD_PM_06_Content() {
       </StyledList>
       <SubsectionTitle>4.14 생산수율 관리</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.14.1 제조 기준 수율은 일반적으로 90% 이상을 목표로 하며, ±5%의 허용 오차 범위를 설정한다.</StyledListItem>
-        <StyledListItem>4.14.2 수율이 기준 이하로 떨어질 경우 다음과 같이 조치한다:</StyledListItem>
+        <StyledListItem>4.14.1 각 제품의 특성을 고려하여 적정 수율을 관리한다.</StyledListItem>
+        <StyledListItem>4.14.2 작업자는 제조 과정에서 수율이 낮게 나올 경우 다음과 같이 조치한다:</StyledListItem>
         <StyledList sx={{ paddingLeft: '20px' }}>
-          <StyledListItem>a) 즉시 제조생산책임자에게 보고한다.</StyledListItem>
-          <StyledListItem>b) 원인 분석을 실시하고 개선 조치를 취한다.</StyledListItem>
-          <StyledListItem>c) 재발 방지를 위한 대책을 수립한다.</StyledListItem>
+          <StyledListItem>a) 제조생산책임자에게 보고한다.</StyledListItem>
+          <StyledListItem>b) 원인을 분석하고 필요한 개선 조치를 취한다.</StyledListItem>
         </StyledList>
       </StyledList>
 
