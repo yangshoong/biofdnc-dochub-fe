@@ -123,7 +123,7 @@ function BF_RMD_GM_12_Content() {
         품질검사자 및 내부심사자의 자격 인증에 대하여 검토/승인할 책임과 권한이 있다.
       </Paragraph>
 
-      <SubsectionTitle>3.2 품질보증담당자</SubsectionTitle>
+      <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.2.1 품질검사자 및 내부심사자의 자격 인증에 대하여 검토할 책임과 권한이 있다.</StyledListItem>
         <StyledListItem>3.2.2 품질검사자 및 내부심사자의 자격 인증에 대하여 기안할 책임과 권한이 있다.</StyledListItem>
@@ -163,9 +163,9 @@ function BF_RMD_GM_12_Content() {
       <SectionTitle>5. 업무 절차</SectionTitle>
       <SubsectionTitle>5.1 자격의 부여 및 승인</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.1.1 품질보증담당자는 자격의 요건에 의거하여 해당되는 자의 관련 기록을 검토하고 자격인정서와 자격근거자료를 수집하여 품질경영최고책임자의 승인을 득한다.</StyledListItem>
-        <StyledListItem>5.1.2 필요시 품질보증담당자는 자격인정서의 작성 시 관련되는 문서를 첨부할 수 있다.</StyledListItem>
-        <StyledListItem>5.1.3 품질보증담당자는 해당되는 자의 자격인정에 대한 품질경영최고책임자의 승인 시 자격 인정 관리대장을 작성하여 유지, 관리한다.</StyledListItem>
+        <StyledListItem>5.1.1 품질보증책임자는 자격의 요건에 의거하여 해당되는 자의 관련 기록을 검토하고 자격인정서와 자격근거자료를 수집하여 품질경영최고책임자의 승인을 득한다.</StyledListItem>
+        <StyledListItem>5.1.2 필요시 품질보증책임자는 자격인정서의 작성 시 관련되는 문서를 첨부할 수 있다.</StyledListItem>
+        <StyledListItem>5.1.3 품질보증책임자는 해당되는 자의 자격인정에 대한 품질경영최고책임자의 승인 시 자격 인정 관리대장을 작성하여 유지, 관리한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>5.2 자격 인증의 유지 관리</SubsectionTitle>
