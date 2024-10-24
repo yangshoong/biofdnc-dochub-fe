@@ -176,7 +176,7 @@ function BF_RMD_QC_02_Content() {
       <StyledList>
         <StyledListItem>6.1 에어컨, 보일러, 에어컴프레셔 등 환경 설비가 다음 중 한가지 이상 발생 시 일탈로 분류한다.</StyledListItem>
         <StyledList>
-          <StyledListItem>6.1.1 온습도 일탈</StyledListItem>
+          <StyledListItem>6.1.1 온도 일탈</StyledListItem>
           <StyledListItem>6.1.2 설비의 정상 작동 범위를 벗어난 압력, 유량</StyledListItem>
           <StyledListItem>6.1.3 제어 시스템의 오작동 또는 이상 신호</StyledListItem>
         </StyledList>

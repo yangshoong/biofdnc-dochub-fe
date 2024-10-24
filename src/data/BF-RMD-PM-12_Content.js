@@ -172,7 +172,7 @@ function BF_RMD_PM_12_Content() {
       <StyledList>
         <StyledListItem>6.1.1 품목별 적정 보관 조건(온도, 습도 등)을 설정하고 관리한다.</StyledListItem>
         <StyledListItem>6.1.2 창고의 실내 온도는 실온 조건을 유지한다.</StyledListItem>
-        <StyledListItem>6.1.3 창고의 온습도를 매일 1회 점검하고 기록한다.</StyledListItem>
+        <StyledListItem>6.1.3 창고의 온도를 매일 1회 점검하고 기록한다.</StyledListItem>
       </StyledList>
       <SubsectionTitle>6.2 재고 관리 방법</SubsectionTitle>
       <StyledList>

@@ -216,7 +216,7 @@ function BF_RMD_QC_03_Content() {
           <StyledListItem>5.2.3.2 검교정이 완료된 측정장비에 대하여는 측정결과를 무효화 시킬 수 있는 조정 및 방법으로부터 보호 될 수 있도록 한다.</StyledListItem>
           <StyledListItem>5.2.3.3 자체점검이 필요한 계측기를 위해 품질관리담당자는 외부 교정이 된 표준 계측기 또는 표준물질을 입수하여 비교 검정한다.</StyledListItem>
           <StyledListItem>5.2.3.4 품질관리담당자는 자체적으로 실시한 내부검정성적서를 작성하고, 해당 계측기에 "비교검정 필증"을 부착하여 관리한다.</StyledListItem>
-          <StyledListItem>5.2.3.5 계측기 사용자는 온습도 등 환경에 의한 성능저하 요인이 발생하지 않도록 관리하고 규정된 성능을 유지 및 도난, 분실, 파손 등을 방지한다.</StyledListItem>
+          <StyledListItem>5.2.3.5 계측기 사용자는 온도 등 환경에 의한 성능저하 요인이 발생하지 않도록 관리하고 규정된 성능을 유지 및 도난, 분실, 파손 등을 방지한다.</StyledListItem>
         </StyledList>
       </StyledList>
       <SubsectionTitle>5.3 부적합 계측기의 처리</SubsectionTitle>

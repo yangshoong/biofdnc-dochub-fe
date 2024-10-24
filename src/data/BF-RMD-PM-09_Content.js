@@ -202,7 +202,7 @@ function BF_RMD_PM_09_Content() {
         </Table>
       </TableContainer>
       <StyledList>
-        <StyledListItem>5.7.1.1 온습도 상태를 매일 1회 점검하여 기록한다.</StyledListItem>
+        <StyledListItem>5.7.1.1 온도 상태를 매일 1회 점검하여 기록한다.</StyledListItem>
       </StyledList>
       <Paragraph>5.7.2 제품 보관 관리</Paragraph>
       <StyledList>
