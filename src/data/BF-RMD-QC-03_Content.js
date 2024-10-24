@@ -250,9 +250,7 @@ function BF_RMD_QC_03_Content() {
       
       <SectionTitle>8. 인큐베이터 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>8.1 인큐베이터는 IoT 온도계를 사용하여 실시간으로 온도를 모니터링하고 관리한다.</StyledListItem>
-        <StyledListItem>8.2 IoT 온도계는 클라우드 시스템과 연동하여 온도 데이터를 자동으로 기록하고 저장한다.</StyledListItem>
-        <StyledListItem>8.3 설정된 온도 범위를 벗어날 경우, 담당자에게 즉시 알림이 전송되도록 설정한다.</StyledListItem>
+        <StyledListItem>8.1 인큐베이터는 디지털 온도계를 사용하여 온도를 측정하며, 수은 온도계로 이를 교차 검증한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
