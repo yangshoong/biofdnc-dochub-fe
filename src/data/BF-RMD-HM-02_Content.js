@@ -106,7 +106,7 @@ function BF_RMD_HM_02_Content() {
       
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
-        본 규정은 당사의 모든 작업장 및 보관소에 출입하는 업무담당자 및 외부 방문자에게 적용된다.
+        본 규정은 당사의 작업장 및 보관소에 출입하는 업무담당자 및 외부 방문자에게 적용된다.
       </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
