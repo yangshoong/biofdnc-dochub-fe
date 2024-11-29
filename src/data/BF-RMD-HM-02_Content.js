@@ -204,7 +204,7 @@ function BF_RMD_HM_02_Content() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>방문객용 위생모</TableCell>
+              <TableCell>위생모</TableCell>
               <TableCell>부직포</TableCell>
               <TableCell>흰색</TableCell>
               <TableCell>일회용 위생모</TableCell>
@@ -212,7 +212,7 @@ function BF_RMD_HM_02_Content() {
               <TableCell>제조구역</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>방문객용 위생화</TableCell>
+              <TableCell>위생화</TableCell>
               <TableCell>부직포</TableCell>
               <TableCell>흰색</TableCell>
               <TableCell>일회용 덧신</TableCell>
