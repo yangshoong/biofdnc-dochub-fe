@@ -139,6 +139,7 @@ function BF_RMD_HM_02_Content() {
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>4. 위생복 착용 규정</SectionTitle>
+      <SubsectionTitle>4.1 업무담당자용 위생복</SubsectionTitle>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -184,14 +185,24 @@ function BF_RMD_HM_02_Content() {
               <TableCell>없음</TableCell>
               <TableCell>품질 실험실, 연구소</TableCell>
             </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+
+      <SubsectionTitle sx={{ marginTop: '30px' }}>4.2 방문자용 위생복</SubsectionTitle>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
             <TableRow>
-              <TableCell>방문객용 위생복</TableCell>
-              <TableCell>폴리에스텔 + 면</TableCell>
-              <TableCell>흰색</TableCell>
-              <TableCell>실험가운</TableCell>
-              <TableCell>없음</TableCell>
-              <TableCell>제조구역</TableCell>
+              <TableCell>종류</TableCell>
+              <TableCell>재질</TableCell>
+              <TableCell>색상</TableCell>
+              <TableCell>착용형태</TableCell>
+              <TableCell>남녀구분</TableCell>
+              <TableCell>착용 구역</TableCell>
             </TableRow>
+          </TableHead>
+          <TableBody>
             <TableRow>
               <TableCell>방문객용 위생모</TableCell>
               <TableCell>부직포</TableCell>
