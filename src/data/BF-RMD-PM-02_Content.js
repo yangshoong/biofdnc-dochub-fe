@@ -146,6 +146,7 @@ function BF_RMD_PM_02_Content() {
       <StyledList>
         <StyledListItem>4.4.1 건물 및 지원 설비 유지관리 및 이상 시 보수활동</StyledListItem>
         <StyledListItem>4.4.2 제조 및 포장 설비 이상 시 보수 활동</StyledListItem>
+        <StyledListItem>4.4.3 화재경보 및 감지기 점검 결과 확인</StyledListItem>
       </StyledList>
       <SubsectionTitle>4.5 업무담당자</SubsectionTitle>
       <StyledList>
@@ -175,6 +176,13 @@ function BF_RMD_PM_02_Content() {
         <StyledListItem>5.2.7 설비 수리 후 세척한 설비는 다음 사용 시까지 오염되지 아니하도록 뚜껑을 덮어서 관리한다.</StyledListItem>
       </StyledList>
 
+      <SubsectionTitle>5.3 비상구 표지판, 화재경보 및 감지기 점검</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>5.3.1 비상구 표지판, 화재경보 시스템 및 감지기에 대한 점검은 건물 시설 관리 사무소에서 주기적으로 일괄 실시한다.</StyledListItem>
+        <StyledListItem>5.3.2 이상이 있을 시 생산관리담당자는 건물 시설 관리 사무소로부터 내역을 확인하고 즉시 제조생산책임자에게 보고한다.</StyledListItem>
+        <StyledListItem>5.3.3 필요한 경우 적절한 조치를 취하여 안전을 확보한다.</StyledListItem>
+      </StyledList>
+
       <Divider sx={{ marginY: '50px' }} />
       
       <SectionTitle>6. 생산 설비의 재질</SectionTitle>
@@ -183,14 +191,6 @@ function BF_RMD_PM_02_Content() {
         <StyledListItem>6.2 각 제조시설과 기구에 대해 상기 6.1항에 부합한지 확인하고 이상이 없으면 승인하여 제조관리시설목록에 등록한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>첨부 1) 설비 및 기기 이력카드</StyledListItem>
-        <StyledListItem>첨부 2) 설비 및 기기 등록대장</StyledListItem>
-        <StyledListItem>첨부 3) 설비•기기 수리 의뢰 및 결과 보고서</StyledListItem>
-      </StyledList>
     </Box>
   );
 }

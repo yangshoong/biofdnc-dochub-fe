@@ -126,14 +126,14 @@ function BF_RMD_GM_04_Content() {
         <StyledListItem>3.2.2 사외 교육훈련 결과 보고서를 승인한다.</StyledListItem>
         <StyledListItem>3.2.3 전 업무담당자에 대한 교육 필요성을 파악한다.</StyledListItem>
         <StyledListItem>3.2.4 품질보증담당자 중 교육훈련 담당자를 지정하여 교육훈련을 총괄관리한다.</StyledListItem>
-        <StyledListItem>3.2.5 교육훈련을 진행하고 그 효과를 평가한다.</StyledListItem>
+        <StyledListItem>3.2.5 교육훈련을 진행한다.</StyledListItem>
         <StyledListItem>3.2.6 전체 교육훈련 프로그램을 총괄 관리한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>3.3 부서별 책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.3.1 신입 및 전입 업무담당자에 대한 직무교육(OJT) 계획을 수립하고 시행한다.</StyledListItem>
-        <StyledListItem>3.3.2 OJT 시행 시 지도사원을 선임하고 OJT 종료 후 교육의 효과성을 평가한다.</StyledListItem>
+        <StyledListItem>3.3.2 OJT 시행 시 지도사원을 선임한다.</StyledListItem>
         <StyledListItem>3.3.3 해당 부서 업무담당자에 대한 교육 필요성 파악 및 연간 교육훈련 계획에 반영한다.</StyledListItem>
       </StyledList>
 
@@ -271,13 +271,7 @@ function BF_RMD_GM_04_Content() {
             </TableRow>
             <TableRow>
               <TableCell>사내교육 교육훈련 보고서 작성</TableCell>
-              <TableCell>사외교육 훈련 보고서 작성 및 수료증 제출</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>평가</TableCell>
-              <TableCell>교육훈련 평가표 작성</TableCell>
-              <TableCell>수료증으로 대체</TableCell>
+              <TableCell>사외교육 훈련 보고서 작성 또는 수료증 제출</TableCell>
               <TableCell></TableCell>
             </TableRow>
           </TableBody>
@@ -287,173 +281,18 @@ function BF_RMD_GM_04_Content() {
         <StyledListItem>2) 교육대상자로 선정될 경우, 해당 교육에 성실히 참여할 의무가 있다.</StyledListItem>
         <StyledListItem>3) 부득이한 사유로 불참이 예상되는 교육대상자는 품질보증 부서와 협의하여 교육연기 또는 대상자를 변경하여 시행 할 수 있다.</StyledListItem>
       </StyledList>
-
-      <SubsectionTitle sx={{ paddingLeft: '40px' }}>5.2.3 교육훈련 효과 평가</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>1) 실시한 교육훈련의 효과를 측정하기 위하여 다음의 방식으로 평가하고 그 결과를 기록 하여 보관한다.</StyledListItem>
-        <StyledList>
-          <StyledListItem sx={{ paddingLeft: '40px' }}>a) 교육내용 이해도에 대한 질의 응답 (담당 강사 또는 교육 주관 부서장)</StyledListItem>
-          <StyledListItem sx={{ paddingLeft: '40px' }}>b) 교육내용에 대한 시험 (교육주관 부서장)</StyledListItem>
-          <StyledListItem sx={{ paddingLeft: '40px' }}>c) 실제 업무수행 질과 성과의 향상 정도 관찰 (해당 팀장)</StyledListItem>
-        </StyledList>
-        <StyledListItem>2) 교육을 실시한 후 교육의 효과성 평가 결과가 70% 미만이거나, 미흡하다고 판단되는 경우에는 재 교육을 실시하고 재 평가를 실시한다.</StyledListItem>
-      </StyledList>
-
-      <SubsectionTitle>5.3 교육훈련 결과의 보고</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>5.3.1 교육주관 부서장은 실시한 교육에 대한 결과를 교육 후 1주일 이내에 "사내 외 교육훈련 보고서"를 작성하여 품질보증팀장의 승인을 득한다.</StyledListItem>
-        <StyledListItem>5.3.2 승인을 득한 교육훈련 보고서는 품질보증부서에서 이를 접수하여 보관한다.</StyledListItem>
-      </StyledList>
-      <Divider sx={{ marginY: '50px' }} />
-      
+         
       <SectionTitle>6. 기록관리</SectionTitle>
       <StyledList>
         <StyledListItem>본 규정을 실행한 결과 기록은 "기록관리 절차서"에 따라 관리한다.</StyledListItem>
       </StyledList>
 
-      <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>7. 관련 문서</SectionTitle>
-      <StyledList>
-        <StyledListItem>7.1 문서 및 자료관리 절차서</StyledListItem>
-        <StyledListItem>7.2 기록관리 절차서</StyledListItem>
-      </StyledList>
-      <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>8. 첨부</SectionTitle>
-      <StyledList>
-        <StyledListItem>첨부 1) 일반 업무담당자 교육 내용</StyledListItem>
-        <TableContainer component={Paper}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>No.</TableCell>
-                <TableCell>교육 내용</TableCell>
-                <TableCell>비고</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              <TableRow>
-                <TableCell>1</TableCell>
-                <TableCell>품질경영시스템 개요 및 인식</TableCell>
-                <TableCell>전 업무담당자</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>2</TableCell>
-                <TableCell>제조, 충진 및 포장공정 관리 방법</TableCell>
-                <TableCell>제조/충진/포장공정 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>3</TableCell>
-                <TableCell>문제 발생시의 조치 및 보고방법</TableCell>
-                <TableCell>전 업무담당자</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>4</TableCell>
-                <TableCell>제조/충진 포장 지시 및 기록서의 작성방법</TableCell>
-                <TableCell>제조/충진/포장공정 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>5</TableCell>
-                <TableCell>검체 채취 및 검사, 시험방법</TableCell>
-                <TableCell>품질 시험 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>6</TableCell>
-                <TableCell>각종 서류 정리 및 관리에 관한 사항</TableCell>
-                <TableCell>전 업무담당자</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>7</TableCell>
-                <TableCell>품질 실험실 기기 사용 방법</TableCell>
-                <TableCell>품질 시험 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>8</TableCell>
-                <TableCell>표준품 관리 및 시약 취급·관리 방법</TableCell>
-                <TableCell>품질 시험 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>9</TableCell>
-                <TableCell>화장품 원료 일반 시험법</TableCell>
-                <TableCell>품질 시험 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>10</TableCell>
-                <TableCell>미생물 시험방법</TableCell>
-                <TableCell>미생물 시험 담당에 한함</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>11</TableCell>
-                <TableCell>개인, 작업장 및 설비 위생관리 방법</TableCell>
-                <TableCell>전 업무담당자</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <StyledListItem>첨부 2) 신입 업무담당자 교육 내용</StyledListItem>
-        <TableContainer component={Paper}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>No.</TableCell>
-                <TableCell>교육 내용</TableCell>
-                <TableCell>비고</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              <TableRow>
-                <TableCell>1</TableCell>
-                <TableCell>회사 및 화장품 원료 업무 소개</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>2</TableCell>
-                <TableCell>품질경영시스템 개요 및 인식</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>3</TableCell>
-                <TableCell>품질관리의 필요성 및 샘플링 검사방법</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>4</TableCell>
-                <TableCell>화장품 관련 법규</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>5</TableCell>
-                <TableCell>원부자재의 품질관리</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>6</TableCell>
-                <TableCell>제조공정 및 포장공정 관리 및 특성</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>7</TableCell>
-                <TableCell>품질경영시스템 요구사항</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>8</TableCell>
-                <TableCell>개인, 작업장 및 설비 위생관리 방법</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>9</TableCell>
-                <TableCell>기타 품질경영시스템 실행을 위한 주의사항</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <StyledListItem>첨부 3) 년간 교육훈련 계획서</StyledListItem>
-        <StyledListItem>첨부 4) 사내교육훈련실시보고서</StyledListItem>
-        <StyledListItem>첨부 5) 사외교육결과보고서</StyledListItem>
-      </StyledList>
+      
+      
+      
+     
 
     </Box>
   );
