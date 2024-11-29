@@ -184,6 +184,30 @@ function BF_RMD_HM_02_Content() {
               <TableCell>없음</TableCell>
               <TableCell>품질 실험실, 연구소</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>방문객용 위생복</TableCell>
+              <TableCell>폴리에스텔 + 면</TableCell>
+              <TableCell>흰색</TableCell>
+              <TableCell>실험가운</TableCell>
+              <TableCell>없음</TableCell>
+              <TableCell>제조구역</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>방문객용 위생모</TableCell>
+              <TableCell>부직포</TableCell>
+              <TableCell>흰색</TableCell>
+              <TableCell>일회용 위생모</TableCell>
+              <TableCell>없음</TableCell>
+              <TableCell>제조구역</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>방문객용 위생화</TableCell>
+              <TableCell>부직포</TableCell>
+              <TableCell>흰색</TableCell>
+              <TableCell>일회용 덧신</TableCell>
+              <TableCell>없음</TableCell>
+              <TableCell>제조구역</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
       </TableContainer>
