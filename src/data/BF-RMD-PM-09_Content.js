@@ -195,7 +195,7 @@ function BF_RMD_PM_09_Content() {
             </TableRow>
             <TableRow>
               <TableCell>저온 보관 제품</TableCell>
-              <TableCell>온도 : 15℃ 이하</TableCell>
+              <TableCell>온도 : 1 ~ 15℃ 이하</TableCell>
               <TableCell>냉장고</TableCell>
             </TableRow>
           </TableBody>
