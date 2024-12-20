@@ -101,100 +101,96 @@ function BF_RMD_GM_13_Content() {
 
       <SectionTitle sx={{ marginTop: '100px' }}>1. 목적</SectionTitle>
       <Paragraph>
-        본 규정은 (주)바이오에프디엔씨 (이하 "당사"라 함)의 품질 경영 활동의 운영 및 관리자의 적격성과 품질검사자와 내부심사 업무를 수행할 수 있는 심사원 자격을 인정하여 관리함으로써 합리적이고 효율적인 업무수행에 그 목적이 있다.
+        본 규정은 (주)바이오에프디엔씨(이하 "당사")의 공급 차질을 야기할 수 있는 위기 상황 발생 시, 신속한 대응과 재개를 통해 비즈니스 연속성을 유지하고 고객에게 안정적인 제품 및 서비스를 제공하는 데 목적이 있다.
       </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
-      
+
       <SectionTitle>2. 적용범위</SectionTitle>
       <Paragraph>
-        본 절차서는 당사의 검사 및 시험, 내부 품질감사 업무를 수행하기 위한 요원의 자격인정에 대하여 적용한다.
+        본 규정은 당사 모든 사업장, 생산시설, 관리부서를 포함하여, 업무 연속성을 위한 위기관리 체계 수립 및 운영에 적용한다.
       </Paragraph>
-      <StyledList>
-        <StyledListItem>2.1 품질검사자(검사원)</StyledListItem>
-        <StyledListItem>2.2 내부심사자 (내부심사원)</StyledListItem>
-      </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
-      
+
       <SectionTitle>3. 책임과 권한</SectionTitle>
       <SubsectionTitle>3.1 품질경영최고책임자</SubsectionTitle>
-      <Paragraph>
-        품질검사자 및 내부심사자의 자격 인증에 대하여 검토/승인할 책임과 권한이 있다.
-      </Paragraph>
+      <StyledList>
+        <StyledListItem>3.1.1 비즈니스 연속성 관리 총괄 책임</StyledListItem>
+        <StyledListItem>3.1.2 주요 규정 최종 승인</StyledListItem>
+      </StyledList>
 
       <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>3.2.1 품질검사자 및 내부심사자의 자격 인증에 대하여 검토할 책임과 권한이 있다.</StyledListItem>
-        <StyledListItem>3.2.2 품질검사자 및 내부심사자의 자격 인증에 대하여 기안할 책임과 권한이 있다.</StyledListItem>
+        <StyledListItem>3.2.1 비즈니스 연속성 계획(BCP) 수립 및 관리</StyledListItem>
+        <StyledListItem>3.2.2 위기 상황 발생 시 대응 절차 총괄</StyledListItem>
+        <StyledListItem>3.2.3 시정 및 예방 조치 관리</StyledListItem>
       </StyledList>
 
-      <SubsectionTitle>3.3 기타 부서장</SubsectionTitle>
-      <Paragraph>
-        해당 부서 작업원의 교육실시 및 자격인증에 대한 기안할 책임이 있다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>4. 자격의 요건</SectionTitle>
-      <SubsectionTitle>4.1 검사원의 선정</SubsectionTitle>
+      <SubsectionTitle>3.3 제조생산책임자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.1.1 업무 집중 및 성실성</StyledListItem>
-        <StyledListItem>4.1.2 의사소통 능력, 분석 능력, 판단력, 문서작성 능력, 융통성</StyledListItem>
-        <StyledListItem>4.1.3 CGMP 자격인증 교육 평가에서 80점 이상인 자</StyledListItem>
-        <StyledListItem>4.1.4 고등학교 졸업 이상의 학력 소지자</StyledListItem>
+        <StyledListItem>3.3.1 생산 관련 비상 대응 계획 수립 및 실행</StyledListItem>
+        <StyledListItem>3.3.2 제조설비 및 공정의 비상 상황 대비</StyledListItem>
+        <StyledListItem>3.3.3 대체 생산 방안 수립 및 관리</StyledListItem>
+        <StyledListItem>3.3.4 원부자재 공급 중단 대응 방안 관리</StyledListItem>
+        <StyledListItem>3.3.5 생산인력 비상 대응 체계 구축</StyledListItem>
       </StyledList>
 
-      <SubsectionTitle>4.2 내부 심사원</SubsectionTitle>
-      <Paragraph>
-        다음 각 항의 수행업무 항목 중 (필수)항목을 포함 또는 이상을 만족하는 관리자
-      </Paragraph>
+      <SubsectionTitle>3.4 업무담당자</SubsectionTitle>
       <StyledList>
-        <StyledListItem>4.2.1 고등학교 졸업 이상의 학력 소지자(필수)</StyledListItem>
-        <StyledListItem>4.2.2 CGMP 내부감사 교육을 이수한 자로서 필기평가 80점 이상인 자</StyledListItem>
-        <StyledListItem>4.2.3 외부 품질경영 전문 진단지도기관의 지도위원</StyledListItem>
-        <StyledListItem>4.2.4 품질관리 자격증 소지자</StyledListItem>
-        <StyledListItem>4.2.5 바이오, 제약, 화장품 분야 5년 이상 경력자(타사 경력 포함)(필수)</StyledListItem>
-        <StyledListItem>4.2.6 외부 기관의 "내부심사원 교육"을 이수한 자</StyledListItem>
+        <StyledListItem>3.4.1 비상 대응 절차 숙지 및 준수</StyledListItem>
+        <StyledListItem>3.4.2 담당 업무별 위기 상황 보고</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>5. 업무 절차</SectionTitle>
-      <SubsectionTitle>5.1 자격의 부여 및 승인</SubsectionTitle>
-      <StyledList>
-        <StyledListItem>5.1.1 품질보증책임자는 자격의 요건에 의거하여 해당되는 자의 관련 기록을 검토하고 자격인정서와 자격근거자료를 수집하여 품질경영최고책임자의 승인을 득한다.</StyledListItem>
-        <StyledListItem>5.1.2 필요시 품질보증책임자는 자격인정서의 작성 시 관련되는 문서를 첨부할 수 있다.</StyledListItem>
-        <StyledListItem>5.1.3 품질보증책임자는 해당되는 자의 자격인정에 대한 품질경영최고책임자의 승인 시 자격 인정 관리대장을 작성하여 유지, 관리한다.</StyledListItem>
-      </StyledList>
 
-      <SubsectionTitle>5.2 자격 인증의 유지 관리</SubsectionTitle>
+      <SectionTitle>4. 용어 정의</SectionTitle>
       <StyledList>
-        <StyledListItem>5.2.1 검사 및 시험요원의 자격 인증은 자격 인증이 부여된 자가 타 부서로 보직 변경하기 전까지는 유효한 것으로 한다.</StyledListItem>
-        <StyledListItem>5.2.2 자격이 부여된 자가 퇴사 시에는 퇴사와 동시에 자격이 상실된다.</StyledListItem>
+        <StyledListItem>4.1 비즈니스 연속성(BC, Business Continuity): 사업 운영의 중단을 최소화하고 신속히 회복하여 안정적으로 지속하는 능력</StyledListItem>
+        <StyledListItem>4.2 BCP (Business Continuity Plan): 위기 또는 재난 상황에서 핵심 기능을 유지 및 복구하기 위한 문서화된 절차와 지침</StyledListItem>
+        <StyledListItem>4.3 BCM (Business Continuity Management): 예상치 못한 위험 및 비상사태에 대한 즉각적인 대응과 피해 최소화 활동</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
-      
+
+      <SectionTitle>5. 비즈니스 연속성 관리 절차</SectionTitle>
+      <SubsectionTitle>5.1 위험 식별 및 영향분석</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>5.1.1 당사는 정기적으로 잠재적 위협(천재지변, 설비고장, 인력부족, 공급망 단절 등)을 식별한다.</StyledListItem>
+        <StyledListItem>5.1.2 영향분석(BIA)을 통해 핵심 업무 중단 시 발생 가능한 영향도를 평가한다.</StyledListItem>
+      </StyledList>
+
+      <SubsectionTitle>5.2 비즈니스 연속성 전략 수립</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>5.2.1 핵심 업무 기능(제품 생산, 품질관리, 물류, 고객서비스 등)의 우선순위를 정하고, 비상 대응 전략을 마련한다.</StyledListItem>
+        <StyledListItem>5.2.2 대체 자원(대체 설비, 예비 인력, 예비 공급업체) 확보 전략을 수립한다.</StyledListItem>
+      </StyledList>
+
+      <SubsectionTitle>5.3 BCP 개발 및 유지관리</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>5.3.1 BCM 책임자는 식별된 위험과 전략을 반영하여 BCP를 작성한다.</StyledListItem>
+        <StyledListItem>5.3.2 BCP는 정기적(연 1회 이상)으로 검토·갱신하며, 조직 변화, 신규 위협 등장 시 즉각 개정한다.</StyledListItem>
+      </StyledList>
+
+      <SubsectionTitle>5.4 사고 발생 시 대응</SubsectionTitle>
+      <StyledList>
+        <StyledListItem>5.4.1 위기 발생 시 BCM 책임자 주도 하에 BCP를 실행하여 핵심 기능 지속 및 신속한 복구를 지원한다.</StyledListItem>
+        <StyledListItem>5.4.2 상황 종료 후, 사고 대응 성과를 평가하고 개선사항을 BCP에 반영한다.</StyledListItem>
+      </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
+
       <SectionTitle>6. 기록관리</SectionTitle>
       <Paragraph>
-        본 절차서를 실행한 결과 기록은 "기록관리 절차서"에 따라 관리한다.
+        비즈니스 연속성 관련 활동(영향분석 결과, BCP 개정 이력, 교육 및 훈련 기록, 사고 대응 결과 등)에 관한 기록은 "기록 관리 규정"에 따라 체계적으로 보관·관리한다.
       </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>7. 관련 문서</SectionTitle>
+      <SectionTitle>7. 첨부양식</SectionTitle>
       <StyledList>
-        <StyledListItem>7.1 기록관리 규정</StyledListItem>
-        <StyledListItem>7.2 문서 및 자료 관리 규정</StyledListItem>
-      </StyledList>
-
-      <Divider sx={{ marginY: '50px' }} />
-      
-      <SectionTitle>8. 첨부양식</SectionTitle>
-      <StyledList>
-        <StyledListItem>8.1 자격인정서</StyledListItem>
-        <StyledListItem>8.2 자격인정관리대장</StyledListItem>
+        <StyledListItem>7.1 비즈니스 영향분석서(BIA) 양식</StyledListItem>
+        <StyledListItem>7.2 비즈니스 연속성 계획(BCP) 표준 양식</StyledListItem>
+        <StyledListItem>7.3 비상 대응 체크리스트</StyledListItem>
       </StyledList>
     </Box>
   );
