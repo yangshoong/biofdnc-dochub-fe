@@ -15,6 +15,7 @@ const RMDStandards = [
       { id: 'BF-RMD-GM-10', title: '폐기물 처리 및 관리 규정'},
       { id: 'BF-RMD-GM-11', title: '회수반품처리규정'},
       { id: 'BF-RMD-GM-12', title: '자격인증 규정'},
+      { id: 'BF-RMD-GM-13', title: '비즈니스 연속성 관리 규정'},
     ],
   },
   {
