@@ -209,7 +209,7 @@ function BF_RMD_HM_09_Content() {
       <SectionTitle>9. 세척의 평가 방법</SectionTitle>
       <SubsectionTitle>9.1 육안 평가</SubsectionTitle>
       <Paragraph>
-        설비 세척 후 육안 및 백색 거즈로 세척부위를 문질러서 세척여부를 확인한다.
+        설비 세척 후 육안 및 면봉으로 세척부위를 문질러서 세척여부를 확인한다.
       </Paragraph>
 
       <Divider sx={{ marginY: '50px' }} />

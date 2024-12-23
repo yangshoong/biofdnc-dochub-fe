@@ -117,23 +117,17 @@ function BF_RMD_GM_13_Content() {
       <SubsectionTitle>3.1 품질경영최고책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.1.1 비즈니스 연속성 관리 총괄 책임</StyledListItem>
-        <StyledListItem>3.1.2 주요 규정 최종 승인</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>3.2 품질보증책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.2.1 비즈니스 연속성 계획(BCP) 수립 및 관리</StyledListItem>
         <StyledListItem>3.2.2 위기 상황 발생 시 대응 절차 총괄</StyledListItem>
-        <StyledListItem>3.2.3 시정 및 예방 조치 관리</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>3.3 제조생산책임자</SubsectionTitle>
       <StyledList>
         <StyledListItem>3.3.1 생산 관련 비상 대응 계획 수립 및 실행</StyledListItem>
-        <StyledListItem>3.3.2 제조설비 및 공정의 비상 상황 대비</StyledListItem>
-        <StyledListItem>3.3.3 대체 생산 방안 수립 및 관리</StyledListItem>
-        <StyledListItem>3.3.4 원부자재 공급 중단 대응 방안 관리</StyledListItem>
-        <StyledListItem>3.3.5 생산인력 비상 대응 체계 구축</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>3.4 업무담당자</SubsectionTitle>
@@ -156,7 +150,7 @@ function BF_RMD_GM_13_Content() {
       <SectionTitle>5. 비즈니스 연속성 관리 절차</SectionTitle>
       <SubsectionTitle>5.1 위험 식별 및 영향분석</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.1.1 당사는 정기적으로 잠재적 위협(천재지변, 설비고장, 인력부족, 공급망 단절 등)을 식별한다.</StyledListItem>
+        <StyledListItem>5.1.1 정기적으로 잠재적 위협(천재지변, 설비고장, 인력부족, 공급망 단절 등)을 식별한다.</StyledListItem>
         <StyledListItem>5.1.2 영향분석(BIA)을 통해 핵심 업무 중단 시 발생 가능한 영향도를 평가한다.</StyledListItem>
       </StyledList>
 
@@ -169,23 +163,16 @@ function BF_RMD_GM_13_Content() {
       <SubsectionTitle>5.3 BCP 개발 및 유지관리</SubsectionTitle>
       <StyledList>
         <StyledListItem>5.3.1 BCM 책임자는 식별된 위험과 전략을 반영하여 BCP를 작성한다.</StyledListItem>
-        <StyledListItem>5.3.2 BCP는 정기적(연 1회 이상)으로 검토·갱신하며, 조직 변화, 신규 위협 등장 시 즉각 개정한다.</StyledListItem>
+        <StyledListItem>5.3.2 BCP는 조직 변화, 신규 위협 등장 시 검토 및 개정한다.</StyledListItem>
       </StyledList>
 
       <SubsectionTitle>5.4 사고 발생 시 대응</SubsectionTitle>
       <StyledList>
         <StyledListItem>5.4.1 위기 발생 시 BCM 책임자 주도 하에 BCP를 실행하여 핵심 기능 지속 및 신속한 복구를 지원한다.</StyledListItem>
-        <StyledListItem>5.4.2 상황 종료 후, 사고 대응 성과를 평가하고 개선사항을 BCP에 반영한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
 
-      <SectionTitle>6. 기록관리</SectionTitle>
-      <Paragraph>
-        비즈니스 연속성 관련 활동(영향분석 결과, BCP 개정 이력, 교육 및 훈련 기록, 사고 대응 결과 등)에 관한 기록은 "기록 관리 규정"에 따라 체계적으로 보관·관리한다.
-      </Paragraph>
-
-      <Divider sx={{ marginY: '50px' }} />
       <SectionTitle>7. 첨부양식</SectionTitle>
       <StyledList>
         <StyledListItem>7.1 비즈니스 영향분석서(BIA) 양식</StyledListItem>

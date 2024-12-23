@@ -149,9 +149,9 @@ function BF_RMD_PM_14_Content() {
       </StyledList>
       <SubsectionTitle>5.2 라벨 출력</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.2.1 제품 라벨은 전용 라벨 출력 프로그램을 통해 출력 및 수량이 관리된다.</StyledListItem>
+        <StyledListItem>5.2.1 제품 라벨은 전용 라벨 출력 프로그램을 통해서 출력한다.</StyledListItem>
         <StyledListItem>5.2.2 제품 라벨 출력 수량은 제조 배치 크기에 따라 전용 프로그램에서 자동으로 계산된다.</StyledListItem>
-        <StyledListItem>5.2.3 기타 라벨(원료, 반제품 등)은 별도의 프로그램을 통해 출력되며, 수량 관리는 하지 않는다.</StyledListItem>
+        <StyledListItem>5.2.3 기타 라벨(원료, 반제품 등)은 별도의 프로그램을 통해 출력한다.</StyledListItem>
         <StyledListItem>5.2.4 라벨 출력 시 제조담당자는 내용의 정확성을 확인해야 한다.</StyledListItem>
       </StyledList>
       <SubsectionTitle>5.3 라벨 사용</SubsectionTitle>
@@ -161,7 +161,7 @@ function BF_RMD_PM_14_Content() {
       </StyledList>
       <SubsectionTitle>5.4 라벨 폐기</SubsectionTitle>
       <StyledList>
-        <StyledListItem>5.4.1 오류 라벨이나 사용하지 않는 라벨은 즉시 폐기한다.</StyledListItem>
+        <StyledListItem>5.4.1 오류 라벨이나 사용하지 않는 라벨은 즉시 사용할 수 없는 형태로 폐기 처리한다.</StyledListItem>
       </StyledList>
 
       <Divider sx={{ marginY: '50px' }} />
