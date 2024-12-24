@@ -265,12 +265,29 @@ function BF_RMD_QC_03_Content() {
 
       <Divider sx={{ marginY: '50px' }} />
       
-      <SectionTitle>10. 첨부</SectionTitle>
+      <SectionTitle>10. 백필터 관리</SectionTitle>
       <StyledList>
-        <StyledListItem>첨부 1) 저울 점검기록서 </StyledListItem>
+        <StyledListItem>10.1 백필터 점검</StyledListItem>
+        <StyledList>
+          <StyledListItem>10.1.1 시각적 점검을 실시하여 손상 여부를 확인하고 백필터 점검 기록서에 기록한다.</StyledListItem>
+        </StyledList>
+        <StyledListItem>10.2 백필터 교체</StyledListItem>
+        <StyledList>
+          <StyledListItem>10.2.1 백필터는 정해진 주기에 따라 교체하며, 육안으로 오염이 확인될 경우 즉시 교체한다.</StyledListItem>
+          <StyledListItem>10.2.2 교체 이력을 백필터 점검 기록서에 기록하고 관리한다.</StyledListItem>
+          <StyledListItem>10.2.3 교체 주기는 사용 빈도 및 제조환경을 고려하여 품질보증책임자가 결정한다.</StyledListItem>
+        </StyledList>
+      </StyledList>
+
+      <Divider sx={{ marginY: '50px' }} />
+      
+      <SectionTitle>11. 첨부</SectionTitle>
+      <StyledList>
+        <StyledListItem>첨부 1) 저울 점검기록서</StyledListItem>
         <StyledListItem>첨부 2) 저울 검교정 성적서</StyledListItem>
         <StyledListItem>첨부 3) pH미터 교정 기록서</StyledListItem>
         <StyledListItem>첨부 4) 클린벤치 점검 기록서</StyledListItem>
+        <StyledListItem>첨부 5) 백필터 점검 기록서</StyledListItem>
       </StyledList>
     </Box>
   );
